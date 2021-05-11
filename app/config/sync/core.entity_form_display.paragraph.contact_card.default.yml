@@ -1,0 +1,50 @@
+uuid: 464cbf77-d3b3-44f5-9669-4e9b9e9e4b99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_card.field_p_address
+    - field.field.paragraph.contact_card.field_p_email
+    - field.field.paragraph.contact_card.field_p_image
+    - field.field.paragraph.contact_card.field_p_phone
+    - paragraphs.paragraphs_type.contact_card
+  module:
+    - address
+    - media_library
+    - telephone
+id: paragraph.contact_card.default
+targetEntityType: paragraph
+bundle: contact_card
+mode: default
+content:
+  field_p_address:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_p_email:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_p_image:
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_p_phone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+hidden:
+  created: true
+  status: true

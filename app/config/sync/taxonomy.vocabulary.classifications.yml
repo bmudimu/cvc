@@ -1,0 +1,8 @@
+uuid: 22e3053e-ae5a-4b84-a743-0e1822ada67a
+langcode: en
+status: true
+dependencies: {  }
+name: Classifications
+vid: classifications
+description: 'Client type classification e.g hospital, investor, contractor'
+weight: 0

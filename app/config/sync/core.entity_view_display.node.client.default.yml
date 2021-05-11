@@ -1,0 +1,94 @@
+uuid: 7d0e2095-229d-4b47-b297-83c81c1c036f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.client.field_assigned_to
+    - field.field.node.client.field_client_bio
+    - field.field.node.client.field_contact_info
+    - field.field.node.client.field_fund
+    - field.field.node.client.field_fund_manager
+    - field.field.node.client.field_province
+    - field.field.node.client.field_registration_number
+    - field.field.node.client.field_status
+    - node.type.client
+  module:
+    - entity_reference_revisions
+    - user
+id: node.client.default
+targetEntityType: node
+bundle: client
+mode: default
+content:
+  field_assigned_to:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_client_bio:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_contact_info:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_fund:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fund_manager:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_province:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_registration_number:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_status:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: 07be9706-89f0-46c2-9b2b-0ac42f2a02d1
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dashboard_page.body
+    - field.field.node.dashboard_page.layout_builder__layout
+    - node.type.dashboard_page
+  module:
+    - text
+    - user
+id: node.dashboard_page.teaser
+targetEntityType: node
+bundle: dashboard_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  layout_builder__layout: true

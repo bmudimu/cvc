@@ -1,0 +1,23 @@
+uuid: f2cc8ec1-dcfb-4d16-b733-1468045246f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_africans
+    - node.type.staff_and_job_count
+id: node.staff_and_job_count.field_africans
+field_name: field_africans
+entity_type: node
+bundle: staff_and_job_count
+label: Africans
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10000
+  prefix: ''
+  suffix: ''
+field_type: integer

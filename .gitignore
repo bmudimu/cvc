@@ -3,47 +3,50 @@
 # earlier versions of Drupal are tracked in `community/PHP/`
 
 # Ignore configuration files that may contain sensitive information
-/sites/*/*settings*.php
-/sites/*/*services*.yml
+app/web/sites/*/*settings*.php
+app/web/sites/*/*services*.yml
 
 # Ignore paths that may contain user-generated content
-/sites/*/files
-/sites/*/public
-/sites/*/private
-/sites/*/files-public
-/sites/*/files-private
+app/web/sites/*/files
+app/web/sites/*/public
+app/web/sites/*/private
+app/web/sites/*/files-public
+app/web/sites/*/files-private
+app/pvt
+app/tmp
 
 # Ignore paths that may contain temporary files
-/sites/*/translations
-/sites/*/tmp
-/sites/*/cache
+app/web/sites/*/translations
+app/web/sites/*/tmp
+app/web/sites/*/cache
 
 # Ignore testing related files
-/sites/simpletest
+app/web/sites/simpletest
 
 # Ignore drupal core (if not versioning drupal sources)
-/core
-/vendor
-/modules/README.txt
-/profiles/README.txt
-/themes/README.txt
-/sites/README.txt
-/sites/example.sites.php
-/sites/example.settings.local.php
-/sites/development.services.yml
-/.csslintrc
-/.editorconfig
-/.eslintignore
-/.eslintrc.json
-/.gitattributes
-/.ht.router.php
-/.htaccess
-/autoload.php
-/example.gitignore
-/index.php
-/INSTALL.txt
-/LICENSE.txt
-/README.txt
-/robots.txt
-/update.php
-/web.config
+app/web/core
+app/vendor
+app/web/modules/README.txt
+app/web/modules/contrib
+app/web/profiles/README.txt
+app/web/themes/README.txt
+app/web/sites/README.txt
+app/web/sites/example.sites.php
+app/web/sites/example.settings.local.php
+app/web/sites/development.services.yml
+app/web/.csslintrc
+app/web/.editorconfig
+app/web/.eslintignore
+app/web/.eslintrc.json
+app/web/.gitattributes
+app/.ht.router.php
+app/web/.htaccess
+app/web/autoload.php
+app/web/example.gitignore
+app/web/index.php
+app/web/INSTALL.txt
+app/web/LICENSE.txt
+app/web/README.txt
+app/web/robots.txt
+app/web/update.php
+app/web/web.config

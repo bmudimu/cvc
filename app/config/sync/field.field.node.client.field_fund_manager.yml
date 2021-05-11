@@ -1,0 +1,29 @@
+uuid: dfc99396-ef7e-4aa4-86bc-1280aaeb78d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fund_manager
+    - node.type.client
+    - taxonomy.vocabulary.fund_managers
+id: node.client.field_fund_manager
+field_name: field_fund_manager
+entity_type: node
+bundle: client
+label: 'Fund Manager'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fund_managers: fund_managers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

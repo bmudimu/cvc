@@ -1,0 +1,29 @@
+uuid: 1288e3e7-bef8-40d1-8257-05ab0583bec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_image
+    - media.type.image
+    - paragraphs.paragraphs_type.contact_card
+id: paragraph.contact_card.field_p_image
+field_name: field_p_image
+entity_type: paragraph
+bundle: contact_card
+label: Logo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

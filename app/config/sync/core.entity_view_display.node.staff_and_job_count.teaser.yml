@@ -1,0 +1,52 @@
+uuid: 5fcd8749-20c7-48d5-b97b-4d39b6cf2bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.staff_and_job_count.field_africans
+    - field.field.node.staff_and_job_count.field_client_name
+    - field.field.node.staff_and_job_count.field_coloured
+    - field.field.node.staff_and_job_count.field_disabled
+    - field.field.node.staff_and_job_count.field_foreign_national
+    - field.field.node.staff_and_job_count.field_gender
+    - field.field.node.staff_and_job_count.field_indians
+    - field.field.node.staff_and_job_count.field_job_type
+    - field.field.node.staff_and_job_count.field_notes
+    - field.field.node.staff_and_job_count.field_occupational_level
+    - field.field.node.staff_and_job_count.field_quarter
+    - field.field.node.staff_and_job_count.field_stats_category
+    - field.field.node.staff_and_job_count.field_total
+    - field.field.node.staff_and_job_count.field_under_35
+    - field.field.node.staff_and_job_count.field_whites
+    - field.field.node.staff_and_job_count.field_year
+    - node.type.staff_and_job_count
+  module:
+    - user
+id: node.staff_and_job_count.teaser
+targetEntityType: node
+bundle: staff_and_job_count
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_africans: true
+  field_client_name: true
+  field_coloured: true
+  field_disabled: true
+  field_foreign_national: true
+  field_gender: true
+  field_indians: true
+  field_job_type: true
+  field_notes: true
+  field_occupational_level: true
+  field_quarter: true
+  field_stats_category: true
+  field_total: true
+  field_under_35: true
+  field_whites: true
+  field_year: true

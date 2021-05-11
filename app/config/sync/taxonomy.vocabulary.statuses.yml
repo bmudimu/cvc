@@ -1,0 +1,8 @@
+uuid: 8212edbe-ab1c-4191-b900-e1141b100c91
+langcode: en
+status: true
+dependencies: {  }
+name: Statuses
+vid: statuses
+description: 'Client state of operation or activity'
+weight: 0

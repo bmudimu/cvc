@@ -1,0 +1,8 @@
+uuid: daa0fb56-999c-413a-8f06-3f5b9df3092c
+langcode: en
+status: true
+dependencies: {  }
+name: Provinces
+vid: provinces
+description: 'South Africa provinces'
+weight: 0

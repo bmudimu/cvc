@@ -1,0 +1,15 @@
+uuid: d7da3138-c01f-4010-aae2-6c2ac43a7809
+langcode: en
+status: true
+dependencies: {  }
+name: image60x60
+label: image60x60
+effects:
+  cc71f995-3ddb-462b-8a18-a90b3a937ccf:
+    uuid: cc71f995-3ddb-462b-8a18-a90b3a937ccf
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 60
+      anchor: center-center

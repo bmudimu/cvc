@@ -1,0 +1,8 @@
+uuid: 7d1fed9b-d3d0-4ac7-988e-2fafc6dbc74e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Fund Managers'
+vid: fund_managers
+description: 'Fund holding bodies or managers'
+weight: 0

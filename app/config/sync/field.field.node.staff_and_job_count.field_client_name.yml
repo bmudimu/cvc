@@ -1,0 +1,29 @@
+uuid: e75d2afe-7770-4992-811d-1d2afb7ddb9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_name
+    - node.type.client
+    - node.type.staff_and_job_count
+id: node.staff_and_job_count.field_client_name
+field_name: field_client_name
+entity_type: node
+bundle: staff_and_job_count
+label: 'Client Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client: client
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: fd6b625b-5c0a-4f2a-95d3-42af67110517
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Certificate
+type: certificate
+description: 'Use <em>Certificate</em> to define required compliance documents or certificates'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

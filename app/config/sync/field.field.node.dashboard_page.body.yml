@@ -1,0 +1,23 @@
+uuid: 4ec7222a-883a-49f2-803b-3af14a5460d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.dashboard_page
+  module:
+    - text
+id: node.dashboard_page.body
+field_name: body
+entity_type: node
+bundle: dashboard_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

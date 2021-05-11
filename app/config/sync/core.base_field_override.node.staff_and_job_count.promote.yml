@@ -1,0 +1,22 @@
+uuid: 5d363648-ce91-4fb6-8692-e442af72cd03
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.staff_and_job_count
+id: node.staff_and_job_count.promote
+field_name: promote
+entity_type: node
+bundle: staff_and_job_count
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

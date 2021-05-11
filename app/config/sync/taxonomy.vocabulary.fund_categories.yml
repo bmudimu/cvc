@@ -1,0 +1,8 @@
+uuid: ff3aca09-40eb-408e-8152-b0d725ef3ad1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Fund Categories'
+vid: fund_categories
+description: 'Fund groups based on portfolio'
+weight: 0

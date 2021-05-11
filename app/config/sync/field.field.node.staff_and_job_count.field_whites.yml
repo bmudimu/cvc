@@ -1,0 +1,23 @@
+uuid: 8a7b3010-01fd-44ef-9ab6-f43dfe255b81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_whites
+    - node.type.staff_and_job_count
+id: node.staff_and_job_count.field_whites
+field_name: field_whites
+entity_type: node
+bundle: staff_and_job_count
+label: Whites
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10000
+  prefix: ''
+  suffix: ''
+field_type: integer

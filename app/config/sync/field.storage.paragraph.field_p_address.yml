@@ -1,0 +1,19 @@
+uuid: a8df415a-1fcd-4224-bf36-1073faf1bf76
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - paragraphs
+id: paragraph.field_p_address
+field_name: field_p_address
+entity_type: paragraph
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

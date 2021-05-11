@@ -1,0 +1,21 @@
+uuid: 7f7b5060-86de-43c8-9f45-64101d70217c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_fund_manager_reg
+field_name: field_fund_manager_reg
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 14
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

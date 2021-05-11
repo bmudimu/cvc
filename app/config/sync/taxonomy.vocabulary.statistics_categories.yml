@@ -1,0 +1,8 @@
+uuid: bc1a6a9b-dfb3-484c-802b-2b979f4ed3bc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Statistics Categories'
+vid: statistics_categories
+description: ''
+weight: 0

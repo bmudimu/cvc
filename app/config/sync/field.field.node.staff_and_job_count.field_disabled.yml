@@ -1,0 +1,23 @@
+uuid: 2212a738-0214-4fac-8f3e-901555a61cdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disabled
+    - node.type.staff_and_job_count
+id: node.staff_and_job_count.field_disabled
+field_name: field_disabled
+entity_type: node
+bundle: staff_and_job_count
+label: Disabled
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 10000
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,8 @@
+uuid: fa51eae4-b1f6-4467-b420-adb146507c95
+langcode: en
+status: true
+dependencies: {  }
+name: 'Occupational Levels'
+vid: occupational_levels
+description: ''
+weight: 0

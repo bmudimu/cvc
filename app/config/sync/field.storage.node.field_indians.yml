@@ -1,0 +1,20 @@
+uuid: 050dc952-cd5f-4e8c-a8af-b4d175aca185
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_indians
+field_name: field_indians
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

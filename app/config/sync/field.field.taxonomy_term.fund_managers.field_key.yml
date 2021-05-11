@@ -1,0 +1,19 @@
+uuid: 1a6866f6-a909-4e6d-bbe0-d5a2c71c01dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_key
+    - taxonomy.vocabulary.fund_managers
+id: taxonomy_term.fund_managers.field_key
+field_name: field_key
+entity_type: taxonomy_term
+bundle: fund_managers
+label: KEY
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

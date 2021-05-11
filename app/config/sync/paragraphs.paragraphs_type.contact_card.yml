@@ -1,0 +1,10 @@
+uuid: c18985c6-a11d-43b7-b515-9d708fd08dd0
+langcode: en
+status: true
+dependencies: {  }
+id: contact_card
+label: 'Contact Card'
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Contact Card</em> to create a contact details card'
+behavior_plugins: {  }

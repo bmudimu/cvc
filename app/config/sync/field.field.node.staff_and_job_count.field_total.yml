@@ -1,0 +1,23 @@
+uuid: ae2f10b1-5163-4b11-b0e8-1a0c65fa28a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total
+    - node.type.staff_and_job_count
+id: node.staff_and_job_count.field_total
+field_name: field_total
+entity_type: node
+bundle: staff_and_job_count
+label: Total
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,36 @@
+uuid: fd47bf11-e2d8-4555-a1bd-0deaad9cc11a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.client.field_assigned_to
+    - field.field.node.client.field_client_bio
+    - field.field.node.client.field_contact_info
+    - field.field.node.client.field_fund
+    - field.field.node.client.field_fund_manager
+    - field.field.node.client.field_province
+    - field.field.node.client.field_registration_number
+    - field.field.node.client.field_status
+    - node.type.client
+  module:
+    - user
+id: node.client.teaser
+targetEntityType: node
+bundle: client
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_assigned_to: true
+  field_client_bio: true
+  field_contact_info: true
+  field_fund: true
+  field_fund_manager: true
+  field_province: true
+  field_registration_number: true
+  field_status: true

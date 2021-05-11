@@ -1,0 +1,21 @@
+uuid: 4f6c54c8-4d20-4cf9-b128-1bef2d3d898d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_text
+    - paragraphs.paragraphs_type.bio_card
+  module:
+    - text
+id: paragraph.bio_card.field_p_text
+field_name: field_p_text
+entity_type: paragraph
+bundle: bio_card
+label: Bio
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

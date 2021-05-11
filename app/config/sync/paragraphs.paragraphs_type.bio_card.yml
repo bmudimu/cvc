@@ -1,0 +1,10 @@
+uuid: cb9d8cc8-787d-4ec1-a568-485f292c0528
+langcode: en
+status: true
+dependencies: {  }
+id: bio_card
+label: 'Bio Card'
+icon_uuid: null
+icon_default: null
+description: 'Use <em>Bio Card</em> to add brief details about client'
+behavior_plugins: {  }

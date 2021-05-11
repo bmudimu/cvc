@@ -1,0 +1,39 @@
+uuid: e20d7cf2-f321-45f5-8975-8a727c56d95c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.fund_managers.field_fund_manager_reg
+    - field.field.taxonomy_term.fund_managers.field_key
+    - taxonomy.vocabulary.fund_managers
+  module:
+    - text
+id: taxonomy_term.fund_managers.default
+targetEntityType: taxonomy_term
+bundle: fund_managers
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fund_manager_reg:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_key:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

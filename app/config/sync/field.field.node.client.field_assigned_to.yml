@@ -1,0 +1,29 @@
+uuid: d306ba48-66cf-4455-bb75-3980f26301b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assigned_to
+    - node.type.client
+id: node.client.field_assigned_to
+field_name: field_assigned_to
+entity_type: node
+bundle: client
+label: 'Assigned To'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

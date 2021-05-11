@@ -1,0 +1,29 @@
+uuid: 385b48d4-3c48-4e53-867c-f5d3a3f6054c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_province
+    - node.type.client
+    - taxonomy.vocabulary.provinces
+id: node.client.field_province
+field_name: field_province
+entity_type: node
+bundle: client
+label: Province
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      provinces: provinces
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

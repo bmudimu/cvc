@@ -1,0 +1,29 @@
+uuid: b0fe2fc7-c8b4-46c0-85ef-801a22c79e15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_occupational_level
+    - node.type.staff_and_job_count
+    - taxonomy.vocabulary.occupational_levels
+id: node.staff_and_job_count.field_occupational_level
+field_name: field_occupational_level
+entity_type: node
+bundle: staff_and_job_count
+label: 'Occupational Level'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      occupational_levels: occupational_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

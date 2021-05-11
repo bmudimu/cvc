@@ -1,0 +1,8 @@
+uuid: 88a43bf9-1ca5-43dd-980a-7ff463228715
+langcode: en
+status: true
+dependencies: {  }
+name: Quarters
+vid: quarters
+description: 'Reporting quarters'
+weight: 0

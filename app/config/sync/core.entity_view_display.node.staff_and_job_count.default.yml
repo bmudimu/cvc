@@ -1,0 +1,170 @@
+uuid: 226d943b-0206-425a-b8c2-143e4a3bd8d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff_and_job_count.field_africans
+    - field.field.node.staff_and_job_count.field_client_name
+    - field.field.node.staff_and_job_count.field_coloured
+    - field.field.node.staff_and_job_count.field_disabled
+    - field.field.node.staff_and_job_count.field_foreign_national
+    - field.field.node.staff_and_job_count.field_gender
+    - field.field.node.staff_and_job_count.field_indians
+    - field.field.node.staff_and_job_count.field_job_type
+    - field.field.node.staff_and_job_count.field_notes
+    - field.field.node.staff_and_job_count.field_occupational_level
+    - field.field.node.staff_and_job_count.field_quarter
+    - field.field.node.staff_and_job_count.field_stats_category
+    - field.field.node.staff_and_job_count.field_total
+    - field.field.node.staff_and_job_count.field_under_35
+    - field.field.node.staff_and_job_count.field_whites
+    - field.field.node.staff_and_job_count.field_year
+    - node.type.staff_and_job_count
+  module:
+    - options
+    - user
+id: node.staff_and_job_count.default
+targetEntityType: node
+bundle: staff_and_job_count
+mode: default
+content:
+  field_africans:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_client_name:
+    weight: 113
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_coloured:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_disabled:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_foreign_national:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_gender:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_indians:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_job_type:
+    weight: 117
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_notes:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_occupational_level:
+    weight: 116
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_quarter:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_stats_category:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_total:
+    weight: 109
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_under_35:
+    weight: 108
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_whites:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

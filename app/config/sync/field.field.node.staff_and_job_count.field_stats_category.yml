@@ -1,0 +1,29 @@
+uuid: 5553774b-fe9d-45fd-ba1d-cec2fd8910de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stats_category
+    - node.type.staff_and_job_count
+    - taxonomy.vocabulary.statistics_categories
+id: node.staff_and_job_count.field_stats_category
+field_name: field_stats_category
+entity_type: node
+bundle: staff_and_job_count
+label: 'Stats Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      statistics_categories: statistics_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 8678891a-9ac6-4cc6-9045-300cada846be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fund_manager_reg
+    - taxonomy.vocabulary.fund_managers
+id: taxonomy_term.fund_managers.field_fund_manager_reg
+field_name: field_fund_manager_reg
+entity_type: taxonomy_term
+bundle: fund_managers
+label: 'Fund Manager Reg'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

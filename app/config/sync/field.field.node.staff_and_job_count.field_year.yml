@@ -1,0 +1,29 @@
+uuid: 4233f3fc-576a-4aa6-a2d0-5e5dff187494
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.staff_and_job_count
+    - taxonomy.vocabulary.years
+id: node.staff_and_job_count.field_year
+field_name: field_year
+entity_type: node
+bundle: staff_and_job_count
+label: Year
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

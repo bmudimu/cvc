@@ -1,0 +1,46 @@
+uuid: bf9be437-3ac8-4340-835d-f69cc12e0550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bio_card.field_p_image
+    - field.field.paragraph.bio_card.field_p_text
+    - field.field.paragraph.bio_card.field_p_url
+    - paragraphs.paragraphs_type.bio_card
+  module:
+    - link
+    - text
+id: paragraph.bio_card.default
+targetEntityType: paragraph
+bundle: bio_card
+mode: default
+content:
+  field_p_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_p_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_p_url:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
