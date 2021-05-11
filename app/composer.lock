@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "862aaced670b2f4ea58f271b20c9ba12",
+    "content-hash": "dde0f270c5de2230b2a252905fd6f37a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,30 @@
                 "stack"
             ],
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "c3js/c3",
+            "version": "v0.4.18",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/c3js/c3/archive/v0.4.18.zip"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "c3"
+            }
+        },
+        {
+            "name": "chartjs/chartjs",
+            "version": "v2.7.2",
+            "dist": {
+                "type": "file",
+                "url": "https://www.chartjs.org/dist/2.7.2/Chart.bundle.js"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "chartjs"
+            }
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -303,6 +327,10 @@
                 "zend",
                 "zikula"
             ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v1.11.0"
+            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -1024,6 +1052,21 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
+            "name": "d3/d3",
+            "version": "v3.5.17",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "d3"
+            }
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v1.1.0",
             "source": {
@@ -1528,6 +1571,70 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/charts",
+            "version": "5.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/charts.git",
+                "reference": "5.0.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/charts-5.0.0-alpha2.zip",
+                "reference": "5.0.0-alpha2",
+                "shasum": "c11beef473f5ae2c35e7714475e079968074a01f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.0-alpha2",
+                    "datestamp": "1607571398",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre.Vriens",
+                    "homepage": "https://www.drupal.org/user/1689304"
+                },
+                {
+                    "name": "andileco",
+                    "homepage": "https://www.drupal.org/user/2054544"
+                },
+                {
+                    "name": "brmassa",
+                    "homepage": "https://www.drupal.org/user/67164"
+                },
+                {
+                    "name": "kenorb",
+                    "homepage": "https://www.drupal.org/user/191974"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "rashad612",
+                    "homepage": "https://www.drupal.org/user/319686"
+                }
+            ],
+            "description": "A charting API for Drupal that provides chart elements and integration with Views.",
+            "homepage": "https://www.drupal.org/project/charts",
+            "support": {
+                "source": "https://git.drupalcode.org/project/charts"
             }
         },
         {
@@ -2586,6 +2693,21 @@
             "time": "2021-05-06T09:03:35+00:00"
         },
         {
+            "name": "google/charts",
+            "version": "45",
+            "dist": {
+                "type": "file",
+                "url": "https://www.gstatic.com/charts/loader.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "google_charts"
+            }
+        },
+        {
             "name": "grasmash/expander",
             "version": "1.0.0",
             "source": {
@@ -2876,6 +2998,96 @@
                 "url"
             ],
             "time": "2020-09-30T07:37:11+00:00"
+        },
+        {
+            "name": "highcharts/3d",
+            "version": "8.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/8.1.0/highcharts-3d.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_3d"
+            }
+        },
+        {
+            "name": "highcharts/accessibility",
+            "version": "8.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/8.1.0/modules/accessibility.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_accessibility"
+            }
+        },
+        {
+            "name": "highcharts/export-data",
+            "version": "8.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/8.1.0/modules/export-data.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_export-data"
+            }
+        },
+        {
+            "name": "highcharts/exporting",
+            "version": "8.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/8.1.0/modules/exporting.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_exporting"
+            }
+        },
+        {
+            "name": "highcharts/highcharts",
+            "version": "8.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/8.1.0/highcharts.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts"
+            }
+        },
+        {
+            "name": "highcharts/more",
+            "version": "8.1.0",
+            "dist": {
+                "type": "file",
+                "url": "https://code.highcharts.com/8.1.0/highcharts-more.js"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "highcharts_more"
+            }
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -6651,7 +6863,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/charts": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
