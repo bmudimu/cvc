@@ -1,0 +1,282 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the cvc_admin theme.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\views\Form\ViewsForm;
+
+use Drupal\file\Entity\File;
+use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ *
+ * Adds body classes if certain regions have content.
+ */
+function cvc_admin_preprocess_html(&$variables) {
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-two-sidebars';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
+  }
+
+  if (!empty($variables['page']['featured_top'])) {
+    $variables['attributes']['class'][] = 'has-featured-top';
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page title templates.
+ */
+function cvc_admin_preprocess_page_title(&$variables) {
+  // Since the title and the shortcut link are both block level elements,
+  // positioning them next to each other is much simpler with a wrapper div.
+  if (!empty($variables['title_suffix']['add_or_remove_shortcut']) && $variables['title']) {
+    // Add a wrapper div using the title_prefix and title_suffix render
+    // elements.
+    $variables['title_prefix']['shortcut_wrapper'] = [
+      '#markup' => '<div class="shortcut-wrapper clearfix">',
+      '#weight' => 100,
+    ];
+    $variables['title_suffix']['shortcut_wrapper'] = [
+      '#markup' => '</div>',
+      '#weight' => -99,
+    ];
+    // Make sure the shortcut link is the first item in title_suffix.
+    $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for maintenance-page.html.twig.
+ */
+function cvc_admin_preprocess_maintenance_page(&$variables) {
+  // By default, site_name is set to Drupal if no db connection is available
+  // or during site installation. Setting site_name to an empty string makes
+  // the site and update pages look cleaner.
+  // @see template_preprocess_maintenance_page
+  if (!$variables['db_is_active']) {
+    $variables['site_name'] = '';
+  }
+
+  // cvc_admin has custom styling for the maintenance page.
+  $variables['#attached']['library'][] = 'cvc_admin/maintenance_page';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function cvc_admin_preprocess_node(&$variables) {
+  // Remove the "Add new comment" link on teasers or when the comment form is
+  // displayed on the page.
+  if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
+    unset($variables['content']['links']['comment']['#links']['comment-add']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function cvc_admin_preprocess_block(&$variables) {
+  // Add a clearfix class to system branding blocks.
+  if ($variables['plugin_id'] == 'system_branding_block') {
+    $variables['attributes']['class'][] = 'clearfix';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu.html.twig.
+ */
+function cvc_admin_preprocess_menu(&$variables) {
+  $variables['attributes']['class'][] = 'clearfix';
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ */
+// function cvc_admin_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+//   if ($variables['element']['#form_id'] == 'search_block_form') {
+//     $suggestions[] = 'form__search_block_form';
+//   }
+  
+// }
+
+
+/**
+ * Implements hook_preprocess_image_widget().
+ *
+ * @todo Revisit in https://drupal.org/node/3117430
+ */
+function cvc_admin_preprocess_image_widget(&$variables) {
+  if (!empty($variables['element']['fids']['#value'])) {
+    $file = reset($variables['element']['#files']);
+    $variables['data']["file_{$file->id()}"]['filename']['#suffix'] = ' <span class="file-size">(' . format_size($file->getSize()) . ')</span> ';
+  }
+}
+
+
+/**
+ * Implements template_preprocess_breadcrumb().
+ */
+function cvc_admin_preprocess_breadcrumb(&$variables) {
+    $request = \Drupal::request();
+
+    if (($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']) {
+        $variables['breadcrumb'][] = array(
+            'text' => $node->getTitle(),
+        );
+    } elseif ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+        $variables['title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
+        $variables['breadcrumb'][] = array(
+            'text' => $variables['title'],
+        );
+    }
+}
+
+
+function cvc_admin_preprocess_page(array &$variables) {
+	$config = \Drupal::config('system.site');
+    global $base_root,$base_url;
+    $variables['base_path'] = base_path();
+ 
+    $theme = \Drupal::theme()->getActiveTheme()->getName();
+    $variables['theme_path'] = drupal_get_path('theme', $theme);
+
+    if (!empty(theme_get_setting('bg_image_file'))) {
+        $variables['bg_image_file'] = $base_url . theme_get_setting('bg_image_file');
+    } else {
+        $variables['bg_image_file'] = $base_url . '/sites/default/files/boxed-solid.jpg';
+    }
+
+    $request = \Drupal::request();
+    if ($route = $request->attributes->get(\Symfony\Cmf\Component\Routing\RouteObjectInterface::ROUTE_OBJECT)) {
+        $variables['title'] = \Drupal::service('title_resolver')->getTitle($request, $route);
+    }
+
+
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $picture = NULL;
+
+    if($user->hasField('user_picture')){
+        $picture = $user->get('user_picture')->entity;
+        if($picture)
+        $picture = $picture->createFileUrl(FALSE);
+        else{
+        $field = \Drupal\field\Entity\FieldConfig::loadByName('user', 'user', 'user_picture');
+        $default_image = $field->getSetting('default_image');
+        if($default_image['uuid']){
+            $file = \Drupal::entityManager()->loadEntityByUuid('file', $default_image['uuid']);
+            $picture = file_create_url($file->getFileUri());
+        }
+        }
+    } 
+
+    $variables['site_name'] = isset($variables['site_name']) ? $variables['site_name'] : $config->get('name');
+    $variables['site_slogan'] = $config->get('slogan');
+    $variables['user'] = [];
+    $variables['user']['uid'] =  $user->id();
+    $variables['user']['name'] = $user->getAccountname();
+    $variables['user']['picture'] = $picture;
+    $variables['user']['created'] = $user->getCreatedtime();
+    $variables['relative_logo_url'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+    
+}
+
+/**
+ * Implements hook_theme_suggestions_alter
+ */
+function cvc_admin_theme_suggestions_alter(array &$suggestions, array $variables)
+{
+
+    if (isset($variables['element']) && isset($variables['element']['#type']) && $variables['element']['#type'] == 'form') {
+        $original_theme_hook = $variables['theme_hook_original'];
+
+        $suggestions[] = $original_theme_hook . '__' . str_replace('-', '_', $variables['element']['#id']);
+    }
+
+    // if ($variables['element']['#type'] == 'form' & !empty($variables['element']['#id'])) {
+    //   $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
+    // }
+
+    return $suggestions;
+ 
+}
+
+
+/**
+* Implements hook_form_BASE_FORM_ID_alter().
+*/
+function cvc_admin_form_user_login_form_alter(&$form, FormStateInterface &$form_state) {
+  $form['#theme'] = ['admincv_user_login'];
+}
+
+function _cvc_admin_form_alter_elements(&$element, $form_id) {
+  $children = Element::children($element);
+  foreach ($children as $child_key) {
+    $element[$child_key]['#form_id'] = $form_id;
+    _cvc_admin_form_alter_elements($element[$child_key], $form_id);
+  }
+}
+/**
+ * Implements hook_form_alter().
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+function cvc_admin_form_alter(&$form, $form_state, $form_id) {
+  _cvc_admin_form_alter_elements($form, $form_id); /** add formid to elements */
+
+  if ($form_id == 'user_login_form' ) {
+    // Add placeholders.
+    $form['name']['#attributes']['placeholder'] = t('Email');
+    $form['pass']['#attributes']['placeholder'] = t('Password');
+    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-primary btn-block';
+  }
+  if ($form_id == 'search_block_form--2') {
+    // $form['keys']['#attributes']['placeholder'] = t('Search');
+    // $form['actions']['submit']['#value'] = html_entity_decode('&#xf002;');
+    $form['actions']['submit']['#prefix' ] = '<div class="input-group-append">';
+    $form['actions']['submit']['#suffix' ] = '</div>';
+    // $form['actions']['submit']['#markup'] = '<i class="fas fa-search fa-fw"></i>';
+    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-sidebar';
+  }
+}
+
+/**
+ * Implementation of hook_theme_suggestions_form_element_alter().
+ */
+function cvc_admin_theme_suggestions_form_element_alter(array &$suggestions, array $variables) {
+  $elementId = str_replace('-', '_', $variables['element']['#id']);
+  $formId = str_replace('-', '_', $variables['element']['#form_id']);
+  $suggestions[] = 'form_element__' . $formId;
+  $suggestions[] = 'form_element__' . $formId . '__' . $elementId;
+}
+
+
+/**
+ * @param $suggestions
+ * @param array $variables
+ */
+function cvc_admin_theme_suggestions_input_alter(&$suggestions, array $variables) {
+  $elementId = str_replace('-', '_', $variables['element']['#id']);
+  $formId = str_replace('-', '_', $variables['element']['#form_id']);
+  $suggestions[] = 'input__' . $formId;
+  $suggestions[] = 'input__' . $formId . '__' . $elementId;
+}

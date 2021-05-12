@@ -1,0 +1,5 @@
+name: CVC Login
+description: Redirects anonymous users to the login page
+package: Corporatev
+type: module
+core_version_requirement: ^8.8|^9.0

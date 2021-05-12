@@ -1,0 +1,6 @@
+services:
+  cvc_login.event_subscriber:
+    class: Drupal\cvc_login\EventSubscriber\RedirectAnonymousSubscriber
+    arguments: []
+    tags:
+      - {name: event_subscriber}

@@ -1,0 +1,14 @@
+/* Custom */
+.cv-table .table thead th {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.nav-link > svg {
+    font-size: 1.2rem;
+    margin-left: .05rem;
+    margin-right: .2rem;
+    text-align: center;
+    width: 1.6rem !important;
+}

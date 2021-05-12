@@ -1,0 +1,24 @@
+
+<div class="hold-transition login-page">
+    <div class="login-box">
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <a href="{{ path('<front>') }}">
+                  <img src="{{ base_url }}/sites/default/files/logobold.png" alt="{{ site_name|t }}">
+                </a>
+            </div>
+            <div class="card-body">
+              <p class="login-box-msg">Sign in to start your session</p>
+
+              {% if page.content %}
+                  {{ page.content }}
+              {% endif %}
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+</div>
+
+

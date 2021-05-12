@@ -1,0 +1,51 @@
+
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/1.x/tags/macro.html
+#}
+{{ menus.menu_links(items, attributes, 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.addClass("nav nav-pills nav-sidebar flex-column") }}  data-widget="treeview" role="menu" data-accordion="false">
+    {% else %}
+      <ul class="nav nav-treeview">
+    {% endif %}
+    {% for item in items %}
+
+        {%
+          set classes = [
+            'nav-item',
+            item.is_expanded and item.below ? 'menu-is-opening menu-open', 
+            item.is_collapsed ? 'right'
+          ]
+        %}
+
+        <li{{ item.attributes.addClass('nav-item') }}>
+
+          {%
+            set link_classes = ['nav-link', item.in_active_trail ? 'active']
+          %}
+
+          {% set title %}
+            <p>{{ item.title }}<i class="right fas fa-angle-left"></i></p>
+          {% endset %}
+
+          {% if item.below %}
+            
+            {{ link(title, item.url, item.attributes.addClass(link_classes).removeClass('nav-item') ) }}
+
+            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+          {% else %}
+            <a class="nav-link" href="{{ item.url }}" ><p>{{ item.title }}</p></a>
+          {% endif %}
+        </li>
+
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,78 @@
+/* More customized to actual project.  Added Row and Columns to elements to make them more responsive */
+/* Exposed Views Form */
+.views-exposed-form {
+    .make-row(); /* Adds separation between filter of results */
+
+  /* Floats Label to the left and aligns */
+  label {
+    .text-muted();
+  }
+
+  /* Adds Columns */
+  .form-item {
+    .make-sm-column(12);
+    .make-md-column(5);
+    margin-bottom: 10px;
+  }
+
+  &#views-exposed-form-news-center-news-center-press .form-item {
+    .make-md-column(10);
+  }
+
+  .form-actions {
+    .make-sm-column(12);
+    .make-md-column(2);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+
+  @media only screen and (max-width : 768px) {
+
+    .form-actions {
+      margin-top: 0;
+      padding-left: 15px;
+    }
+
+  }
+
+  /* Styling for the Div surrounding the select. Sets width, & hides overflow */
+  /* Background image from core! */
+  .select-style {
+    border: 1px solid #808080;
+    color: #808080;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff url("/core/misc/icons/333333/caret-down.svg") no-repeat 99% 50%;
+    float: left;
+  }
+
+  /* Styling for the select itself, extra width hides natural dropdown */
+  .select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+  }
+
+  /* Removes focus outline for Firefox */
+  .select-style select:focus {
+      outline: none;
+  }
+
+  /* Adds Bootstrap styling to Apply button input */
+  .form-actions .button {
+    .btn();
+    .btn-sm();
+  }
+
+}
+
+.views-exposed-form + .views-infinite-scroll-content-wrapper {
+  border-top: 1px solid #808080;
+  padding-top: 10px;
+}

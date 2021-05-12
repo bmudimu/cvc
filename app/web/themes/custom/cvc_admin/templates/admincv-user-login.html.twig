@@ -1,0 +1,41 @@
+  {{ form.name }}
+  <div class="input-group-append">
+    <div class="input-group-text">
+      <span class="fas fa-envelope"></span>
+    </div>
+  </div>
+
+  {{ form.pass }}
+  <div class="input-group-append">
+    <div class="input-group-text">
+      <span class="fas fa-lock"></span>
+    </div>
+  </div>
+
+{{ form.test }}
+{{ form.form_build_id }} {# required #}
+{{ form.form_id }} {# required #}
+
+<div class="col-4">
+{{ form.actions }}
+</div> 
+
+{# <div class="login-form login-form__wrapper">
+        <div class="login-form__top">
+            <h3>hello world</h3>
+            <div id="error_messages"></div>
+            {{ element.messages }}
+            {{ element.name }} {# username element #}
+            {{ element.pass }} {# password element #}
+            <div class="login-form__help_actions">
+                <input id="show_password" class="show_password" type="checkbox" />
+                <label class="password-toggle" for="show_password">Show password</label>
+                <a href="/user/password" class="forgot-password">Forgot Password?</a>
+            </div>
+            {{ element.form_build_id }} {# required #}
+            {{ element.form_id }} {# required #}
+            <div class="login-form__submit">
+                {{ element.actions.submit }}
+            </div>
+        </div>
+</div> #}

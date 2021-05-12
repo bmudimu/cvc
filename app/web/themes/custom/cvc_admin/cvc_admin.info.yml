@@ -1,0 +1,29 @@
+name: Admin CVC
+type: theme
+description: 'A Corporate Vision Web App HTML5 Theme by Brian Mudimu'
+screenshot: screenshot.png
+base theme: stable
+package: CorporateV
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - cvc_admin/base
+
+regions:
+  header: Header
+  header_right: 'Right of Header'
+  breadcrumb: 'Breadcrumb'
+  search: 'Search'
+  primary_menu: 'Primary Menu'
+  content: Content
+  logo_top: 'Branding top'
+  dash_charts: 'Dashboard charts'
+  sidebar: Sidebar
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  help: 'Help'
+  footer: Footer
+
+ 
+
+ 

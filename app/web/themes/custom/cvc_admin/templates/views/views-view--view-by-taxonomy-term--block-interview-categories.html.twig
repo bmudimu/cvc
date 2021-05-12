@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if rows %}
+    {% for row in rows %}
+        <ul class="nav nav-pills">
+            <li><a href="#" data-filter=".all" class="filter active">All</a></li>
+                {{ rows }}
+        </ul>
+    {% endfor %}
+{% endif %}
+
+
+{# <div class="item all {{ field_gallery_categories }}">
+    <!-- Image Wrapper -->
+    <div class="image-wrapper">
+        <!-- IMAGE -->
+       {{ field_image }}
+        <!-- Gallery Btns Wrapper -->
+        <div class="gallery-detail btns-wrapper">
+            <a href="{{ path }}" class="btn uni-upload-2"></a>
+            <a href="{{ field_image_1 }}" data-rel="prettyPhoto[portfolio]" class="btn uni-full-screen"></a>
+        </div><!-- Gallery Btns Wrapper -->
+    </div><!-- Image Wrapper -->
+</div><!-- Portfolio Item --> #}

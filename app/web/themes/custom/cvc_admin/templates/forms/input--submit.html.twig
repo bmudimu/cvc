@@ -1,0 +1,5 @@
+{% if  region == 'search' %}
+    <input{{ attributes.addClass('btn btn-sidebar') }} />{{ children }}   
+{% else %}
+    <input{{ attributes.addClass('btn btn-primary button-block') }} />{{ children }}
+{% endif %}

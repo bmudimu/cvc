@@ -1,0 +1,31 @@
+    <form{{ attributes }}>
+        <div id="error_messages">
+            {{ element.messages }}
+        </div>
+        <div class="input-group mb-3">    
+            {{ element.name }} {# username element class="form-control" #}
+            <div class="input-group-append">
+                <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-8">
+            {# <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div> #}
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            {{ element.actions.submit }}
+          </div>
+          <!-- /.col -->
+        </div>
+        {{ element.form_build_id }} {# required #}
+        {{ element.form_id }} {# required #}
+    </form>
