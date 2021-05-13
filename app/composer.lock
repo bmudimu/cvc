@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "732042df3f267a11a48ffa0ace811a60",
+    "content-hash": "5532ad6ee488369be347425e5766a996",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2119,17 +2119,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "0113cd1e787ff3bde088c836c2d79d14136b0013"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "9a849bb6ac9f4d02603d04b3265b35b7329e1ef5"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -2137,8 +2137,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1618592931",
+                    "version": "8.x-3.6",
+                    "datestamp": "1620838181",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2374,6 +2374,98 @@
             "homepage": "https://www.drupal.org/project/fontawesome_menu_icons",
             "support": {
                 "source": "https://git.drupalcode.org/project/fontawesome_menu_icons"
+            }
+        },
+        {
+            "name": "drupal/fullcalendar_view",
+            "version": "5.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
+                "reference": "5.0.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-5.0.8.zip",
+                "reference": "5.0.8",
+                "shasum": "5eb97f50787231f53187b485bb39e53847d726a9"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.8",
+                    "datestamp": "1615420063",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mingsong",
+                    "homepage": "https://www.drupal.org/user/2986445"
+                }
+            ],
+            "description": "This is a lightweight View plugin module that provides a calendar view format powered by FullCalendar JavaScript.",
+            "homepage": "http://drupal.org/project/fullcalendar_view",
+            "keywords": [
+                "Drupal",
+                "fullcalendar_view"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fullcalendar_view",
+                "issues": "http://drupal.org/project/issues/fullcalendar_view"
+            }
+        },
+        {
+            "name": "drupal/notificationswidget",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/notificationswidget.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/notificationswidget-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "614b3fae89e510c007cb50f9c64a0e2053675d23"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1590489581",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Vernit",
+                    "homepage": "https://www.drupal.org/user/822032"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/notificationswidget",
+            "support": {
+                "source": "https://git.drupalcode.org/project/notificationswidget"
             }
         },
         {

@@ -200,6 +200,8 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/fontawesome_menu_icons": "^1.9",
+        "drupal/fullcalendar_view": "^5.0",
+        "drupal/notificationswidget": "^1.5",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/slick": "^2.3",

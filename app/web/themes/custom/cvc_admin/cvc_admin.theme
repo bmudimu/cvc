@@ -13,6 +13,7 @@ use Drupal\views\Form\ViewsForm;
 use Drupal\file\Entity\File;
 use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\Render\Element;
+use Drupal\Core\Entity\EntityRepository;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -182,7 +183,8 @@ function cvc_admin_preprocess_page(array &$variables) {
         $field = \Drupal\field\Entity\FieldConfig::loadByName('user', 'user', 'user_picture');
         $default_image = $field->getSetting('default_image');
         if($default_image['uuid']){
-            $file = \Drupal::entityManager()->loadEntityByUuid('file', $default_image['uuid']);
+            // $file = EntityRepository::loadEntityByUuid('file', $default_image['uuid']);
+            $file = \Drupal::service('entity.repository')->loadEntityByUuid('file', $default_image['uuid']);
             $picture = file_create_url($file->getFileUri());
         }
         }
