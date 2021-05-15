@@ -10,7 +10,7 @@ base:
       # plugins/icheck-bootstrap/icheck-bootstrap.min.css: {}
       dist/css/adminlte.css: {}
       css/cv_select.css: {}
-      # dist/css/custom.css: {}
+      css/custom.css: {}
       # css/skins/default.css: {}
 
   js:

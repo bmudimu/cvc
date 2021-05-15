@@ -1,0 +1,37 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+    {# {% set file = content_field_p_image.entity %}
+    {% set uri = file_url(file.uri.value) %} #}
+    
+    <div class="row blog-wrap">
+      <div class="col-sm-5">
+        <div class="blog-img-wrap">
+          {{ content.field_p_image }}    
+          {# <img width="200" height="200" src="{{ uri }}" class="img-responsive" alt="{{file.name.value}}">          #}
+          {# <img width="600" height="220" src="{{ uri }}" class="img-responsive" alt="{{ content.field_p_image['#title'] }}"> #}
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="blog-details">
+          {{ content.field_p_text }}
+          <a class="btn" href="{{ content.field_p_url['url'] }}">{{ content.field_p_url['#title']}}</a> 
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+{# {% if content.field_custom_image|render is not empty %}
+  {{ file_url(content.field_custom_image[0]['#media'].field_media_image.entity.uri.value) }} #}
+{# {% endif %} #}

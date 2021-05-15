@@ -204,20 +204,20 @@ function cvc_admin_preprocess_page(array &$variables) {
 /**
  * Implements hook_theme_suggestions_alter
  */
-function cvc_admin_theme_suggestions_alter(array &$suggestions, array $variables)
+// function cvc_admin_theme_suggestions_alter(array &$suggestions, array $variables)
 {
 
-    if (isset($variables['element']) && isset($variables['element']['#type']) && $variables['element']['#type'] == 'form') {
-        $original_theme_hook = $variables['theme_hook_original'];
+    // if (isset($variables['element']) && isset($variables['element']['#type']) && $variables['element']['#type'] == 'form') {
+    //     $original_theme_hook = $variables['theme_hook_original'];
 
-        $suggestions[] = $original_theme_hook . '__' . str_replace('-', '_', $variables['element']['#id']);
-    }
+    //     $suggestions[] = $original_theme_hook . '__' . str_replace('-', '_', $variables['element']['#id']);
+    // }
 
     // if ($variables['element']['#type'] == 'form' & !empty($variables['element']['#id'])) {
     //   $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
     // }
 
-    return $suggestions;
+    // return $suggestions;
  
 }
 
@@ -229,21 +229,22 @@ function cvc_admin_form_user_login_form_alter(&$form, FormStateInterface &$form_
   $form['#theme'] = ['admincv_user_login'];
 }
 
-function _cvc_admin_form_alter_elements(&$element, $form_id) {
-  $children = Element::children($element);
-  foreach ($children as $child_key) {
-    $element[$child_key]['#form_id'] = $form_id;
-    _cvc_admin_form_alter_elements($element[$child_key], $form_id);
-  }
-}
+// function _cvc_admin_form_alter_elements(&$element, $form_id) {
+//   $children = Element::children($element);
+//   foreach ($children as $child_key) {
+//     $element[$child_key]['#form_id'] = $form_id;
+//     _cvc_admin_form_alter_elements($element[$child_key], $form_id);
+//   }
+// }
 /**
  * Implements hook_form_alter().
  * @param $form
  * @param \Drupal\Core\Form\FormStateInterface $form_state
  * @param $form_id
  */
-function cvc_admin_form_alter(&$form, $form_state, $form_id) {
-  _cvc_admin_form_alter_elements($form, $form_id); /** add formid to elements */
+function cvc_admin_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // _cvc_admin_form_alter_elements($form, $form_id);
+  cvc_admin_attach_form_id($form, $form_id); /** add formid to elements */
 
   if ($form_id == 'user_login_form' ) {
     // Add placeholders.
@@ -261,24 +262,52 @@ function cvc_admin_form_alter(&$form, $form_state, $form_id) {
   }
 }
 
+
 /**
- * Implementation of hook_theme_suggestions_form_element_alter().
+ * Attaches form id to all form elements.
+ *
+ * @param $form
+ *   The form or form element which children should have form id attached.
+ * @param $form_id
+ *   The form id attached to form elements.
+ *
+ * @return array
  */
-function cvc_admin_theme_suggestions_form_element_alter(array &$suggestions, array $variables) {
-  $elementId = str_replace('-', '_', $variables['element']['#id']);
-  $formId = str_replace('-', '_', $variables['element']['#form_id']);
-  $suggestions[] = 'form_element__' . $formId;
-  $suggestions[] = 'form_element__' . $formId . '__' . $elementId;
+function cvc_admin_attach_form_id(&$form, $form_id) {
+  foreach (Element::children($form) as $child) {
+    if (!isset($form[$child]['#form_id'])) {
+      $form[$child]['#form_id'] = $form_id;
+    }
+    cvc_admin_attach_form_id($form[$child], $form_id); // recurse for children
+  }
 }
 
-
 /**
- * @param $suggestions
+ * Add suggestions by keys
+ * implements hook_theme_suggestions_alter()
+ *
+ * @param array $suggestions
+ *      Existing suggestions
  * @param array $variables
+ *      Element variables
+ * @param string $hook
+ *      Original hook
  */
-function cvc_admin_theme_suggestions_input_alter(&$suggestions, array $variables) {
-  $elementId = str_replace('-', '_', $variables['element']['#id']);
-  $formId = str_replace('-', '_', $variables['element']['#form_id']);
-  $suggestions[] = 'input__' . $formId;
-  $suggestions[] = 'input__' . $formId . '__' . $elementId;
+function cvc_admin_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if (isset($variables['element']) && isset($variables['element']['#type']) && $variables['element']['#type'] == 'form') {
+    $original_theme_hook = $variables['theme_hook_original'];
+    $suggestions[] = $original_theme_hook . '__' . str_replace('-', '_', $variables['element']['#id']);
+  }
+  if (
+    isset($variables['element']['#form_id'])
+    && isset($variables['element']['#type'])
+    && isset($variables['element']['#name'])
+  ) {
+    $element = $variables['element'];
+    $formid = str_replace('-', '_', $element['#form_id']);
+    $suggestions[] = $hook . '__' . $formid;
+    $suggestions[] = $hook . '__' . $element['#type'] . '__' . $formid;
+    $suggestions[] = $hook . '__' . $element['#name'] . '__' . $formid;
+    $suggestions[] = $hook . '__' . $element['#name'] . '__' . $element['#type'] . '__' . $formid;
+  }
 }

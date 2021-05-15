@@ -1,0 +1,48 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      {# {% set file = content_field_p_image.entity %}
+      {% set uri = file_url(file.uri.value) %} #}
+      <div class="card-cvc">
+        <div class="photo">
+          {{ content.field_p_image }}          
+          <p>
+          {{content.field_p_image.get(0).getUrl().toString()}}
+          {% if content.field_p_image_info is not empty %}
+          {{ file_url(content.field_p_image.entity.fileuri) }}
+          {% endif %}
+          </p>
+        </div>
+        <div class="banner"></div>
+        <ul class="card-cvc-ul">
+          <li>{{ content.field_p_address }}</li>
+        </ul>
+        <div class="contact" ></div>
+        
+
+        <div class="social-media-banner">
+          <ul class="cont">
+            <li><i class="fa fa-phone"></i>{{ content.field_p_email }}</li>
+            <li>{{ content.field_p_phone }}</li>
+          </ul>
+          
+          {# <a href=""><i class="fa fa-twitter"></i></a>
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-linkedin"></i></a> #}
+        </div>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+
