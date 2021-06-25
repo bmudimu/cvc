@@ -1,0 +1,23 @@
+menu_link_icons:
+  standard_front_page:
+    icon: fa-home
+    prefix: fa
+    tag: i
+    appearance: before
+  'views_view:views_section_view_page_1':
+    icon: fa-h-square
+    prefix: fa
+    tag: i
+    appearance: before
+  'views_view:views_view_client_section_page_1':
+    icon: 'fa fa-book'
+    prefix: fa
+    tag: i
+    appearance: before
+  'views_view:views_block_resource_view_page_2':
+    icon: 'fa fa-money'
+    prefix: fa
+    tag: i
+    appearance: before
+_core:
+  default_config_hash: 5TDl2QyTY-mHHJ0_VrmcxVDwhp4oqkLTzDI03yXvhAI

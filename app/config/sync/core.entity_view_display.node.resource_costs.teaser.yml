@@ -1,0 +1,34 @@
+uuid: fedf5004-60ba-4071-842c-e73abb475b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.resource_costs.field_client_name
+    - field.field.node.resource_costs.field_electricity
+    - field.field.node.resource_costs.field_month
+    - field.field.node.resource_costs.field_notes
+    - field.field.node.resource_costs.field_quarter
+    - field.field.node.resource_costs.field_water
+    - field.field.node.resource_costs.field_year
+    - node.type.resource_costs
+  module:
+    - user
+id: node.resource_costs.teaser
+targetEntityType: node
+bundle: resource_costs
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_electricity: true
+  field_month: true
+  field_notes: true
+  field_quarter: true
+  field_water: true
+  field_year: true

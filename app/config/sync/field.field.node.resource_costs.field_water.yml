@@ -1,0 +1,25 @@
+uuid: 883d1733-8d77-4d53-8d6e-76210c2c6d61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_water
+    - node.type.resource_costs
+id: node.resource_costs.field_water
+field_name: field_water
+entity_type: node
+bundle: resource_costs
+label: Water
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 0
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

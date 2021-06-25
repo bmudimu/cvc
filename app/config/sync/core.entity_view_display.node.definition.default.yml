@@ -1,0 +1,36 @@
+uuid: 564e50b8-482f-4706-b6f7-783548a10788
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.definition.field_definition
+    - field.field.node.definition.field_definition_type
+    - node.type.definition
+  module:
+    - options
+    - user
+id: node.definition.default
+targetEntityType: node
+bundle: definition
+mode: default
+content:
+  field_definition:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_definition_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,26 @@
+uuid: 143d76c7-53e9-43bb-a3b0-9c8533656451
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cvc_admin
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: cvc_admin_page_title
+theme: cvc_admin
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

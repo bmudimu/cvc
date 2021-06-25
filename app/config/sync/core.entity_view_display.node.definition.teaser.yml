@@ -1,0 +1,24 @@
+uuid: a591c199-f103-4684-9a83-daf09e6600a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.definition.field_definition
+    - field.field.node.definition.field_definition_type
+    - node.type.definition
+  module:
+    - user
+id: node.definition.teaser
+targetEntityType: node
+bundle: definition
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_definition: true
+  field_definition_type: true

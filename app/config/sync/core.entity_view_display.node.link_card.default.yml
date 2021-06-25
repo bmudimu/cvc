@@ -1,0 +1,52 @@
+uuid: 0f9883e4-c5e9-41b6-ba31-245df902c682
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.link_card.field_card_group
+    - field.field.node.link_card.field_card_link
+    - field.field.node.link_card.field_link_icon
+    - node.type.link_card
+  module:
+    - fontawesome
+    - link
+    - options
+    - user
+id: node.link_card.default
+targetEntityType: node
+bundle: link_card
+mode: default
+content:
+  field_card_group:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_card_link:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_link_icon:
+    weight: 103
+    label: above
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 33a0daed-c21f-446b-823a-09dd79434c44
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c978f074-d3d2-4683-a098-f6f4da81eeaa'
+  module:
+    - block_content
+  theme:
+    - cvc_admin
+id: mainfooter
+theme: cvc_admin
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c978f074-d3d2-4683-a098-f6f4da81eeaa'
+settings:
+  id: 'block_content:c978f074-d3d2-4683-a098-f6f4da81eeaa'
+  label: 'Main Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

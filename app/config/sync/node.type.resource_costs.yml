@@ -1,0 +1,17 @@
+uuid: 68094dbe-05bd-4f98-9ad4-136b443b96e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Resource Costs'
+type: resource_costs
+description: 'Use <em>Resource Costs</em> to capture the water and electricity costs for a client.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,29 @@
+uuid: 8324983b-892c-409a-9f5b-3de62fff245f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.apps-menu
+  module:
+    - block_classes
+    - system
+  theme:
+    - cvc_admin
+third_party_settings:
+  block_classes:
+    title_class: nav-header
+id: appsmenu
+theme: cvc_admin
+region: primary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:apps-menu'
+settings:
+  id: 'system_menu_block:apps-menu'
+  label: Apps
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,37 @@
+uuid: 9eb8f82c-90a7-4f19-8b6f-4dfea5eb68b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slide_carousel_view
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - cvc_admin
+id: views_block__slide_carousel_view_block_client_cards
+theme: cvc_admin
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:slide_carousel_view-block_client_cards'
+settings:
+  id: 'views_block:slide_carousel_view-block_client_cards'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      client: client
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

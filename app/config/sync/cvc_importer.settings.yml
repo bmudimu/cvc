@@ -1,0 +1,6 @@
+allowed_types:
+  - definition
+  - testimport
+introduction: "<p>Use the form below to import your data. Make sure your Excel files adhere to <a href=\"\">guidelines provided</a>.</p>\r\n\r\n<p>Additionally, you can use these <a href=\"\">template files</a> to appropriately setup your data.</p>\r\n"
+_core:
+  default_config_hash: I2rVo9wOkbWzCuwPsCbG_olReatdEPbjrpOfBnL_Fu0

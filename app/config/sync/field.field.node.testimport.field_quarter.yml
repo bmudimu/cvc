@@ -1,0 +1,29 @@
+uuid: 2d76a6ad-dc82-431c-a49b-979790c61303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.testimport
+    - taxonomy.vocabulary.quarters
+id: node.testimport.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: testimport
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

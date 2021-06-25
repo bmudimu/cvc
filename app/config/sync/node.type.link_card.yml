@@ -1,0 +1,17 @@
+uuid: 8ecf2b14-46b4-4f71-83be-dc611bf7aa0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Link Card'
+type: link_card
+description: 'Use <em>Link Card </em> to create a card link on the landing page.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

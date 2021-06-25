@@ -1,0 +1,25 @@
+uuid: 1cfbe8b4-d6aa-46f7-8797-db75a5aff510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_icon
+    - node.type.link_card
+  module:
+    - fontawesome
+id: node.link_card.field_link_icon
+field_name: field_link_icon
+entity_type: node
+bundle: link_card
+label: 'Link Icon'
+description: 'Font awesome icon'
+required: true
+translatable: false
+default_value:
+  -
+    icon_name: fan-table
+    settings: 'a:3:{s:7:"duotone";a:3:{s:12:"swap-opacity";i:0;s:7:"opacity";a:2:{s:7:"primary";s:0:"";s:9:"secondary";s:0:"";}s:5:"color";a:2:{s:7:"primary";s:7:"#000000";s:9:"secondary";s:7:"#000000";}}s:7:"masking";a:2:{s:4:"mask";s:0:"";s:5:"style";s:3:"fas";}s:16:"power_transforms";a:3:{s:5:"scale";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_y";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}s:10:"position_x";a:2:{s:4:"type";s:0:"";s:5:"value";s:0:"";}}}'
+    style: fas
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

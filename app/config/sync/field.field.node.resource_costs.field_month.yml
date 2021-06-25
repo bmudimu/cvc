@@ -1,0 +1,29 @@
+uuid: e9c35f92-780d-4cea-aba8-25404a9c3281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_month
+    - node.type.resource_costs
+    - taxonomy.vocabulary.months
+id: node.resource_costs.field_month
+field_name: field_month
+entity_type: node
+bundle: resource_costs
+label: Month
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      months: months
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,54 @@
+uuid: df7c3f25-b1f9-470c-9e20-4a5ae616bb66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.definition.field_definition
+    - field.field.node.definition.field_definition_type
+    - node.type.definition
+id: node.definition.default
+targetEntityType: node
+bundle: definition
+mode: default
+content:
+  field_definition:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_definition_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  uid: true

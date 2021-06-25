@@ -1,0 +1,22 @@
+uuid: f278cad8-e974-47f6-9fb2-8e476085bf85
+langcode: en
+status: true
+dependencies:
+  module:
+    - notifications_widget
+  theme:
+    - cvc_admin
+id: notificationwidgetblock
+theme: cvc_admin
+region: header_right
+weight: 0
+provider: null
+plugin: notification_widget_block
+settings:
+  id: notification_widget_block
+  label: 'Notification widget block'
+  provider: notifications_widget
+  label_display: '0'
+  block_notification_type: '1'
+  block_notification_logs_display: 0
+visibility: {  }

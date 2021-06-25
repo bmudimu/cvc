@@ -1,0 +1,25 @@
+uuid: 5bd5eefe-8aaa-475d-bd35-676b9e421d1a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cvc_admin
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: cvc_admin_branding
+theme: cvc_admin
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

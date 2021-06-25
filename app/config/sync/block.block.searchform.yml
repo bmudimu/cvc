@@ -1,0 +1,21 @@
+uuid: 455c5d1d-3832-47b5-9f8d-9f05abbc7f0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - cvc_admin
+id: searchform
+theme: cvc_admin
+region: search
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 95f77d04-da8b-45f6-9d88-5a844815f628
+langcode: en
+status: true
+dependencies:
+  module:
+    - notifications_widget
+    - serialization
+    - user
+_core:
+  default_config_hash: VNVszzhjq_LAulGDMVPrBImpdODFiJwTU7TAwa2NYsM
+id: notifications_update_widget
+plugin_id: notifications_update_widget
+granularity: method
+configuration:
+  POST:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

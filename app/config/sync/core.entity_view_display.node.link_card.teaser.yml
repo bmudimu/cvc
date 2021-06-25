@@ -1,0 +1,26 @@
+uuid: 27b305c9-ee58-4570-b014-c9bdc3e5d21f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link_card.field_card_group
+    - field.field.node.link_card.field_card_link
+    - field.field.node.link_card.field_link_icon
+    - node.type.link_card
+  module:
+    - user
+id: node.link_card.teaser
+targetEntityType: node
+bundle: link_card
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_card_group: true
+  field_card_link: true
+  field_link_icon: true

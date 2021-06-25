@@ -1,0 +1,22 @@
+uuid: d1459ddc-d0e4-493a-9e75-d00d24332cfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.link_card
+id: node.link_card.promote
+field_name: promote
+entity_type: node
+bundle: link_card
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

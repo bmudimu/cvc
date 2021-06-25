@@ -1,0 +1,22 @@
+uuid: b5eb7c0d-5b14-43ac-878d-e91c39a9a67d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cvc_admin
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: cvc_admin_content
+theme: cvc_admin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

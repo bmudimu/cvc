@@ -1,0 +1,23 @@
+uuid: 7224b0b9-75b4-4404-bb64-c78dfd63a07e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.testimport
+  module:
+    - text
+id: node.testimport.body
+field_name: body
+entity_type: node
+bundle: testimport
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

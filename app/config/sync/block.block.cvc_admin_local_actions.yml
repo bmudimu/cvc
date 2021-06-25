@@ -1,0 +1,20 @@
+uuid: f34094e3-0f69-43e9-a5f8-f326652c7844
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cvc_admin
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: cvc_admin_local_actions
+theme: cvc_admin
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

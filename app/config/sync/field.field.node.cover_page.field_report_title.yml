@@ -1,0 +1,19 @@
+uuid: 549ba883-1080-4d9d-b933-c36494f05b96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_title
+    - node.type.cover_page
+id: node.cover_page.field_report_title
+field_name: field_report_title
+entity_type: node
+bundle: cover_page
+label: 'Report Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

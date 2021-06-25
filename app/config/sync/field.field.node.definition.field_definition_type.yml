@@ -1,0 +1,23 @@
+uuid: 0e021d69-a407-473e-984f-3aa21458462c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_definition_type
+    - node.type.definition
+  module:
+    - options
+id: node.definition.field_definition_type
+field_name: field_definition_type
+entity_type: node
+bundle: definition
+label: 'Definition Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Abbreviation
+default_value_callback: ''
+settings: {  }
+field_type: list_string

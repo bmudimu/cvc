@@ -1,0 +1,28 @@
+uuid: d084ce4c-4558-46c3-ac23-6c92f9273e9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - cvc_admin
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: cvc_admin_search
+theme: cvc_admin
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility:
+  request_path:
+    id: request_path
+    pages: /clients/manage-clients
+    negate: true

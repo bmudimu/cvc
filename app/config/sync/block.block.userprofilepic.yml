@@ -1,0 +1,25 @@
+uuid: 05fe88b4-64d7-42f3-b120-8449e6ddca82
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:62cdab49-98cc-40e6-aac2-f508ee95db78'
+  module:
+    - block_content
+  theme:
+    - cvc_admin
+id: userprofilepic
+theme: cvc_admin
+region: header_right
+weight: 0
+provider: null
+plugin: 'block_content:62cdab49-98cc-40e6-aac2-f508ee95db78'
+settings:
+  id: 'block_content:62cdab49-98cc-40e6-aac2-f508ee95db78'
+  label: 'User Profile Pic'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

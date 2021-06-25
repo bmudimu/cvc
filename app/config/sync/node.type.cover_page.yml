@@ -1,0 +1,17 @@
+uuid: a664c765-4ad6-419e-82d5-e98a9ce1f1ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Cover Page'
+type: cover_page
+description: 'Use <em>Cover Page</em> for reports'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

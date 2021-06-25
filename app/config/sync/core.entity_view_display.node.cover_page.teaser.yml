@@ -1,0 +1,30 @@
+uuid: 16c55bfd-0ecb-49fa-abdd-d02af7d1da81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cover_page.field_client_logo
+    - field.field.node.cover_page.field_client_name
+    - field.field.node.cover_page.field_corporate_vision_logo
+    - field.field.node.cover_page.field_report_date
+    - field.field.node.cover_page.field_report_title
+    - node.type.cover_page
+  module:
+    - user
+id: node.cover_page.teaser
+targetEntityType: node
+bundle: cover_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_logo: true
+  field_client_name: true
+  field_corporate_vision_logo: true
+  field_report_date: true
+  field_report_title: true

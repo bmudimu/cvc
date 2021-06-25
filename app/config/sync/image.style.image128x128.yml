@@ -1,0 +1,15 @@
+uuid: 16449c42-880b-48b3-b969-0c61931eb9a8
+langcode: en
+status: true
+dependencies: {  }
+name: image128x128
+label: Image128x128
+effects:
+  e725ac3e-87ff-4e80-a526-583e74ed3860:
+    uuid: e725ac3e-87ff-4e80-a526-583e74ed3860
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 128
+      height: 128
+      anchor: center-center
