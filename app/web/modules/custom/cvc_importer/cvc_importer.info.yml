@@ -1,0 +1,8 @@
+name: CVC Importer
+description: Module to import Excel data into Nodes.
+
+type: module
+package: CorporateV
+core_version_requirement: ^8.8 || ^9
+
+configure: cvc_importer.admin_settings

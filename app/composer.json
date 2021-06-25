@@ -217,7 +217,8 @@
         "highcharts/export-data": "8.1.0",
         "highcharts/exporting": "8.1.0",
         "highcharts/highcharts": "8.1.0",
-        "highcharts/more": "8.1.0"
+        "highcharts/more": "8.1.0",
+        "phpoffice/phpspreadsheet": "^1.18"
     },
     "conflict": {
         "drupal/drupal": "*"

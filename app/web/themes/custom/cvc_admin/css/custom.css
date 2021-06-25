@@ -337,3 +337,177 @@ ul.blog-meta{
 .blog-single .blog-meta li i {
     background: #fff none repeat scroll 0 0;
 }
+
+/*==================== 
+	Filters
+====================== */
+/* Block Filters */
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters .nav-pills span {
+    margin-right: 20px;
+}
+
+.filters .nav-pills span a.is-active,
+.filters .nav-pills span a:hover,
+.filters .nav-pills span a:focus {
+    color: #fff;
+    background-color: #2196f3;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+} 
+
+.filters .nav-pills span a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #606060;
+    min-width: 100px;
+    padding: 10px 15px;
+    text-align: center;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    transition: all 250ms ease-in-out 0s;
+}
+
+/*==================== 
+	Link Cards
+====================== */
+/* Block card links */
+
+.btn-app {
+    min-width: 150px;
+    min-height: 80px;
+    font-size: 14px;
+    margin: 0 0 30px 30px;
+
+}
+.btn-app a {
+    text-decoration: none;
+    color: #606060;
+}
+
+.bg-info h3 a {
+    color: #fff !important;
+
+}
+.widget-user {
+    max-width: 80%;
+  }
+  .description-block > .description-text {
+    font-size: .8rem;
+}
+.table {
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/*=================================Menu======================*/
+
+.sidebar-mini.sidebar-collapse .nav-sidebar .nav-link p span{
+    width: 0;
+  }
+  .sidebar-mini.sidebar-collapse .nav-sidebar .nav-link p span {
+    margin-left: -10px;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+  }
+  .sidebar-mini-md.sidebar-collapse .nav-sidebar .nav-link p span {
+    width: 0;
+  }
+  .sidebar-mini-md.sidebar-collapse .nav-sidebar .nav-link p span {
+    margin-left: -10px;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+  }
+  .sidebar-mini-md.sidebar-collapse .main-sidebar:hover .nav-sidebar .nav-link p span,
+  .sidebar-mini-md.sidebar-collapse .main-sidebar.sidebar-focused .nav-sidebar .nav-link p span {
+    display: inline-block;
+    margin-left: 0;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: visible;
+  }
+  .sidebar-collapse .sidebar-no-expand.main-sidebar.sidebar-focused .nav-sidebar .nav-link p span,
+.sidebar-collapse .sidebar-no-expand.main-sidebar:hover .nav-sidebar .nav-link p span {
+  margin-left: -10px;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility: hidden;
+  width: 0;
+}
+  .sidebar-mini.sidebar-collapse .main-sidebar:hover .nav-sidebar .nav-link p span,
+  .sidebar-mini.sidebar-collapse .main-sidebar.sidebar-focused .nav-sidebar .nav-link p span {
+    display: inline-block;
+    margin-left: 0;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: visible;
+  }
+  .svg-inline--fa {
+      font-size: 1.1rem;
+      margin-left: 0.05rem;
+      margin-right: 0.2rem;
+      text-align: center;
+      width: 1.6rem;
+  }
+
+.nav-header {
+font-size: .9rem;
+padding: 0.5rem;
+text-transform: uppercase;
+}
+.nav-header:not(:first-of-type) {
+padding: 1.7rem 1rem .5rem;
+}
+.sidebar-collapse .nav-sidebar .nav-header {
+    display: none;
+}
+@media (min-width: 992px) {
+.nav-header {
+    white-space: nowrap;
+    overflow: hidden;
+}
+}
+
+/*===================Search Form============*/
+.input-group .form-item {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.sidebar-collapse .form-inline.input-group {
+    display: none;
+}
+.form-search {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-actions .input-group-append .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

@@ -9,6 +9,7 @@ use Drupal\Component\Utility\Html;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
 use Drupal\views\Form\ViewsForm;
+use Drupal\Core\Url;
 
 use Drupal\file\Entity\File;
 use Drupal\Component\Render\FormattableMarkup;
@@ -103,24 +104,6 @@ function cvc_admin_preprocess_block(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_HOOK() for menu.html.twig.
- */
-function cvc_admin_preprocess_menu(&$variables) {
-  $variables['attributes']['class'][] = 'clearfix';
-}
-
-/**
- * Implements hook_theme_suggestions_HOOK_alter() for form templates.
- */
-// function cvc_admin_theme_suggestions_form_alter(array &$suggestions, array $variables) {
-//   if ($variables['element']['#form_id'] == 'search_block_form') {
-//     $suggestions[] = 'form__search_block_form';
-//   }
-  
-// }
-
-
-/**
  * Implements hook_preprocess_image_widget().
  *
  * @todo Revisit in https://drupal.org/node/3117430
@@ -201,6 +184,54 @@ function cvc_admin_preprocess_page(array &$variables) {
     
 }
 
+function cvc_admin_preprocess_menu_local_action(&$variables) {
+  $link = $variables['element']['#link'];
+  $link += array('localized_options' => array());
+  $link['localized_options']['attributes']['class'][] = 'btn';
+  $link['localized_options']['attributes']['class'][] = 'btn-block';
+  $link['localized_options']['attributes']['class'][] = 'btn-primary';
+  $link['localized_options']['attributes']['class'][] = 'fa';
+  $link['localized_options']['attributes']['class'][] = 'fa-plus';
+
+  $variables['link'] = array(
+    '#type' => 'link',
+    '#title' => ' '.$link['title'],
+    '#options' => $link['localized_options'],
+    '#url' => $link['url'],
+  );
+}
+
+ /**
+ * Implements hook_preprocess_HOOK() for menu.html.twig.
+ */
+
+function cvc_admin_preprocess_menu(&$variables) {
+  $variables['attributes']['class'][] = 'clearfix';
+  $icon_setting = explode("\n",theme_get_setting('menu_icons'));
+  $icons = [];
+  for($i = 0; $i < sizeof($icon_setting); $i++){
+    $icon_setting[$i] = explode('|',$icon_setting[$i]);
+    if(array_key_exists($i,$icon_setting) && sizeof($icon_setting[$i]) >= 2){
+      $icons[$icon_setting[$i][0]] = $icon_setting[$i][1];
+    }
+  }
+  foreach ($variables['items'] as $id => $item){
+    $title = (string)$item['title'];
+    if(array_key_exists($title,$icons) && $icons[$title]){
+      $variables['items'][$id]['icon'] = $icons[$title];
+    }
+  }
+}
+
+function cvc_admin_form_system_theme_settings_alter(&$form, $form_state) {
+  $form['menu_icons'] = array(
+    '#type'          => 'textarea',
+    '#title'         => t('Menu Icons'),
+    '#default_value' => theme_get_setting('menu_icons'),
+    '#description'   => t("<a href='https://fortawesome.github.io/Font-Awesome/icons/' target='_blank'>Font Awesome</a> icon class with associated menu item. One per line. Format: Menu link title|class")
+  );
+}
+
 /**
  * Implements hook_theme_suggestions_alter
  */
@@ -227,6 +258,15 @@ function cvc_admin_preprocess_page(array &$variables) {
 */
 function cvc_admin_form_user_login_form_alter(&$form, FormStateInterface &$form_state) {
   $form['#theme'] = ['admincv_user_login'];
+  $form['#submit'][] = 'cvc_admin_user_login_form_submit'; 
+}
+
+/**
+ * Custom submit handler for the login form.
+ */
+function cvc_admin_user_login_form_submit($form, FormStateInterface $form_state) {
+  $url = Url::fromRoute('<front>');
+  $form_state->setRedirectUrl($url);
 }
 
 // function _cvc_admin_form_alter_elements(&$element, $form_id) {
@@ -252,13 +292,13 @@ function cvc_admin_form_alter(&$form, FormStateInterface $form_state, $form_id) 
     $form['pass']['#attributes']['placeholder'] = t('Password');
     $form['actions']['submit']['#attributes']['class'][] = 'btn btn-primary btn-block';
   }
-  if ($form_id == 'search_block_form--2') {
+  if ($form_id == 'search_block_form') {
     // $form['keys']['#attributes']['placeholder'] = t('Search');
     // $form['actions']['submit']['#value'] = html_entity_decode('&#xf002;');
     $form['actions']['submit']['#prefix' ] = '<div class="input-group-append">';
     $form['actions']['submit']['#suffix' ] = '</div>';
     // $form['actions']['submit']['#markup'] = '<i class="fas fa-search fa-fw"></i>';
-    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-sidebar';
+    // $form['actions']['submit']['#attributes']['class'][] = 'btn btn-sidebar';
   }
 }
 

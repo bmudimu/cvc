@@ -1,0 +1,7 @@
+cvc_import.ImportForm:
+  path: '/admin/import'
+  defaults:
+    _form: '\Drupal\cvc_import\Form\ImportForm'
+    _title: 'Upload file'
+  requirements:
+    _permission: 'access content'

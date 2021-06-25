@@ -1,0 +1,54 @@
+<!-- Course Wrapper -->
+<div class="row course-single bg-grey">
+    <!-- Course Banner Image -->
+    <div class="col-sm-5">
+        {{content.field_contact_info}}
+    </div><!-- Column -->	
+        <!-- Course Banner Image -->
+
+    <!-- Course Detail -->
+    <div class="col-sm-7">
+        <div class="course-detail">
+            <!-- Course Content -->
+            <div class="course-meta">
+               {# {{content.field_client_info}} #}
+              
+                <h4>{{node.Title}}</h4>
+                <ul class="course-meta-icons">
+                    <li><i class="fas fa-registered"></i><span>Registration</span><h5>{{ content.field_registration_number}}</h5></li>
+                    <li><i class="fa fa-briefcase"></i><span>Fund</span><h5>{{content.field_fund}}</h5></li>
+                    <li><i class="fas fa-city"></i><span>Province</span><h5>{{ content.field_province}}</h5></li>
+                    <li><i class="fa fa-info-circle"></i><span>Status</span><h5>{{ content.field_status}}</h5></li>
+                    <li><i class="fa fa-users"></i><span>Fund Manager</span><h5>{{content.field_fund_manager}}</h5></li>
+                    <li><i class="fa fa-user"></i><span>Asigned To</span><h5>{{ content.field_assigned_to}}</h5></li>
+                </ul>
+            </div>
+        </div><!-- Course Detail -->
+    </div><!-- Column -->	
+</div><!-- Course Wrapper -->
+
+<div class="row course-full-detail">
+    <div class="col-sm-12">
+        <h4>Brief Details</h4>
+       {# {{ content.body }} #}
+       {{content.field_client_bio}}
+        <!-- Blog Blockquote -->
+     
+      {{content.field_courses_syllabus}}
+        <!-- Related -->
+         {% if related_course|length >=1 %}
+            <h4>Related Courses : </h4>
+            <div class="owl-carousel show-nav-hover dots-dark nav-square dots-square navigation-color"
+                data-animatein="zoomIn" data-animateout="slideOutDown" data-items="2" data-margin="30" data-loop="true" data-merge="true" data-nav="true" data-dots="false" data-stagepadding="" data-mobile="1" data-tablet="2" data-desktopsmall="2"  data-desktop="3" data-autoplay="true" data-delay="3000" data-navigation="true">
+            {% for i in related_course %}
+                        {{i|raw}} 
+                    {% endfor %} 
+            </div><!-- Related Post -->
+        {% endif %}
+    </div><!-- Column -->
+</div><!-- row -->  
+
+
+
+
+

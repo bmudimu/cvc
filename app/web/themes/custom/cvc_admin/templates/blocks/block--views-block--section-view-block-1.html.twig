@@ -1,0 +1,26 @@
+<div{{ attributes.addClass('card') }}>
+  <div class="card-header">
+    {{ title_prefix }}
+    {% if label %}
+      <h3 class="card-title"{{ title_attributes }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+    <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+        <i class="fas fa-minus"></i>
+        </button>
+        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+        <i class="fas fa-times"></i>
+        </button>
+    </div>
+  </div>
+  <div class="card-body" style="display: block;">
+    {% if content %}
+      {{ content }}
+    {% endif %}
+  </div>
+  <div class="card-footer" style="display: block;">
+    {% if footer %}
+        {{ footer }}
+    {% endif %}
+</div>

@@ -1,0 +1,5 @@
+name: Corporate Vision Import
+description: Import Excel or CSV files
+type: module
+core_version_requirement: ^8.8 | ^9.0
+package: CorporateV

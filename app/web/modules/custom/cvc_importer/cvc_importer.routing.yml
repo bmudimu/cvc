@@ -1,0 +1,15 @@
+cvc_importer.admin_settings:
+  path: '/admin/config/content/cvc_importer'
+  defaults:
+    _form: '\Drupal\cvc_importer\Form\xImporterSettingsForm'
+    _title: 'Excel Importer Settings'
+  requirements:
+    _permission: 'administer cvc_importer'
+
+cvc_importer.import_form:
+  path: '/cvc-import'
+  defaults:
+    _form: '\Drupal\cvc_importer\Form\xImporterForm'
+    _title: 'Import your Excel file'
+  requirements:
+    _permission: 'use cvc_importer'

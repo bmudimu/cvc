@@ -8,7 +8,7 @@ base:
       # plugins/datatables-responsive/css/responsive.bootstrap4.min.css: {}
       # plugins/datatables-buttons/css/buttons.bootstrap4.min.css: {}
       # plugins/icheck-bootstrap/icheck-bootstrap.min.css: {}
-      dist/css/adminlte.css: {}
+      css/adminlte.css: {}
       css/cv_select.css: {}
       css/custom.css: {}
       # css/skins/default.css: {}

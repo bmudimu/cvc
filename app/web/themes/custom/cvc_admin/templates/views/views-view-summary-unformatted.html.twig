@@ -1,0 +1,13 @@
+<ul class="nav nav-pills">
+  {% for row in rows  %}
+    {{ options.inline ? '<span' : '<div' }} >
+    {% if row.separator -%}
+      {{ row.separator }}
+    {%- endif %}
+    <a href="{{ row.url }}"{{ row.attributes.addClass(row.active ? 'is-active filter active')|without('href') }}>{{ row.link }}</a>
+    {% if options.count %}
+      ({{ row.count }})
+    {% endif %}
+    {{ options.inline ? '</span>' : '</div>' }}
+  {% endfor %}
+  </ul>
