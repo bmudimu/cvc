@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Evaluation progress.
+ */
+
+ /**
+  * Implements hook_theme().
+  */
+  function esg_progress_theme($existing, $type, $theme, $path)
+  {
+      return [
+          'esgrange' => [
+              'variables' => [
+                  'year' => NULL,
+                  'quarter' => NULL,
+                  'score' => NULL,
+              ],
+            ],
+        ];
+  }

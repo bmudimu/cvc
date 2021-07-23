@@ -5,13 +5,14 @@
  */
 #}
 
-<ul class="navbar-nav ml-auto">
+<ul class="nav navbar-nav navbar-right">
   <li class="nav-item dropdown">
     <a href="#notifications-panel" class="nav-link" data-toggle="dropdown" aria-expanded="false">
       {% if unread > 0 %}
-        <span data-count="{{ unread }}" id="notificationcount" class="badge badge-danger nav-badge"></span>
+        <i class="far fa-comments"></i>
+        <span data-count="{{ unread }}" class="badge badge-danger navbar-badge">{{ unread }}</span>
       {% else %}
-        <i class="far fa-comments glyphicon glyphicon-bell notification-icon-read"></i>
+        <i class="far fa-comments"></i>
       {% endif %}
     </a>
     <ul class="dropdown-menu notify-drop">
@@ -30,9 +31,9 @@
       <div class="drop-content">
         {% for notifications in notification_list %}
           <li data-id="{{  notifications.id }}" data-read-status = "{{ notifications.status ? 'read' : 'unread' }}" class="notification-items {{ notifications.status ? 'read' : 'unread' }}">
-            <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+            <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
             <span class="notification-msg">{{ notifications.message | raw }}</span>
-            <span class="glyphicon glyphicon-trash notification-remove"></span>
+            <span class="far fa-trash-alt notification-remove"></span>
           </li>
         {% endfor %}
       </div>

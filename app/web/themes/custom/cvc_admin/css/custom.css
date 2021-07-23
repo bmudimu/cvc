@@ -538,7 +538,7 @@ padding: 1.7rem 1rem .5rem;
 }
 
 .form-style-10{
-	max-width:600px;
+	max-width:900px;
 	padding:30px;
 	margin:40px auto;
 	background: #FFF;
@@ -663,3 +663,6 @@ padding: 1.7rem 1rem .5rem;
 	text-align: right;
 }
 
+.notify-drop .drop-content li {
+    white-space: nowrap;
+}

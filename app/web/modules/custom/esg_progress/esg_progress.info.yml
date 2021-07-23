@@ -1,0 +1,5 @@
+name: Evaluation Progress
+description: Displays a progress bar of current evaluations
+type: module
+core_version_requirement: ^8.8 | ^9.0
+package: custom

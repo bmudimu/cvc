@@ -1,0 +1,469 @@
+environmental_management_systems:
+  '#type': wizard_page
+  '#title': 'Environmental Management Systems'
+  container1:
+      '#type': container
+  env1:
+        '#type': markup
+        '#markup': '<div class="section"><span>1</span>The company has a policy that clearly articulates the environmental objectives and principles that guide the company to achieve sound environmental performance.</div>'
+      flexbox1:
+        '#type': flexbox
+  container2:
+          '#type': container
+          '#attributes':
+            class:
+              - inner-wrap
+  rate1:
+            '#type': select
+            '#title': Rating
+            '#options': likert_satisfaction
+  notes1:
+            '#type': textarea
+            '#title': Comments
+  container3:
+          '#type': container
+          '#attributes':
+            class:
+              - inner-wrap
+  time1:
+            '#type': textfield
+            '#title': Timeline
+            '#placeholder': Ongoing
+  indicator1:
+            '#type': textarea
+            '#title': 'Compliance Indicators'
+  env2:
+        '#type': markup
+        '#markup': '<div class="section"><span>2</span>The company has established a formal risk identification and impact process.</div>'
+  container4:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate2:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes2:
+          '#type': textarea
+          '#title': Comments
+  env3:
+        '#type': markup
+        '#markup': '<div class="section"><span>3</span>The company has sufficient management programmes that address continuous environmental and social issued exposed to the hospital.</div>'
+  container5:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate3:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes3:
+          '#type': textarea
+          '#title': Comments
+  env4:
+        '#type': markup
+        '#markup': '<div class="section"><span>4</span>The company has a formal organisational structure to implement EMS within the hospital. The structure includes individuals responsible for managing and implementing the EMS within the hospital.</div>'
+  container6:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate4:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes4:
+          '#type': textarea
+          '#title': Comments
+  env5:
+        '#type': markup
+        '#markup': '<div class="section"><span>5</span>The company has implemented an emergency preparedness and response systems so that the company, in collaboration with appropriate and relevant third parties, will be prepared to respond to accidents and emergency situations (e.g. fires, accidental oil spills) in a manner appropriate to prevent and mitigate any harm to people and/or the environment.</div>'
+  container7:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate5:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes5:
+          '#type': textarea
+          '#title': Comments
+  env6:
+        '#type': markup
+        '#markup': '<div class="section"><span>6</span>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</div>'
+  container8:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate6:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes6:
+          '#type': textarea
+          '#title': Comments
+  env7:
+        '#type': markup
+        '#markup': '<div class="section"><span>7</span>The company has a detailed and updated grievance register.</div>'
+  container9:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate7:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes7:
+          '#type': textarea
+          '#title': Comments
+  env8:
+        '#type': markup
+        '#markup': '<div class="section"><span>8</span>There is evidence that environmental monitoring shapes and informs the company''s practices.</div>'
+  container10:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate8:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes8:
+          '#type': textarea
+          '#title': Comments
+  env9:
+        '#type': markup
+        '#markup': '<div class="section"><span>9</span>Does the company comply with all relevant local environmental laws, standards and regulations?</div>'
+  container11:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate9:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes9:
+          '#type': textarea
+          '#title': Comments
+  env10:
+        '#type': markup
+        '#markup': '<div class="section"><span>10</span>Has the company obtained all relevant environmental permits and certifications and are they up to date?</div>'
+  container12:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate10:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes10:
+          '#type': textarea
+          '#title': Comments
+  env11:
+        '#type': markup
+        '#markup': '<div class="section"><span>11</span>The company did not pay any fines or penalties or was not under investigation for non-compliance with environmental regulations and standards (Yes or No). If the answer is no, provide details thereof.</div>'
+  container13:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate11:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes11:
+          '#type': textarea
+          '#title': Comments
+  env12:
+        '#type': markup
+        '#markup': '<div class="section"><span>12</span>The Department of Environmental Affairs undertaken an environmental audit on the company for environmental transgressions.</div>'
+  container14:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate12:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes12:
+          '#type': textarea
+          '#title': Comments
+  env13:
+        '#type': markup
+        '#markup': '<div class="section"><span>13</span>Greenhouse gasses: Review strategies that include adoption of renewable or low carbon energy sources, sustainable agricultural, forestry and livestock management practices, the reduction of fugitive emissions and the reduction of gas flaring.</div>'
+  container15:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate13:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes13:
+          '#type': textarea
+          '#title': Comments
+  env14:
+        '#type': markup
+        '#markup': '<div class="section"><span>14</span>Water consumption: Focus on the use of additional technically feasible water conservation measures within the client’s operations, the use of alternative water supplies, water consumption offsets to reduce total demand for water resources to within the available supply, and evaluation of alternative project locations.</div>'
+  container16:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate14:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes14:
+          '#type': textarea
+          '#title': Comments
+  env15:
+        '#type': markup
+        '#markup': '<div class="section"><span>15</span>Has the company undertaken any renewal energy options? List them.</div>'
+  container17:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate15:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes15:
+          '#type': textarea
+          '#title': Comments
+  env16:
+        '#type': markup
+        '#markup': '<div class="section"><span>16</span>Does the company have a clear understanding of energy and water costs (or are they aggregated within a general operating budget)?</div>'
+  container18:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate16:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes16:
+          '#type': textarea
+          '#title': Comments
+  env17:
+        '#type': markup
+        '#markup': '<div class="section"><span>17</span>Did the company experience any load shedding during the current year?</div>'
+  container19:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate17:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes17:
+          '#type': textarea
+          '#title': Comments
+  env18:
+        '#type': markup
+        '#markup': '<div class="section"><span>18</span>Has the company undertaken an energy or water use audit? If so, what were the conclusions and what actions were taken. If not, explore the rationale for not undertaking one.</div>'
+  container20:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate18:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes18:
+          '#type': textarea
+          '#title': Comments
+  env19:
+        '#type': markup
+        '#markup': '<div class="section"><span>19</span>Water & Electricity.</div>'
+  container21:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate19:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes19:
+          '#type': textarea
+          '#title': Comments
+  env20:
+        '#type': markup
+        '#markup': '<div class="section"><span>20</span>Waste; hazardous material management; pesticide use and management.</div>'
+  container22:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate20:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes20:
+          '#type': textarea
+          '#title': Comments
+  env21:
+        '#type': markup
+        '#markup': '<div class="section"><span>21</span>Does the company have a waste management plan in place?</div>'
+  container23:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate21:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes21:
+          '#type': textarea
+          '#title': Comments
+  env22:
+        '#type': markup
+        '#markup': '<div class="section"><span>22</span>What resource efficieny measures has the hospital underatken: solar energy, boreholes, energy efficiency lighting, water tanks, generators etc.?</div>'
+  container24:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate22:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes22:
+          '#type': textarea
+          '#title': Comments
+  env23:
+        '#type': markup
+        '#markup': '<div class="section"><span>23</span>Has the company planned or taken any measures to reduce or optimise its water consumption? If yes, explain.</div>'
+  container25:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate23:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes23:
+          '#type': textarea
+          '#title': Comments
+  env24:
+        '#type': markup
+        '#markup': '<div class="section"><span>24</span>Does the company recycle water?</div>'
+  container26:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate24:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes24:
+          '#type': textarea
+          '#title': Comments
+  env25:
+        '#type': markup
+        '#markup': '<div class="section"><span>25</span>Does the company have contingency plans during water shortage?</div>'
+  container27:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate25:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes25:
+          '#type': textarea
+          '#title': Comments
+  env26:
+        '#type': markup
+        '#markup': '<div class="section"><span>26</span>Does the company have water tanks and what are their capacities?</div>'
+  container28:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate26:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes26:
+          '#type': textarea
+          '#title': Comments
+  env27:
+        '#type': markup
+        '#markup': '<div class="section"><span>27</span>Are there water restrictions in the area?</div>'
+  container29:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate27:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes27:
+          '#type': textarea
+          '#title': Comments
+  env28:
+        '#type': markup
+        '#markup': '<div class="section"><span>28</span>Does the company have more than one source of reliable water supply?</div>'
+  container30:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate28:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes28:
+          '#type': textarea
+          '#title': Comments
+  env29:
+        '#type': markup
+        '#markup': '<div class="section"><span>29</span>Protection and conservation of biodiversity; management of ecosystem services; sustainable management of living and natural resources.</div>'
+  container31:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate29:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes29:
+          '#type': textarea
+          '#title': Comments
+  env30:
+        '#type': markup
+        '#markup': '<div class="section"><span>30</span>The company has undertaken a biodiversity study to identify the risks and impacts of its operation to the ecosystem.</div>'
+  container32:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+  rate30:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+  notes30:
+          '#type': textarea
+          '#title': Comments
