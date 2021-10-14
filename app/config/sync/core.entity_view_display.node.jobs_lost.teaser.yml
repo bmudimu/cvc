@@ -1,0 +1,54 @@
+uuid: 3b242ebc-0a67-4164-b33f-67e55bc6edc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jobs_lost.field_african_female
+    - field.field.node.jobs_lost.field_african_male
+    - field.field.node.jobs_lost.field_client_name
+    - field.field.node.jobs_lost.field_coloured_female
+    - field.field.node.jobs_lost.field_coloured_male
+    - field.field.node.jobs_lost.field_disabled
+    - field.field.node.jobs_lost.field_foreign_female
+    - field.field.node.jobs_lost.field_foreign_male
+    - field.field.node.jobs_lost.field_indian_female
+    - field.field.node.jobs_lost.field_indian_male
+    - field.field.node.jobs_lost.field_notes
+    - field.field.node.jobs_lost.field_occupational_level
+    - field.field.node.jobs_lost.field_quarter
+    - field.field.node.jobs_lost.field_under_35
+    - field.field.node.jobs_lost.field_white_female
+    - field.field.node.jobs_lost.field_white_male
+    - field.field.node.jobs_lost.field_year
+    - node.type.jobs_lost
+  module:
+    - user
+id: node.jobs_lost.teaser
+targetEntityType: node
+bundle: jobs_lost
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_african_female: true
+  field_african_male: true
+  field_client_name: true
+  field_coloured_female: true
+  field_coloured_male: true
+  field_disabled: true
+  field_foreign_female: true
+  field_foreign_male: true
+  field_indian_female: true
+  field_indian_male: true
+  field_notes: true
+  field_occupational_level: true
+  field_quarter: true
+  field_under_35: true
+  field_white_female: true
+  field_white_male: true
+  field_year: true

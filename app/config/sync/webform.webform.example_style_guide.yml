@@ -17,7 +17,638 @@ id: example_style_guide
 title: 'Example: Style Guide'
 description: 'Style Guide containing examples of all elements and layouts.'
 category: Example
-elements: "introduction:\n  '#markup': '<p>Below is a style guide containing examples of all elements and layouts.</p>'\nbasic_elements:\n  '#type': details\n  '#title': 'Basic elements'\n  '#open': true\n  textfield:\n    '#type': textfield\n    '#title': 'Text field'\n  textarea:\n    '#type': textarea\n    '#title': Textarea\n  select:\n    '#type': select\n    '#title': Select\n    '#options':\n      one: One\n      two: Two\n      three: Three\n  select_select2:\n    '#type': select\n    '#title': 'Select (Select2)'\n    '#options':\n      one: One\n      two: Two\n      three: Three\n    '#select2': true\n  select_multiple:\n    '#type': select\n    '#title': 'Select multiple'\n    '#options':\n      one: One\n      two: Two\n      three: Three\n    '#multiple': true\n  select_multiple_select2:\n    '#type': select\n    '#title': 'Select multiple (Select2)'\n    '#options':\n      one: One\n      two: Two\n      three: Three\n    '#multiple': true\n    '#select2': true\n  checkboxes:\n    '#type': checkboxes\n    '#title': Checkboxes\n    '#options_display': side_by_side\n    '#options':\n      one: One\n      two: Two\n      three: Three\n  checkboxes_help:\n    '#type': checkboxes\n    '#title': 'Checkboxes with help text'\n    '#options_display': side_by_side\n    '#options_description_display': help\n    '#options':\n      one: 'One -- This is help text.'\n      two: 'Two -- This is help text.'\n      three: 'Three -- This is  help text.'\n  checkboxes_description:\n    '#type': checkboxes\n    '#title': 'Checkboxes with descriptions'\n    '#options_description_display': description\n    '#options':\n      one: 'One -- This is a description.'\n      two: 'Two -- This is a description.'\n      three: 'Three -- This is a description.'\n  radios:\n    '#type': radios\n    '#title': Radios\n    '#options_display': side_by_side\n    '#options':\n      one: One\n      two: Two\n      three: Three\n  radios_buttons:\n    '#type': radios\n    '#title': 'Radios (Buttons)'\n    '#options_display': buttons\n    '#options':\n      one: One\n      two: Two\n      three: Three\ndate_elements:\n  '#type': details\n  '#title': 'Date elements'\n  '#open': true\n  date:\n    '#type': date\n    '#title': Date\n  datetime:\n    '#type': datetime\n    '#title': Date/time\n  datelist:\n    '#type': datelist\n    '#title': 'Date list'\n  date_datepicker:\n    '#type': date\n    '#title': 'Date picker'\n    '#datepicker': true\n    '#date_date_format': 'D, m/d/Y'\n  webform_time:\n    '#type': webform_time\n    '#title': Time\nadvanced_elements:\n  '#type': details\n  '#title': 'Advanced elements'\n  '#open': true\n  email:\n    '#type': email\n    '#title': Email\n  email_multiple:\n    '#type': webform_email_multiple\n    '#title': 'Email multiple'\n  email_confirm:\n    '#type': webform_email_confirm\n    '#title': Email\n  tel:\n    '#type': tel\n    '#title': Telephone\n  tel_international:\n    '#type': tel\n    '#title': 'Telephone (International)'\n    '#international': true\n    '#telephone_validation_format': '0'\n  url:\n    '#type': url\n    '#title': URL\n  search:\n    '#type': search\n    '#title': Search\n  number:\n    '#type': number\n    '#title': Number\n    '#min': 0\n    '#max': 10\n    '#step': 1\n  range:\n    '#type': range\n    '#title': Range\n    '#min': 0\n    '#max': 100\n    '#step': 1\n    '#output': right\n    '#output__field_prefix': $\n    '#output__field_suffix': '.00'\n  color:\n    '#type': color\n    '#title': Color\n  text_format:\n    '#type': text_format\n    '#title': 'Text format'\n  managed_file:\n    '#type': managed_file\n    '#title': 'File upload'\n  managed_file_multiple:\n    '#type': managed_file\n    '#title': 'File upload multiple'\n    '#multiple': true\n  managed_file_button:\n    '#type': managed_file\n    '#title': 'File upload button'\n    '#button': true\n  tableselect:\n    '#type': tableselect\n    '#title': 'Table select'\n    '#options':\n      one: One\n      two: Two\n      three: Three\n  webform_tableselect_sort:\n    '#type': webform_tableselect_sort\n    '#title': 'Tableselect sort'\n    '#options':\n      one: One\n      two: Two\n  webform_table_sort:\n    '#type': webform_table_sort\n    '#title': 'Table sort'\n    '#options':\n      one: One\n      two: Two\n      three: Three\n  webform_autocomplete:\n    '#type': webform_autocomplete\n    '#title': Autocomplete\n    '#autocomplete_items': country_names\n  webform_buttons:\n    '#type': webform_buttons\n    '#title': Buttons\n    '#options':\n      one: One\n      two: Two\n      three: Three\n  webform_codemirror:\n    '#type': webform_codemirror\n    '#title': CodeMirror\n    '#mode': yaml\n  webform_height:\n    '#type': webform_height\n    '#title': Height\n  webform_image_select:\n    '#type': webform_image_select\n    '#title': 'Image select'\n    '#show_label': true\n    '#images':\n      kitten_1:\n        text: 'Cute Kitten 1'\n        src: 'http://placekitten.com/220/200'\n      kitten_2:\n        text: 'Cute Kitten 2'\n        src: 'http://placekitten.com/180/200'\n      kitten_3:\n        text: 'Cute Kitten 3'\n        src: 'http://placekitten.com/130/200'\n  webform_rating:\n    '#type': webform_rating\n    '#title': Rating\n  webform_scale:\n    '#type': webform_scale\n    '#title': Scale\n    '#min': 1\n    '#max': 10\n    '#min_text': '1 = disagree'\n    '#max_text': '10 = agree'\n  webform_signature:\n    '#type': webform_signature\n    '#title': Signature\n  webform_terms_of_service:\n    '#type': webform_terms_of_service\n    '#terms_content': 'These are the terms of service.'\n  webform_likert:\n    '#type': webform_likert\n    '#title': Likert\n    '#questions':\n      q1: 'Please answer question 1?'\n      q2: 'How about now answering question 2?'\n      q3: 'Finally, here is question 3?'\n    '#answers':\n      1: 1\n      2: 2\n      3: 3\n      4: 4\n      5: 5\nentity_reference_elements:\n  '#type': details\n  '#title': 'Entity reference elements'\n  '#open': true\n  entity_autocomplete:\n    '#type': entity_autocomplete\n    '#title': 'Entity autocomplete'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n  entity_autocomplete_tags:\n    '#type': entity_autocomplete\n    '#title': 'Entity autocomplete tags'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n    '#tags': true\n  entity_autocomplete_multiple:\n    '#type': entity_autocomplete\n    '#title': 'Entity autocomplete multiple'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n    '#multiple': true\n  webform_entity_checkboxes:\n    '#type': webform_entity_checkboxes\n    '#title': 'Entity checkboxes'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n    '#options':\n      1: Administrator\n      0: Anonymous\n  webform_entity_radios:\n    '#type': webform_entity_radios\n    '#title': 'Entity radios'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n    '#options':\n      1: Administrator\n      0: Anonymous\n  webform_entity_select:\n    '#type': webform_entity_select\n    '#title': 'Entity select'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n  webform_entity_select_multiple:\n    '#type': webform_entity_select\n    '#title': 'Entity select multiple'\n    '#target_type': user\n    '#selection_handler': 'default:user'\n    '#selection_settings':\n      include_anonymous: true\n    '#multiple': true\n    '#select2': true\n  webform_term_checkboxes:\n    '#type': webform_term_checkboxes\n    '#title': 'Term checkboxes'\n    '#vocabulary': tags\n  webform_term_select:\n    '#type': webform_term_select\n    '#title': 'Term select'\n    '#vocabulary': tags\n  webform_term_select_multiple:\n    '#type': webform_term_select\n    '#title': 'Term select multiple'\n    '#vocabulary': tags\n    '#multiple': true\n    '#select2': true\nwebform_composites:\n  '#type': details\n  '#title': 'Webform composites'\n  '#open': true\n  webform_addresses:\n    '#type': fieldset\n    '#title': Addresses\n    webform_address:\n      '#type': webform_address\n      '#title': 'First address'\n      '#flexbox': false\n      '#title_display': above\n    webform_same_address:\n      '#type': webform_same\n      '#title': 'Second address same as the first address'\n      '#source': webform_address\n      '#destination': webform_address_other\n      '#destination_state': visible-slide\n      '#default_value': true\n    webform_address_other:\n      '#type': webform_address\n      '#title': 'Second address'\n      '#flexbox': false\n      '#title_display': above\n  webform_link_multiple:\n    '#type': webform_link\n    '#title': 'Link multiple'\n    '#multiple': true\n    '#multiple__header': true\n  webform_custom_composite:\n    '#type': webform_custom_composite\n    '#title': 'Custom composite'\n    '#element':\n      first_name:\n        '#type': textfield\n        '#title': 'First name'\n      last_name:\n        '#type': textfield\n        '#title': 'Last name'\n      sex:\n        '#type': webform_select_other\n        '#options': sex\n        '#title': Sex\n      martial_status:\n        '#type': webform_select_other\n        '#options': marital_status\n        '#title': 'Martial status'\n      employment_status:\n        '#type': webform_select_other\n        '#options': employment_status\n        '#title': 'Employment status'\n      age:\n        '#type': number\n        '#title': Age\nform_elements:\n  '#type': details\n  '#title': 'Form elements'\n  '#open': true\n  form_element:\n    '#type': textfield\n    '#title': 'Form element'\n    '#description': '{description}'\n    '#size': 5\n    '#field_prefix': $\n    '#field_suffix': '.00'\n  form_element_required:\n    '#type': textfield\n    '#title': 'Form element (Required)'\n    '#required': true\n    '#default_value': '{value}'\n    '#attributes':\n      class:\n        - error\n  form_element_disabled:\n    '#type': textfield\n    '#title': 'Form element (Disabled)'\n    '#default_value': '{value}'\n    '#disabled': true\n  form_element_input_mask:\n    '#type': textfield\n    '#title': 'Form element (Input mask: Phone)'\n    '#input_mask': '(999) 999-9999'\n    '#test': ''\n  form_element_input_hide:\n    '#type': textfield\n    '#title': 'Form element (Input hiding)'\n    '#input_hide': true\n    '#default_value': '{value}'\n  title_display_before:\n    '#type': textfield\n    '#title': 'Title displayed before'\n    '#title_display': before\n    '#description': 'This is a description.'\n  title_display_after:\n    '#type': textfield\n    '#title': 'Title displayed after'\n    '#title_display': after\n    '#description': 'This is a description.'\n  title_help:\n    '#type': textfield\n    '#title': 'Title with help (tooltip)'\n    '#help': 'This is help displayed in a tooltip. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.'\n  title_display_inline:\n    '#type': textfield\n    '#title': 'Title displayed inline'\n    '#title_display': inline\n    '#description': 'This is a description.'\n  description_display_before:\n    '#type': textfield\n    '#title': 'Description displayed before'\n    '#description': 'This description is displayed before the input.'\n    '#description_display': before\n  description_display_tooltip:\n    '#type': textfield\n    '#title': 'Description displayed in tooltip'\n    '#description': 'This description is displayed in a tooltip. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.'\n    '#description_display': tooltip\n  description_more:\n    '#type': textfield\n    '#title': 'Description with (read) more'\n    '#description': 'This is a description.'\n    '#more': 'This is more text'\ncontainer_elements:\n  '#type': details\n  '#title': 'Containers elements'\n  '#open': true\n  details:\n    '#type': details\n    '#title': Details\n    '#description': 'This is a description.'\n  fieldset:\n    '#type': fieldset\n    '#title': Fieldset\n    '#description': 'This is a description.'\n  webform_section:\n    '#type': webform_section\n    '#title': Section\n    '#description': 'This is a description.'\n  container_form_inline:\n    '#type': container\n    '#attributes':\n      class:\n        - 'form--inline clearfix'\n    form_inline_01:\n      '#title': 'Form inline 01'\n      '#type': textfield\n      '#size': 10\n    form_inline_02:\n      '#title': 'Form inline 02'\n      '#type': textfield\n      '#size': 10\n  container_inline:\n    '#title': 'Container inline'\n    '#type': textfield\n    '#wrapper_attributes':\n      class:\n        - 'container-inline clearfix'\n  table:\n    '#type': webform_table\n    '#title': Table\n    '#header':\n      - title: 'First Name'\n        attributes:\n          style: 'width: 40%'\n      - title: 'Last Name'\n        attributes:\n          style: 'width: 40%'\n      - title: Gender\n        attributes:\n          style: 'width: 20%'\n    table_01:\n      '#type': webform_table_row\n      '#title': 'Person (1)'\n      table_01_first_name:\n        '#type': textfield\n        '#title': 'First name (1)'\n        '#title_display': invisible\n      table_01_last_name:\n        '#type': textfield\n        '#title': 'Last name (1)'\n        '#title_display': invisible\n      table_01_gender:\n        '#type': select\n        '#title': 'Gender (1)'\n        '#title_display': invisible\n        '#options': gender\n    table_02:\n      '#type': webform_table_row\n      '#title': 'Person (2)'\n      '#states':\n        visible:\n          ':input[name=\"table_01_first_name\"]':\n            filled: true\n      table_02_first_name:\n        '#type': textfield\n        '#title': 'First name (2)'\n        '#title_display': invisible\n      table_02_last_name:\n        '#type': textfield\n        '#title': 'Last name (2)'\n        '#title_display': invisible\n      table_02_gender:\n        '#type': select\n        '#title': 'Gender (2)'\n        '#title_display': invisible\n        '#options': gender\n    table_03:\n      '#type': webform_table_row\n      '#title': 'Person (3)'\n      '#states':\n        visible:\n          ':input[name=\"table_02_first_name\"]':\n            filled: true\n      table_03_first_name:\n        '#type': textfield\n        '#title': 'First name (3)'\n        '#title_display': invisible\n      table_03_last_name:\n        '#type': textfield\n        '#title': 'Last name (3)'\n        '#title_display': invisible\n      table_03_gender:\n        '#type': select\n        '#title': 'Gender (3)'\n        '#title_display': invisible\n        '#options': gender\ndividers:\n  '#type': details\n  '#title': Dividers\n  '#open': true\n  horizontal_rule_dotted_medium:\n    '#type': webform_horizontal_rule\n    '#attributes':\n      class:\n        - webform-horizontal-rule--dotted\n        - webform-horizontal-rule--medium\n  horizontal_rule_dashed_medium:\n    '#type': webform_horizontal_rule\n    '#attributes':\n      class:\n        - webform-horizontal-rule--dashed\n        - webform-horizontal-rule--medium\n  horizontal_rule_gradient_medium:\n    '#type': webform_horizontal_rule\n    '#attributes':\n      class:\n        - webform-horizontal-rule--gradient\n        - webform-horizontal-rule--medium\n  horizontal_rule_flaired:\n    '#type': webform_horizontal_rule\n    '#attributes':\n      class:\n        - webform-horizontal-rule--flaired\n  horizontal_rule_glyph:\n    '#type': webform_horizontal_rule\n    '#attributes':\n      class:\n        - webform-horizontal-rule--glyph\nmessages:\n  '#type': details\n  '#title': Messages\n  '#open': true\n  message_info:\n    '#type': webform_message\n    '#message_type': info\n    '#message_message': 'This is an <strong>info</strong> message.'\n    '#message_close': true\n  message_status:\n    '#type': webform_message\n    '#message_message': 'This is a <strong>status</strong> message.'\n    '#message_close': true\n  message_warning:\n    '#type': webform_message\n    '#message_type': warning\n    '#message_message': 'This is a <strong>warning</strong> message.'\n    '#message_close': true\n  message_error:\n    '#type': webform_message\n    '#message_type': error\n    '#message_message': 'This is a <strong>error</strong> message.'\n    '#message_close': true\nflexbox:\n  '#type': details\n  '#title': Flexbox\n  '#open': true\n  webform_flexbox:\n    '#type': webform_flexbox\n    '#title': 'Flexbox elements'\n    element_flex_1:\n      '#type': textfield\n      '#title': 'Element (Flex: 1)'\n      '#flex': 1\n    element_flex_2:\n      '#type': textfield\n      '#title': 'Element (Flex: 2)'\n      '#flex': 2\n    element_flex_3:\n      '#type': textfield\n      '#title': 'Element (Flex: 3)'\n      '#flex': 3\ncontrib:\n  '#type': details\n  '#title': 'Contrib modules'\n  '#open': true\n  address:\n    '#type': address\n    '#title': Address\n    '#description': '@see <a href=\"https://www.drupal.org/project/address\">https://www.drupal.org/project/address</a>'\n"
+elements: |
+  introduction:
+    '#markup': '<p>Below is a style guide containing examples of all elements and layouts.</p>'
+  basic_elements:
+    '#type': details
+    '#title': 'Basic elements'
+    '#open': true
+    textfield:
+      '#type': textfield
+      '#title': 'Text field'
+    textarea:
+      '#type': textarea
+      '#title': Textarea
+    select:
+      '#type': select
+      '#title': Select
+      '#options':
+        one: One
+        two: Two
+        three: Three
+    select_select2:
+      '#type': select
+      '#title': 'Select (Select2)'
+      '#options':
+        one: One
+        two: Two
+        three: Three
+      '#select2': true
+    select_multiple:
+      '#type': select
+      '#title': 'Select multiple'
+      '#options':
+        one: One
+        two: Two
+        three: Three
+      '#multiple': true
+    select_multiple_select2:
+      '#type': select
+      '#title': 'Select multiple (Select2)'
+      '#options':
+        one: One
+        two: Two
+        three: Three
+      '#multiple': true
+      '#select2': true
+    checkboxes:
+      '#type': checkboxes
+      '#title': Checkboxes
+      '#options_display': side_by_side
+      '#options':
+        one: One
+        two: Two
+        three: Three
+    checkboxes_help:
+      '#type': checkboxes
+      '#title': 'Checkboxes with help text'
+      '#options_display': side_by_side
+      '#options_description_display': help
+      '#options':
+        one: 'One -- This is help text.'
+        two: 'Two -- This is help text.'
+        three: 'Three -- This is  help text.'
+    checkboxes_description:
+      '#type': checkboxes
+      '#title': 'Checkboxes with descriptions'
+      '#options_description_display': description
+      '#options':
+        one: 'One -- This is a description.'
+        two: 'Two -- This is a description.'
+        three: 'Three -- This is a description.'
+    radios:
+      '#type': radios
+      '#title': Radios
+      '#options_display': side_by_side
+      '#options':
+        one: One
+        two: Two
+        three: Three
+    radios_buttons:
+      '#type': radios
+      '#title': 'Radios (Buttons)'
+      '#options_display': buttons
+      '#options':
+        one: One
+        two: Two
+        three: Three
+  date_elements:
+    '#type': details
+    '#title': 'Date elements'
+    '#open': true
+    date:
+      '#type': date
+      '#title': Date
+    datetime:
+      '#type': datetime
+      '#title': Date/time
+    datelist:
+      '#type': datelist
+      '#title': 'Date list'
+    date_datepicker:
+      '#type': date
+      '#title': 'Date picker'
+      '#datepicker': true
+      '#date_date_format': 'D, m/d/Y'
+    webform_time:
+      '#type': webform_time
+      '#title': Time
+  advanced_elements:
+    '#type': details
+    '#title': 'Advanced elements'
+    '#open': true
+    email:
+      '#type': email
+      '#title': Email
+    email_multiple:
+      '#type': webform_email_multiple
+      '#title': 'Email multiple'
+    email_confirm:
+      '#type': webform_email_confirm
+      '#title': Email
+    tel:
+      '#type': tel
+      '#title': Telephone
+    tel_international:
+      '#type': tel
+      '#title': 'Telephone (International)'
+      '#international': true
+      '#telephone_validation_format': '0'
+    url:
+      '#type': url
+      '#title': URL
+    search:
+      '#type': search
+      '#title': Search
+    number:
+      '#type': number
+      '#title': Number
+      '#min': 0
+      '#max': 10
+      '#step': 1
+    range:
+      '#type': range
+      '#title': Range
+      '#min': 0
+      '#max': 100
+      '#step': 1
+      '#output': right
+      '#output__field_prefix': $
+      '#output__field_suffix': '.00'
+    color:
+      '#type': color
+      '#title': Color
+    text_format:
+      '#type': text_format
+      '#title': 'Text format'
+    managed_file:
+      '#type': managed_file
+      '#title': 'File upload'
+    managed_file_multiple:
+      '#type': managed_file
+      '#title': 'File upload multiple'
+      '#multiple': true
+    managed_file_button:
+      '#type': managed_file
+      '#title': 'File upload button'
+      '#button': true
+    tableselect:
+      '#type': tableselect
+      '#title': 'Table select'
+      '#options':
+        one: One
+        two: Two
+        three: Three
+    webform_tableselect_sort:
+      '#type': webform_tableselect_sort
+      '#title': 'Tableselect sort'
+      '#options':
+        one: One
+        two: Two
+    webform_table_sort:
+      '#type': webform_table_sort
+      '#title': 'Table sort'
+      '#options':
+        one: One
+        two: Two
+        three: Three
+    webform_autocomplete:
+      '#type': webform_autocomplete
+      '#title': Autocomplete
+      '#autocomplete_items': country_names
+    webform_buttons:
+      '#type': webform_buttons
+      '#title': Buttons
+      '#options':
+        one: One
+        two: Two
+        three: Three
+    webform_codemirror:
+      '#type': webform_codemirror
+      '#title': CodeMirror
+      '#mode': yaml
+    webform_height:
+      '#type': webform_height
+      '#title': Height
+    webform_image_select:
+      '#type': webform_image_select
+      '#title': 'Image select'
+      '#show_label': true
+      '#images':
+        kitten_1:
+          text: 'Cute Kitten 1'
+          src: 'http://placekitten.com/220/200'
+        kitten_2:
+          text: 'Cute Kitten 2'
+          src: 'http://placekitten.com/180/200'
+        kitten_3:
+          text: 'Cute Kitten 3'
+          src: 'http://placekitten.com/130/200'
+    webform_rating:
+      '#type': webform_rating
+      '#title': Rating
+    webform_scale:
+      '#type': webform_scale
+      '#title': Scale
+      '#min': 1
+      '#max': 10
+      '#min_text': '1 = disagree'
+      '#max_text': '10 = agree'
+    webform_signature:
+      '#type': webform_signature
+      '#title': Signature
+    webform_terms_of_service:
+      '#type': webform_terms_of_service
+      '#terms_content': 'These are the terms of service.'
+    webform_likert:
+      '#type': webform_likert
+      '#title': Likert
+      '#questions':
+        q1: 'Please answer question 1?'
+        q2: 'How about now answering question 2?'
+        q3: 'Finally, here is question 3?'
+      '#answers':
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+  entity_reference_elements:
+    '#type': details
+    '#title': 'Entity reference elements'
+    '#open': true
+    entity_autocomplete:
+      '#type': entity_autocomplete
+      '#title': 'Entity autocomplete'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+    entity_autocomplete_tags:
+      '#type': entity_autocomplete
+      '#title': 'Entity autocomplete tags'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+      '#tags': true
+    entity_autocomplete_multiple:
+      '#type': entity_autocomplete
+      '#title': 'Entity autocomplete multiple'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+      '#multiple': true
+    webform_entity_checkboxes:
+      '#type': webform_entity_checkboxes
+      '#title': 'Entity checkboxes'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+      '#options':
+        1: Administrator
+        0: Anonymous
+    webform_entity_radios:
+      '#type': webform_entity_radios
+      '#title': 'Entity radios'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+      '#options':
+        1: Administrator
+        0: Anonymous
+    webform_entity_select:
+      '#type': webform_entity_select
+      '#title': 'Entity select'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+    webform_entity_select_multiple:
+      '#type': webform_entity_select
+      '#title': 'Entity select multiple'
+      '#target_type': user
+      '#selection_handler': 'default:user'
+      '#selection_settings':
+        include_anonymous: true
+      '#multiple': true
+      '#select2': true
+    webform_term_checkboxes:
+      '#type': webform_term_checkboxes
+      '#title': 'Term checkboxes'
+      '#vocabulary': tags
+    webform_term_select:
+      '#type': webform_term_select
+      '#title': 'Term select'
+      '#vocabulary': tags
+    webform_term_select_multiple:
+      '#type': webform_term_select
+      '#title': 'Term select multiple'
+      '#vocabulary': tags
+      '#multiple': true
+      '#select2': true
+  webform_composites:
+    '#type': details
+    '#title': 'Webform composites'
+    '#open': true
+    webform_addresses:
+      '#type': fieldset
+      '#title': Addresses
+      webform_address:
+        '#type': webform_address
+        '#title': 'First address'
+        '#flexbox': false
+        '#title_display': above
+      webform_same_address:
+        '#type': webform_same
+        '#title': 'Second address same as the first address'
+        '#source': webform_address
+        '#destination': webform_address_other
+        '#destination_state': visible-slide
+        '#default_value': true
+      webform_address_other:
+        '#type': webform_address
+        '#title': 'Second address'
+        '#flexbox': false
+        '#title_display': above
+    webform_link_multiple:
+      '#type': webform_link
+      '#title': 'Link multiple'
+      '#multiple': true
+      '#multiple__header': true
+    webform_custom_composite:
+      '#type': webform_custom_composite
+      '#title': 'Custom composite'
+      '#element':
+        first_name:
+          '#type': textfield
+          '#title': 'First name'
+        last_name:
+          '#type': textfield
+          '#title': 'Last name'
+        sex:
+          '#type': webform_select_other
+          '#options': sex
+          '#title': Sex
+        martial_status:
+          '#type': webform_select_other
+          '#options': marital_status
+          '#title': 'Martial status'
+        employment_status:
+          '#type': webform_select_other
+          '#options': employment_status
+          '#title': 'Employment status'
+        age:
+          '#type': number
+          '#title': Age
+  form_elements:
+    '#type': details
+    '#title': 'Form elements'
+    '#open': true
+    form_element:
+      '#type': textfield
+      '#title': 'Form element'
+      '#description': '{description}'
+      '#size': 5
+      '#field_prefix': $
+      '#field_suffix': '.00'
+    form_element_required:
+      '#type': textfield
+      '#title': 'Form element (Required)'
+      '#required': true
+      '#default_value': '{value}'
+      '#attributes':
+        class:
+          - error
+    form_element_disabled:
+      '#type': textfield
+      '#title': 'Form element (Disabled)'
+      '#default_value': '{value}'
+      '#disabled': true
+    form_element_input_mask:
+      '#type': textfield
+      '#title': 'Form element (Input mask: Phone)'
+      '#input_mask': '(999) 999-9999'
+      '#test': ''
+    form_element_input_hide:
+      '#type': textfield
+      '#title': 'Form element (Input hiding)'
+      '#input_hide': true
+      '#default_value': '{value}'
+    title_display_before:
+      '#type': textfield
+      '#title': 'Title displayed before'
+      '#title_display': before
+      '#description': 'This is a description.'
+    title_display_after:
+      '#type': textfield
+      '#title': 'Title displayed after'
+      '#title_display': after
+      '#description': 'This is a description.'
+    title_help:
+      '#type': textfield
+      '#title': 'Title with help (tooltip)'
+      '#help': 'This is help displayed in a tooltip. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.'
+    title_display_inline:
+      '#type': textfield
+      '#title': 'Title displayed inline'
+      '#title_display': inline
+      '#description': 'This is a description.'
+    description_display_before:
+      '#type': textfield
+      '#title': 'Description displayed before'
+      '#description': 'This description is displayed before the input.'
+      '#description_display': before
+    description_display_tooltip:
+      '#type': textfield
+      '#title': 'Description displayed in tooltip'
+      '#description': 'This description is displayed in a tooltip. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.'
+      '#description_display': tooltip
+    description_more:
+      '#type': textfield
+      '#title': 'Description with (read) more'
+      '#description': 'This is a description.'
+      '#more': 'This is more text'
+  container_elements:
+    '#type': details
+    '#title': 'Containers elements'
+    '#open': true
+    details:
+      '#type': details
+      '#title': Details
+      '#description': 'This is a description.'
+    fieldset:
+      '#type': fieldset
+      '#title': Fieldset
+      '#description': 'This is a description.'
+    webform_section:
+      '#type': webform_section
+      '#title': Section
+      '#description': 'This is a description.'
+    container_form_inline:
+      '#type': container
+      '#attributes':
+        class:
+          - 'form--inline clearfix'
+      form_inline_01:
+        '#title': 'Form inline 01'
+        '#type': textfield
+        '#size': 10
+      form_inline_02:
+        '#title': 'Form inline 02'
+        '#type': textfield
+        '#size': 10
+    container_inline:
+      '#title': 'Container inline'
+      '#type': textfield
+      '#wrapper_attributes':
+        class:
+          - 'container-inline clearfix'
+    table:
+      '#type': webform_table
+      '#title': Table
+      '#header':
+        - title: 'First Name'
+          attributes:
+            style: 'width: 40%'
+        - title: 'Last Name'
+          attributes:
+            style: 'width: 40%'
+        - title: Gender
+          attributes:
+            style: 'width: 20%'
+      table_01:
+        '#type': webform_table_row
+        '#title': 'Person (1)'
+        table_01_first_name:
+          '#type': textfield
+          '#title': 'First name (1)'
+          '#title_display': invisible
+        table_01_last_name:
+          '#type': textfield
+          '#title': 'Last name (1)'
+          '#title_display': invisible
+        table_01_gender:
+          '#type': select
+          '#title': 'Gender (1)'
+          '#title_display': invisible
+          '#options': gender
+      table_02:
+        '#type': webform_table_row
+        '#title': 'Person (2)'
+        '#states':
+          visible:
+            ':input[name="table_01_first_name"]':
+              filled: true
+        table_02_first_name:
+          '#type': textfield
+          '#title': 'First name (2)'
+          '#title_display': invisible
+        table_02_last_name:
+          '#type': textfield
+          '#title': 'Last name (2)'
+          '#title_display': invisible
+        table_02_gender:
+          '#type': select
+          '#title': 'Gender (2)'
+          '#title_display': invisible
+          '#options': gender
+      table_03:
+        '#type': webform_table_row
+        '#title': 'Person (3)'
+        '#states':
+          visible:
+            ':input[name="table_02_first_name"]':
+              filled: true
+        table_03_first_name:
+          '#type': textfield
+          '#title': 'First name (3)'
+          '#title_display': invisible
+        table_03_last_name:
+          '#type': textfield
+          '#title': 'Last name (3)'
+          '#title_display': invisible
+        table_03_gender:
+          '#type': select
+          '#title': 'Gender (3)'
+          '#title_display': invisible
+          '#options': gender
+  dividers:
+    '#type': details
+    '#title': Dividers
+    '#open': true
+    horizontal_rule_dotted_medium:
+      '#type': webform_horizontal_rule
+      '#attributes':
+        class:
+          - webform-horizontal-rule--dotted
+          - webform-horizontal-rule--medium
+    horizontal_rule_dashed_medium:
+      '#type': webform_horizontal_rule
+      '#attributes':
+        class:
+          - webform-horizontal-rule--dashed
+          - webform-horizontal-rule--medium
+    horizontal_rule_gradient_medium:
+      '#type': webform_horizontal_rule
+      '#attributes':
+        class:
+          - webform-horizontal-rule--gradient
+          - webform-horizontal-rule--medium
+    horizontal_rule_flaired:
+      '#type': webform_horizontal_rule
+      '#attributes':
+        class:
+          - webform-horizontal-rule--flaired
+    horizontal_rule_glyph:
+      '#type': webform_horizontal_rule
+      '#attributes':
+        class:
+          - webform-horizontal-rule--glyph
+  messages:
+    '#type': details
+    '#title': Messages
+    '#open': true
+    message_info:
+      '#type': webform_message
+      '#message_type': info
+      '#message_message': 'This is an <strong>info</strong> message.'
+      '#message_close': true
+    message_status:
+      '#type': webform_message
+      '#message_message': 'This is a <strong>status</strong> message.'
+      '#message_close': true
+    message_warning:
+      '#type': webform_message
+      '#message_type': warning
+      '#message_message': 'This is a <strong>warning</strong> message.'
+      '#message_close': true
+    message_error:
+      '#type': webform_message
+      '#message_type': error
+      '#message_message': 'This is a <strong>error</strong> message.'
+      '#message_close': true
+  flexbox:
+    '#type': details
+    '#title': Flexbox
+    '#open': true
+    webform_flexbox:
+      '#type': webform_flexbox
+      '#title': 'Flexbox elements'
+      element_flex_1:
+        '#type': textfield
+        '#title': 'Element (Flex: 1)'
+        '#flex': 1
+      element_flex_2:
+        '#type': textfield
+        '#title': 'Element (Flex: 2)'
+        '#flex': 2
+      element_flex_3:
+        '#type': textfield
+        '#title': 'Element (Flex: 3)'
+        '#flex': 3
+  contrib:
+    '#type': details
+    '#title': 'Contrib modules'
+    '#open': true
+    address:
+      '#type': address
+      '#title': Address
+      '#description': '@see <a href="https://www.drupal.org/project/address">https://www.drupal.org/project/address</a>'
 css: ''
 javascript: ''
 settings:

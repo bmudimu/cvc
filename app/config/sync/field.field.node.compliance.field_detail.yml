@@ -1,0 +1,19 @@
+uuid: e16eb436-35e0-41be-a5c0-94b3897db7de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_detail
+    - node.type.compliance
+id: node.compliance.field_detail
+field_name: field_detail
+entity_type: node
+bundle: compliance
+label: Detail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

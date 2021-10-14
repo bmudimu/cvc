@@ -1,0 +1,5 @@
+name: Views Custom Table
+description: Allows the filtering tables using the client name
+type: module
+core_version_requirement: ^8.8 | ^9.0
+package: custom

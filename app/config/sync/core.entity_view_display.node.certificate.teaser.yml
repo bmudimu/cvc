@@ -4,27 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.certificate.body
+    - field.field.node.certificate.field_authority
+    - field.field.node.certificate.field_certificate_category
+    - field.field.node.certificate.field_certificate_name
     - node.type.certificate
   module:
-    - text
     - user
 id: node.certificate.teaser
 targetEntityType: node
 bundle: certificate
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_authority: true
+  field_certificate_category: true
+  field_certificate_name: true

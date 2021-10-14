@@ -1,0 +1,47 @@
+uuid: c019e887-c762-479c-8c02-98a90d3a7975
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.esg_report.body
+    - field.field.node.esg_report.layout_builder__layout
+    - node.type.esg_report
+  module:
+    - text
+id: node.esg_report.default
+targetEntityType: node
+bundle: esg_report
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  layout_builder__layout: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

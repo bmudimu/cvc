@@ -1,0 +1,29 @@
+uuid: 73ece8eb-460b-40fc-815b-5e989fd075cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.job_type_creat_lost
+    - taxonomy.vocabulary.quarters
+id: node.job_type_creat_lost.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: job_type_creat_lost
+label: Quarter
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

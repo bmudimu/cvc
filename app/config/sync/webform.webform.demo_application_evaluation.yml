@@ -17,7 +17,30 @@ id: demo_application_evaluation
 title: 'Demo: Application Evaluation'
 description: 'A demonstration of a very basic application evaluation form. This form is attached to the ''Demo: Application'' using a Webform block.'
 category: Demo
-elements: "application_evaluation:\n  '#type': fieldset\n  '#title': 'Application evaluation'\n  '#attributes':\n    style: 'background-color: #f5f5f2'\n  '#format': custom\n  '#format_html': |\n    {{ children }}\n    <div>{{ 'Submitted by'|t }}: <em>[webform_submission:user]</em></div>\n    <hr/>\n\n  '#format_text': |\n    {{ children }}\n    {{ 'Submitted by'|t }} [webform_submission:user]\n    ------------------------------------------------------------\n\n  rating:\n    '#type': webform_rating\n    '#title': Rating\n    '#required': true\n  comments:\n    '#type': textarea\n    '#title': Comments\n"
+elements: |
+  application_evaluation:
+    '#type': fieldset
+    '#title': 'Application evaluation'
+    '#attributes':
+      style: 'background-color: #f5f5f2'
+    '#format': custom
+    '#format_html': |
+      {{ children }}
+      <div>{{ 'Submitted by'|t }}: <em>[webform_submission:user]</em></div>
+      <hr/>
+
+    '#format_text': |
+      {{ children }}
+      {{ 'Submitted by'|t }} [webform_submission:user]
+      ------------------------------------------------------------
+
+    rating:
+      '#type': webform_rating
+      '#title': Rating
+      '#required': true
+    comments:
+      '#type': textarea
+      '#title': Comments
 css: ''
 javascript: ''
 settings:

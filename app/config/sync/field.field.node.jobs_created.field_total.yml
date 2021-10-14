@@ -1,0 +1,25 @@
+uuid: a2fb5ed3-3bf8-4fd6-8b45-bc5393854578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total
+    - node.type.jobs_created
+id: node.jobs_created.field_total
+field_name: field_total
+entity_type: node
+bundle: jobs_created
+label: Total
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

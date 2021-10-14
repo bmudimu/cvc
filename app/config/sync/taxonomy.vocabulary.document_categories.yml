@@ -1,0 +1,8 @@
+uuid: 54d6ffe3-d0df-44a4-ada9-a0212ac819a4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Document Categories'
+vid: document_categories
+description: 'Lists all <em>Document Categories</em>'
+weight: 0

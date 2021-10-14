@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Contains client_list.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * 
+ * Alters the client options on manage client pages
+ */
+
+function client_list_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+    //if not the view we need, move on
+    if ($form['#id'] != 'views-exposed-form-certificates-list-view-compliance-checklist-page') {
+        return false;
+    }
+
+    //Query nodes
+    $storage = Drupal::getContainer()->get('entity_type.manager')->getStorage('node');
+    $nids = $storage->getQuery();
+
+    //Gather published client nodes and sort by client name
+    $nids = $nids->condition('type', 'client')->condition('status', 1)->sort('title')->execute();
+
+    //If there are no nodes, move on
+    if (!$nids) {
+        return false;
+    }
+
+    //Start building the list
+    $options = [];
+    $nodes = $storage->loadMultiple($nids);
+
+    //Push titles into select list
+    foreach ($nodes as $node) {
+        $options[$node->id()] = $node->getTitle();
+    }
+
+    //Start building the form element
+    $client_field = 'field_client_name';
+    $form[$client_field]['#type'] = 'select';
+    $form[$client_field]['multiple'] = false;
+
+    //Specify the empty option for the list
+    $form[$client_field]['empty_option'] = t('Client');
+
+    //Add the options from above to select list
+    $form[$client_field]['#options'] = $options;
+    unset($form[$client_field]['#size']);
+}

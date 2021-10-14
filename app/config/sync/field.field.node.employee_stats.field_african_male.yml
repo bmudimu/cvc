@@ -1,0 +1,25 @@
+uuid: 6a076fcf-0714-4ab7-b28d-52753a9ec357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_african_male
+    - node.type.employee_stats
+id: node.employee_stats.field_african_male
+field_name: field_african_male
+entity_type: node
+bundle: employee_stats
+label: 'African Male'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

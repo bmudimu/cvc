@@ -1,0 +1,56 @@
+uuid: 3dfdd224-5e8e-442f-a5c1-037d2364d7c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jobs_created.field_african_female
+    - field.field.node.jobs_created.field_african_male
+    - field.field.node.jobs_created.field_client_name
+    - field.field.node.jobs_created.field_coloured_female
+    - field.field.node.jobs_created.field_coloured_male
+    - field.field.node.jobs_created.field_disabled
+    - field.field.node.jobs_created.field_foreign_female
+    - field.field.node.jobs_created.field_foreign_male
+    - field.field.node.jobs_created.field_indian_female
+    - field.field.node.jobs_created.field_indian_male
+    - field.field.node.jobs_created.field_notes
+    - field.field.node.jobs_created.field_occupational_level
+    - field.field.node.jobs_created.field_quarter
+    - field.field.node.jobs_created.field_total
+    - field.field.node.jobs_created.field_under_35
+    - field.field.node.jobs_created.field_white_female
+    - field.field.node.jobs_created.field_white_male
+    - field.field.node.jobs_created.field_year
+    - node.type.jobs_created
+  module:
+    - user
+id: node.jobs_created.teaser
+targetEntityType: node
+bundle: jobs_created
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_african_female: true
+  field_african_male: true
+  field_client_name: true
+  field_coloured_female: true
+  field_coloured_male: true
+  field_disabled: true
+  field_foreign_female: true
+  field_foreign_male: true
+  field_indian_female: true
+  field_indian_male: true
+  field_notes: true
+  field_occupational_level: true
+  field_quarter: true
+  field_total: true
+  field_under_35: true
+  field_white_female: true
+  field_white_male: true
+  field_year: true

@@ -1,0 +1,55 @@
+<?php
+/**
+ * Implements HOOK_views_pre_view().
+ *
+ * Adds a field to the User Roles view for each role defined.
+ */
+function views_urt_views_pre_view(&$view) {
+  if ($view->name == 'user_roles') {
+    $roles = views_urt_roles();
+    $count = count($roles);
+    for($i=0;$i<$count;$i++) {
+      $view->display['default']->handler->options['fields']['rid_' . $i]['id'] = 'rid_' . $i;
+      $view->display['default']->handler->options['fields']['rid_' . $i]['table'] = 'users_roles';
+      $view->display['default']->handler->options['fields']['rid_' . $i]['field'] = 'rid';
+      $view->display['default']->handler->options['fields']['rid_' . $i]['label'] = $roles[$i];
+
+    }
+  }
+}
+
+/**
+ * Determines if a comma-seperated list of roles contains the role of the
+ * current column.
+ *
+ * @param $pos integer
+ *   The column corresponding to the $field->position value in the view.
+ * @param $user_roles string
+ *   Comma seperated list of Roles (haystack)
+ * @return bool
+ */
+function views_urt_has_role($pos, $user_roles) {
+  $pos = ($pos -1);
+  $user_roles = explode(',', $user_roles);
+  $defined_roles = views_urt_roles();
+  foreach ($user_roles as $user_role) {
+    if (trim($user_role) == $defined_roles[$pos]) {
+      return TRUE;
+    }
+  }
+  return FALSE;
+}
+
+/**
+ * Helper function that returns an array of roles exluding "Anonymous" and
+ * "Authenticated" user.
+ *
+ * @return array
+ *   An array of roles.
+ */
+function views_urt_roles() {
+  $roles = user_roles();
+  array_shift($roles);
+  array_shift($roles);
+  return $roles;
+}

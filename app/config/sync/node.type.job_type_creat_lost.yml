@@ -1,0 +1,17 @@
+uuid: 6a0067f7-f142-40a2-93ca-07ccc1895e7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Job Type Created or Lost'
+type: job_type_creat_lost
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -17,7 +17,77 @@ id: example_input_masks
 title: 'Example: Input Masks'
 description: 'Examples of elements with <a href="https://github.com/RobinHerbots/jquery.inputmask">input masks</a>.'
 category: Example
-elements: "masks:\n  '#type': details\n  '#title': 'Simple masks'\n  '#open': true\n  phone:\n    '#type': textfield\n    '#title': Phone\n    '#input_mask': '(999) 999-9999'\n  zip:\n    '#type': textfield\n    '#title': 'ZIP Code'\n    '#input_mask': '99999[-9999]'\n  ssn:\n    '#type': textfield\n    '#title': SSN\n    '#input_mask': 999-99-9999\n  license_plate:\n    '#type': textfield\n    '#title': 'License plate'\n    '#input_mask': '[9-]AAA-999'\naliases:\n  '#type': details\n  '#title': Aliases\n  '#open': true\n  email:\n    '#type': textfield\n    '#title': Email\n    '#input_mask': '''alias'': ''email'''\n  datetime:\n    '#type': textfield\n    '#title': 'Date time (2007-06-09''T''17:46:21)'\n    '#input_mask': '''alias'': ''datetime'''\n  currency:\n    '#type': textfield\n    '#title': Currency\n    '#input_mask': '''alias'': ''currency'''\n    '#attributes':\n      style: 'text-align: right'\n  numeric:\n    '#type': textfield\n    '#title': Numeric\n    '#input_mask': '''alias'': ''numeric'', ''groupSeparator'': '','', ''autoGroup'': true, ''digits'': 2, ''digitsOptional'': false, ''prefix'': ''$ '', ''placeholder'': ''0'''\n    '#attributes':\n      style: 'text-align: right'\n  percentage:\n    '#type': textfield\n    '#title': 'Percentage (default)'\n    '#input_mask': '''alias'': ''percentage'''\n    '#attributes':\n      style: 'text-align: right'\n  ip:\n    '#type': textfield\n    '#title': 'IP address'\n    '#input_mask': '''alias'': ''ip'''\n  mac:\n    '#type': textfield\n    '#title': 'MAC addresses'\n    '#input_mask': '''alias'': ''mac'''\n  vin:\n    '#type': textfield\n    '#title': 'VIN (Vehicle identification number)'\n    '#input_mask': '''alias'': ''vin'''\n  uppercase:\n    '#type': textfield\n    '#title': UPPERCASE\n    '#input_mask': '''casing'': ''upper'''\n  lowercase:\n    '#type': textfield\n    '#title': lowercase\n    '#input_mask': '''casing'': ''lower'''\n"
+elements: |
+  masks:
+    '#type': details
+    '#title': 'Simple masks'
+    '#open': true
+    phone:
+      '#type': textfield
+      '#title': Phone
+      '#input_mask': '(999) 999-9999'
+    zip:
+      '#type': textfield
+      '#title': 'ZIP Code'
+      '#input_mask': '99999[-9999]'
+    ssn:
+      '#type': textfield
+      '#title': SSN
+      '#input_mask': 999-99-9999
+    license_plate:
+      '#type': textfield
+      '#title': 'License plate'
+      '#input_mask': '[9-]AAA-999'
+  aliases:
+    '#type': details
+    '#title': Aliases
+    '#open': true
+    email:
+      '#type': textfield
+      '#title': Email
+      '#input_mask': '''alias'': ''email'''
+    datetime:
+      '#type': textfield
+      '#title': 'Date time (2007-06-09''T''17:46:21)'
+      '#input_mask': '''alias'': ''datetime'''
+    currency:
+      '#type': textfield
+      '#title': Currency
+      '#input_mask': '''alias'': ''currency'''
+      '#attributes':
+        style: 'text-align: right'
+    numeric:
+      '#type': textfield
+      '#title': Numeric
+      '#input_mask': '''alias'': ''numeric'', ''groupSeparator'': '','', ''autoGroup'': true, ''digits'': 2, ''digitsOptional'': false, ''prefix'': ''$ '', ''placeholder'': ''0'''
+      '#attributes':
+        style: 'text-align: right'
+    percentage:
+      '#type': textfield
+      '#title': 'Percentage (default)'
+      '#input_mask': '''alias'': ''percentage'''
+      '#attributes':
+        style: 'text-align: right'
+    ip:
+      '#type': textfield
+      '#title': 'IP address'
+      '#input_mask': '''alias'': ''ip'''
+    mac:
+      '#type': textfield
+      '#title': 'MAC addresses'
+      '#input_mask': '''alias'': ''mac'''
+    vin:
+      '#type': textfield
+      '#title': 'VIN (Vehicle identification number)'
+      '#input_mask': '''alias'': ''vin'''
+    uppercase:
+      '#type': textfield
+      '#title': UPPERCASE
+      '#input_mask': '''casing'': ''upper'''
+    lowercase:
+      '#type': textfield
+      '#title': lowercase
+      '#input_mask': '''casing'': ''lower'''
 css: ''
 javascript: ''
 settings:

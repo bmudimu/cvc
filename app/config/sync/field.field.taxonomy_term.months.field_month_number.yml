@@ -1,0 +1,23 @@
+uuid: 24d54a5d-3a8a-4b9e-8bf7-0e53e61b3b48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_month_number
+    - taxonomy.vocabulary.months
+id: taxonomy_term.months.field_month_number
+field_name: field_month_number
+entity_type: taxonomy_term
+bundle: months
+label: 'Month Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 12
+  prefix: ''
+  suffix: ''
+field_type: integer

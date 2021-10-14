@@ -1,0 +1,25 @@
+uuid: 7f44fd83-b0da-4477-9fc6-3029f05f6cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foreign_male
+    - node.type.employee_stats
+id: node.employee_stats.field_foreign_male
+field_name: field_foreign_male
+entity_type: node
+bundle: employee_stats
+label: 'Foreign Male'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -19,7 +19,12 @@ id: webform_example_handler
 title: 'Example: Webform Handler'
 description: 'An example of a custom Webform handler.'
 category: Example
-elements: "value:\n  '#type': textfield\n  '#title': Value\n  '#required': true\n  '#description': 'Enter a value to displayed in a custom message.'\n"
+elements: |
+  value:
+    '#type': textfield
+    '#title': Value
+    '#required': true
+    '#description': 'Enter a value to displayed in a custom message.'
 css: ''
 javascript: ''
 settings:

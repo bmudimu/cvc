@@ -1,0 +1,31 @@
+uuid: 8cb325cc-5a4f-4703-aac9-993f0dde0573
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cover_page_block
+    - field.field.block_content.cover_page_block.field_cover
+id: block_content.cover_page_block.default
+targetEntityType: block_content
+bundle: cover_page_block
+mode: default
+content:
+  field_cover:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

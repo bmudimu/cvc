@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.testimport.body
     - field.field.node.testimport.field_client_name
     - field.field.node.testimport.field_quarter
+    - field.field.node.testimport.field_review
     - node.type.testimport
   module:
     - text
     - user
+    - webform
 id: node.testimport.default
 targetEntityType: node
 bundle: testimport
@@ -37,6 +39,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_review:
+    weight: 104
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
   links:
     weight: 100

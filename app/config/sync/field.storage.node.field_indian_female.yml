@@ -1,0 +1,20 @@
+uuid: 53f3c383-7fa0-4727-a685-68eef485f094
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_indian_female
+field_name: field_indian_female
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

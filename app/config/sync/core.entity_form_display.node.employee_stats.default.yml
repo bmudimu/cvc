@@ -1,0 +1,173 @@
+uuid: 09a2553c-ccf8-4a4f-90f4-d2ba4a7a0686
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_stats.field_african_female
+    - field.field.node.employee_stats.field_african_male
+    - field.field.node.employee_stats.field_client_name
+    - field.field.node.employee_stats.field_coloured_female
+    - field.field.node.employee_stats.field_coloured_male
+    - field.field.node.employee_stats.field_disabled
+    - field.field.node.employee_stats.field_foreign_female
+    - field.field.node.employee_stats.field_foreign_male
+    - field.field.node.employee_stats.field_indian_female
+    - field.field.node.employee_stats.field_indian_male
+    - field.field.node.employee_stats.field_notes
+    - field.field.node.employee_stats.field_occupational_level
+    - field.field.node.employee_stats.field_quarter
+    - field.field.node.employee_stats.field_total
+    - field.field.node.employee_stats.field_under_35
+    - field.field.node.employee_stats.field_white_female
+    - field.field.node.employee_stats.field_white_male
+    - field.field.node.employee_stats.field_year
+    - node.type.employee_stats
+id: node.employee_stats.default
+targetEntityType: node
+bundle: employee_stats
+mode: default
+content:
+  field_african_female:
+    weight: 10
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_african_male:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_client_name:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_coloured_female:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_coloured_male:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_disabled:
+    weight: 16
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_foreign_female:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_foreign_male:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_indian_female:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_indian_male:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_notes:
+    weight: 18
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_occupational_level:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_quarter:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_total:
+    weight: 15
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_under_35:
+    weight: 17
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_white_female:
+    weight: 13
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_white_male:
+    weight: 8
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_year:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 19
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

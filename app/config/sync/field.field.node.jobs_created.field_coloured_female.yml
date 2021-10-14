@@ -1,0 +1,25 @@
+uuid: 4b10d370-da69-4e06-ab1a-e353d97ef27e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coloured_female
+    - node.type.jobs_created
+id: node.jobs_created.field_coloured_female
+field_name: field_coloured_female
+entity_type: node
+bundle: jobs_created
+label: 'Coloured Female'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

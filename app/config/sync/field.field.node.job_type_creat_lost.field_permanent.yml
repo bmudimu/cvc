@@ -1,0 +1,25 @@
+uuid: 9afc3484-c457-43a4-ae9c-8b80ccec063c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_permanent
+    - node.type.job_type_creat_lost
+id: node.job_type_creat_lost.field_permanent
+field_name: field_permanent
+entity_type: node
+bundle: job_type_creat_lost
+label: Permanent
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

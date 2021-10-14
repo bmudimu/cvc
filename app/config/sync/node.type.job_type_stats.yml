@@ -1,0 +1,17 @@
+uuid: 002392bf-5256-46a7-892a-92b80ac5f51b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Job Type Stats'
+type: job_type_stats
+description: 'Use <em>Job Type Stats</em> to capture counts of permanent or temporary jobs.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

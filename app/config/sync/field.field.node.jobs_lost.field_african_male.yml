@@ -1,0 +1,25 @@
+uuid: 5cfa0f20-bb29-44c2-8c77-60b12568dc49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_african_male
+    - node.type.jobs_lost
+id: node.jobs_lost.field_african_male
+field_name: field_african_male
+entity_type: node
+bundle: jobs_lost
+label: 'African Male'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

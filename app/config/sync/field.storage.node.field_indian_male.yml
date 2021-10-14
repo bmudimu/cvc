@@ -1,0 +1,20 @@
+uuid: 2b5e565c-1d6e-46c5-9da5-7b9f9285ce47
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_indian_male
+field_name: field_indian_male
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

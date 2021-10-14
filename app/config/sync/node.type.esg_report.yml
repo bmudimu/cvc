@@ -1,0 +1,17 @@
+uuid: e7f7ae56-2d11-41c9-9652-984e6702dec3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'ESG Report'
+type: esg_report
+description: 'Use <em>ESG Report </em> to create a final report with tables and charts '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

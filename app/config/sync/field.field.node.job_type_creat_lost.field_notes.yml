@@ -1,0 +1,19 @@
+uuid: 1445f9f3-8b87-4495-a15f-a87d501928da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.job_type_creat_lost
+id: node.job_type_creat_lost.field_notes
+field_name: field_notes
+entity_type: node
+bundle: job_type_creat_lost
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

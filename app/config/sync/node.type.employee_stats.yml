@@ -1,0 +1,17 @@
+uuid: b0568fb3-ea9e-4c37-ad8d-8d9c37a0b24f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Employee Stats'
+type: employee_stats
+description: 'Use <em>Employee Stats</em> to record the counts of employees. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

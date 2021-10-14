@@ -1,0 +1,32 @@
+uuid: fcab1e8e-c670-4cd7-8cf0-53d7a67a6d15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review
+    - node.type.testimport
+    - webform.webform.esg_matrix
+  module:
+    - webform
+id: node.testimport.field_review
+field_name: field_review
+entity_type: node
+bundle: testimport
+label: Review
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 9becfe22-8f69-4ecf-a5d7-60678cc7e7d1
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

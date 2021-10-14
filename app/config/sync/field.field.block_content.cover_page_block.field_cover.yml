@@ -1,0 +1,29 @@
+uuid: ac1a7b99-ea64-48b7-a615-d2acb343d03d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cover_page_block
+    - field.storage.block_content.field_cover
+    - node.type.cover_page
+id: block_content.cover_page_block.field_cover
+field_name: field_cover
+entity_type: block_content
+bundle: cover_page_block
+label: Cover
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cover_page: cover_page
+    sort:
+      field: field_client_name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

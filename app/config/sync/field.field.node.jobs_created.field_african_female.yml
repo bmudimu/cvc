@@ -1,0 +1,25 @@
+uuid: 578c0775-00f7-4d58-9313-0733bab251d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_african_female
+    - node.type.jobs_created
+id: node.jobs_created.field_african_female
+field_name: field_african_female
+entity_type: node
+bundle: jobs_created
+label: 'African Female'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

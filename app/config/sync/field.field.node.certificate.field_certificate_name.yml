@@ -1,0 +1,19 @@
+uuid: cd91d2c7-e009-4197-9d73-b3c25c396fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificate_name
+    - node.type.certificate
+id: node.certificate.field_certificate_name
+field_name: field_certificate_name
+entity_type: node
+bundle: certificate
+label: 'Certificate Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

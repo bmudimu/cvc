@@ -1,0 +1,25 @@
+uuid: 49b23a7a-364b-4658-8070-a1ec80d24eaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coloured_female
+    - node.type.employee_stats
+id: node.employee_stats.field_coloured_female
+field_name: field_coloured_female
+entity_type: node
+bundle: employee_stats
+label: 'Coloured Female'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

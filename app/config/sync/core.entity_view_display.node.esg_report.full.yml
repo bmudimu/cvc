@@ -1,0 +1,66 @@
+uuid: bd769728-bef5-4bed-b987-0f91a7e8f6ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.esg_report.body
+    - node.type.esg_report
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          815f0a75-a2e7-4207-8852-93afa2b9d474:
+            uuid: 815f0a75-a2e7-4207-8852-93afa2b9d474
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:esg_report:links'
+            additional: {  }
+            weight: 0
+          5bf8a375-7583-4a4c-85d5-3ee5ca35c50a:
+            uuid: 5bf8a375-7583-4a4c-85d5-3ee5ca35c50a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:esg_report:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: node.esg_report.full
+targetEntityType: node
+bundle: esg_report
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

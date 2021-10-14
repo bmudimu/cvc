@@ -1,0 +1,25 @@
+uuid: 4efc77b8-4c1c-458a-820f-96e6b0895671
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indian_male
+    - node.type.employee_stats
+id: node.employee_stats.field_indian_male
+field_name: field_indian_male
+entity_type: node
+bundle: employee_stats
+label: 'Indian Male'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

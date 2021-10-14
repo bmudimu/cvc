@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function resource_costs_views_data_alter(array &$data) {
+    $data['node']['resource_total'] = [
+        'title' => t('Resource Costs Total'),
+        'field' => [
+            'title' => t('Resource Costs Total'),
+            'help' => t('Total value of both electricity and water costs. <em>Appears on Resource Costs nodes only.</em>'),
+            'id' => 'resource_total',
+        ],
+    ];
+}
+
+/**
+ * Implements hook_theme().
+ */
+function resource_costs_theme($existing, $type, $theme, $path) {
+    \Drupal::moduleHandler()->loadInclude('resource_costs', 'inc', 'resource_costs.theme');
+    return [
+        'views_view_accordion' => [
+            'file' => 'resource_costs.theme.inc',
+        ],
+    ];
+}
+
+function resource_costs_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+    var_dump($form_id);
+   }

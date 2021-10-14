@@ -1,0 +1,29 @@
+uuid: cf14d477-1a9f-4ff1-b6f8-f8c30bd76e2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_type
+    - node.type.job_type_creat_lost
+    - taxonomy.vocabulary.statistics_categories
+id: node.job_type_creat_lost.field_job_type
+field_name: field_job_type
+entity_type: node
+bundle: job_type_creat_lost
+label: 'Job Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      statistics_categories: statistics_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: job_categories
+field_type: entity_reference

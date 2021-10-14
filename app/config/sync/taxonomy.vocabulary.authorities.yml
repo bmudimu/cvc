@@ -1,0 +1,8 @@
+uuid: 6f17e5f6-64b5-49ce-a27b-6322140d3464
+langcode: en
+status: true
+dependencies: {  }
+name: Authorities
+vid: authorities
+description: ''
+weight: 0

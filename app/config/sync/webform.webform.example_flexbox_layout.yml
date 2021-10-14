@@ -17,7 +17,109 @@ id: example_flexbox_layout
 title: 'Example: Flexbox layout'
 description: 'Examples of multiple column webform layout using <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>.'
 category: Example
-elements: "name:\n  '#type': webform_flexbox\n  title:\n    '#type': textfield\n    '#title': Title\n  first_name:\n    '#type': textfield\n    '#title': 'First name'\n    '#flex': 3\n  middle_name:\n    '#type': textfield\n    '#title': 'Middle name'\n    '#flex': 3\n  last_name:\n    '#type': textfield\n    '#title': 'Last name'\n    '#flex': 5\n  suffix:\n    '#type': textfield\n    '#title': Suffix\npersonal_information_1:\n  '#type': webform_flexbox\n  birth_date:\n    '#type': datelist\n    '#title': 'Birth date'\n    '#date_part_order':\n      - month\n      - day\n      - year\n  sex:\n    '#type': webform_radios_other\n    '#title': Sex\n    '#options': sex\n    '#options_display': two_columns\npersonal_information_2:\n  '#type': webform_flexbox\n  ethnicity:\n    '#type': webform_checkboxes_other\n    '#title': Ethnicity\n    '#options': ethnicity\n    '#options_display': three_columns\n  marital_status:\n    '#type': radios\n    '#title': 'Marital status'\n    '#options': marital_status\n    '#options_display': two_columns\nwork:\n  '#type': webform_flexbox\n  employment_status:\n    '#type': webform_select_other\n    '#title': 'Employment status'\n    '#options': employment_status\n  industry:\n    '#type': webform_select_other\n    '#title': 'If employed, industry of employer'\n    '#options': industry\naddress_line_1:\n  '#type': webform_flexbox\n  address:\n    '#type': textfield\n    '#title': 'Street address (Line 1)'\naddress_line_2:\n  '#type': webform_flexbox\n  address_1:\n    '#type': textfield\n    '#title': 'Street address (Line 2)'\naddress_line_3:\n  '#type': webform_flexbox\n  city:\n    '#type': textfield\n    '#title': City\n  state_province:\n    '#type': webform_select_other\n    '#title': State/Province\n    '#options': state_province_names\n  zip:\n    '#type': textfield\n    '#title': ZIP\naddress_line_4:\n  country:\n    '#type': select\n    '#title': Country\n    '#options': country_names\nphone_number:\n  '#type': webform_flexbox\n  mobile_phone:\n    '#type': tel\n    '#title': 'Mobile phone'\n  home_phone:\n    '#type': tel\n    '#title': 'Home phone'\n  work_phone:\n    '#type': tel\n    '#title': 'Home phone'\nweb:\n  '#type': webform_flexbox\n  email:\n    '#type': email\n    '#title': 'Email address'\n  url:\n    '#type': url\n    '#title': 'Home page (URL)'\n"
+elements: |
+  name:
+    '#type': webform_flexbox
+    title:
+      '#type': textfield
+      '#title': Title
+    first_name:
+      '#type': textfield
+      '#title': 'First name'
+      '#flex': 3
+    middle_name:
+      '#type': textfield
+      '#title': 'Middle name'
+      '#flex': 3
+    last_name:
+      '#type': textfield
+      '#title': 'Last name'
+      '#flex': 5
+    suffix:
+      '#type': textfield
+      '#title': Suffix
+  personal_information_1:
+    '#type': webform_flexbox
+    birth_date:
+      '#type': datelist
+      '#title': 'Birth date'
+      '#date_part_order':
+        - month
+        - day
+        - year
+    sex:
+      '#type': webform_radios_other
+      '#title': Sex
+      '#options': sex
+      '#options_display': two_columns
+  personal_information_2:
+    '#type': webform_flexbox
+    ethnicity:
+      '#type': webform_checkboxes_other
+      '#title': Ethnicity
+      '#options': ethnicity
+      '#options_display': three_columns
+    marital_status:
+      '#type': radios
+      '#title': 'Marital status'
+      '#options': marital_status
+      '#options_display': two_columns
+  work:
+    '#type': webform_flexbox
+    employment_status:
+      '#type': webform_select_other
+      '#title': 'Employment status'
+      '#options': employment_status
+    industry:
+      '#type': webform_select_other
+      '#title': 'If employed, industry of employer'
+      '#options': industry
+  address_line_1:
+    '#type': webform_flexbox
+    address:
+      '#type': textfield
+      '#title': 'Street address (Line 1)'
+  address_line_2:
+    '#type': webform_flexbox
+    address_1:
+      '#type': textfield
+      '#title': 'Street address (Line 2)'
+  address_line_3:
+    '#type': webform_flexbox
+    city:
+      '#type': textfield
+      '#title': City
+    state_province:
+      '#type': webform_select_other
+      '#title': State/Province
+      '#options': state_province_names
+    zip:
+      '#type': textfield
+      '#title': ZIP
+  address_line_4:
+    country:
+      '#type': select
+      '#title': Country
+      '#options': country_names
+  phone_number:
+    '#type': webform_flexbox
+    mobile_phone:
+      '#type': tel
+      '#title': 'Mobile phone'
+    home_phone:
+      '#type': tel
+      '#title': 'Home phone'
+    work_phone:
+      '#type': tel
+      '#title': 'Home phone'
+  web:
+    '#type': webform_flexbox
+    email:
+      '#type': email
+      '#title': 'Email address'
+    url:
+      '#type': url
+      '#title': 'Home page (URL)'
 css: ''
 javascript: ''
 settings:

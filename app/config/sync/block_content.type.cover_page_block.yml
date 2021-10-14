@@ -1,0 +1,8 @@
+uuid: dacb660a-c9d4-4499-ba00-a0bc638adca9
+langcode: en
+status: true
+dependencies: {  }
+id: cover_page_block
+label: 'Cover Page Block'
+revision: 0
+description: 'A block of report covers'

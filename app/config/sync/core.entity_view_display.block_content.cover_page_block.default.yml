@@ -1,0 +1,22 @@
+uuid: 1d5afa52-e7eb-4cdc-8cf5-f3b1ec47a08c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cover_page_block
+    - field.field.block_content.cover_page_block.field_cover
+id: block_content.cover_page_block.default
+targetEntityType: block_content
+bundle: cover_page_block
+mode: default
+content:
+  field_cover:
+    weight: 1
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 218c9166-70b5-4207-af53-9795f0bfa8f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_continuing_obligations
+    - node.type.compliance
+id: node.compliance.field_continuing_obligations
+field_name: field_continuing_obligations
+entity_type: node
+bundle: compliance
+label: 'Continuing Obligations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

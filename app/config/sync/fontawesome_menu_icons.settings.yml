@@ -19,5 +19,15 @@ menu_link_icons:
     prefix: fa
     tag: i
     appearance: before
+  'views_view:views_certificates_list_view_page_1':
+    icon: fa-certificate
+    prefix: fa
+    tag: i
+    appearance: before
+  'views_view:views_compliance_checklist_page_1':
+    icon: fa-certificate
+    prefix: fa
+    tag: i
+    appearance: before
 _core:
   default_config_hash: 5TDl2QyTY-mHHJ0_VrmcxVDwhp4oqkLTzDI03yXvhAI

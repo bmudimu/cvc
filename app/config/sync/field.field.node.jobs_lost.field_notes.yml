@@ -1,0 +1,19 @@
+uuid: 67ab3c8e-c7b3-4cc9-b638-0c8c812532e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.jobs_lost
+id: node.jobs_lost.field_notes
+field_name: field_notes
+entity_type: node
+bundle: jobs_lost
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

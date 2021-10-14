@@ -1,0 +1,29 @@
+uuid: 08e730df-879c-42e0-82b1-3a8db18cd758
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_name
+    - node.type.client
+    - node.type.job_type_creat_lost
+id: node.job_type_creat_lost.field_client_name
+field_name: field_client_name
+entity_type: node
+bundle: job_type_creat_lost
+label: 'Client Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client: client
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,33 @@
+uuid: 413f41e4-50a5-4b07-a798-07f12d392850
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_occupational_level
+    - node.type.employee_stats
+    - taxonomy.vocabulary.occupational_levels
+  content:
+    - 'taxonomy_term:occupational_levels:4de27b81-22b3-4c93-bf67-1c21899f6148'
+id: node.employee_stats.field_occupational_level
+field_name: field_occupational_level
+entity_type: node
+bundle: employee_stats
+label: 'Occupational Level'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 4de27b81-22b3-4c93-bf67-1c21899f6148
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      occupational_levels: occupational_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

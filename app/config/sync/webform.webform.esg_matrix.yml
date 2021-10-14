@@ -12,7 +12,459 @@ id: esg_matrix
 title: 'ESG Matrix'
 description: ''
 category: ''
-elements: "enviromental_management_systems:\n  '#type': webform_wizard_page\n  '#title': 'Enviromental Management Systems'\n  flexbox1:\n    '#type': webform_flexbox\n    env_policy:\n      '#type': label\n      '#title': 'Environmental Policy'\n    env1_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has a policy that clearly articulates the environmental objectives and principles that guide the company to achieve sound environmental performance.</em></strong>'\n    env1_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env1_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox2:\n    '#type': webform_flexbox\n    env_risk_impacts:\n      '#type': label\n      '#title': 'Identification of Risks and Impacts'\n    env2_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has established a formal risk identification and impact process.</em></strong>'\n    env2_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env2_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox3:\n    '#type': webform_flexbox\n    env_management_programs:\n      '#type': label\n      '#title': 'Management Programmes'\n    env3_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has sufficient management programmes that address continuous environmental and social issued exposed to the hospital.</em></strong>'\n    env3_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env3_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox4:\n    '#type': webform_flexbox\n    env_capacity:\n      '#type': label\n      '#title': 'Organisational Capacity and Competency'\n    env4_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has a formal organisational structure to implement EMS within the hospital. The structure includes individuals responsible for managing and implementing the EMS within the hospital.</em></strong>'\n    env4_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env4_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox5:\n    '#type': webform_flexbox\n    env_emergency_prep:\n      '#type': label\n      '#title': 'Emergency Preparedness and Response'\n    env5_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has implemented an emergency preparedness and response systems so that the company, in collaboration with appropriate and relevant third parties, will be prepared to respond to accidents and emergency situations (e.g. fires, accidental oil spills) in a manner appropriate to prevent and mitigate any harm to people and/or the environment.</em></strong>'\n    env5_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env5_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox6:\n    '#type': webform_flexbox\n    env_stakeholder_engage:\n      '#type': label\n      '#title': 'Stakeholder engagement and grievance mechanism'\n    env6_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</em></strong>'\n    env6_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env6_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox7:\n    env7_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has a detailed and updated grievance register.</em></strong>'\n    env7_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env7_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox8:\n    '#type': webform_flexbox\n    env_monitor_review:\n      '#type': label\n      '#title': 'Monitor and Review'\n    env8_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>There is evidence that environmental monitoring shapes and informs the company''s practices.</em></strong>'\n    env8_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env8_comments:\n      '#type': textarea\n      '#title': Comments\nenvironmental_compliance:\n  '#type': webform_wizard_page\n  '#title': 'Environmental Compliance'\n  flexbox9:\n    '#type': webform_flexbox\n    env_legislation:\n      '#type': label\n      '#title': Legislation\n    env9_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company comply with all relevant local environmental laws, standards and regulations?</em></strong>'\n    env9_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env9_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox10:\n    '#type': webform_flexbox\n    env_legislation2:\n      '#type': label\n      '#title': Legislation\n    env10_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Has the company obtained all relevant environmental permits and certifications and are they up to date?</em></strong>'\n    env10_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env10_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox11:\n    '#type': webform_flexbox\n    env_legislation3:\n      '#type': label\n      '#title': Legislation\n    env11_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company did not pay any fines or penalties or was not under investigation for non-compliance with environmental regulations and standards (Yes or No). If the answer is no, provide details thereof.</em></strong>'\n    env11_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env11_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox12:\n    '#type': webform_flexbox\n    env_legislation3b:\n      '#type': label\n      '#title': Legislation\n    env12_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The Department of Environmental Affairs undertaken an environmental audit on the company for environmental transgressions.</em></strong>'\n    env12_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env12_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox13:\n    '#type': webform_flexbox\n    env_resource_efficiency:\n      '#type': label\n      '#title': Legislation\n    env13_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Greenhouse gasses: Review strategies that include adoption of renewable or low carbon energy sources, sustainable agricultural, forestry and livestock management practices, the reduction of fugitive emissions and the reduction of gas flaring.</em></strong>'\n    env13_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env13_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox14:\n    '#type': webform_flexbox\n    env_resource_efficiency2:\n      '#type': label\n      '#title': Legislation\n    env14_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Water consumption: Focus on the use of additional technically feasible water conservation measures within the client’s operations, the use of alternative water supplies, water consumption offsets to reduce total demand for water resources to within the available supply, and evaluation of alternative project locations.</em></strong>'\n    env14_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env14_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox15:\n    '#type': webform_flexbox\n    env_resource_efficiency3:\n      '#type': label\n      '#title': Legislation\n    env15_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Has the company undertaken any renewal energy options? List them.</em></strong>'\n    env15_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env15_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox16:\n    '#type': webform_flexbox\n    env_resource_efficiency4:\n      '#type': label\n      '#title': Legislation\n    env16_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company have a clear understanding of energy and water costs (or are they aggregated within a general operating budget)?</em></strong>'\n    env16_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env16_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox17:\n    '#type': webform_flexbox\n    env_resource_efficiency5:\n      '#type': label\n      '#title': Legislation\n    env17_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Did the company experience any load shedding during the current year?</em></strong>'\n    env17_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env17_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox18:\n    '#type': webform_flexbox\n    env_resource_efficiency6:\n      '#type': label\n      '#title': Legislation\n    env18_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Has the company undertaken an energy or water use audit? If so, what were the conclusions and what actions were taken. If not, explore the rationale for not undertaking one.</em></strong>'\n    env18_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env18_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox19:\n    '#type': webform_flexbox\n    env_resource_efficiency7:\n      '#type': label\n      '#title': Legislation\n    env19_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Water & Electricity.</em></strong>'\n    env19_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env19_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox20:\n    '#type': webform_flexbox\n    env_resource_efficiency8:\n      '#type': label\n      '#title': Legislation\n    env20_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Waste; hazardous material management; pesticide use and management.</em></strong>'\n    env20_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env20_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox21:\n    '#type': webform_flexbox\n    env_resource_efficiency9:\n      '#type': label\n      '#title': Legislation\n    env21_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company have a waste management plan in place?</em></strong>'\n    env21_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env21_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox22:\n    '#type': webform_flexbox\n    env_resource_management1:\n      '#type': label\n      '#title': Legislation\n    env22_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>What resource efficieny measures has the hospital underatken: solar energy, boreholes, energy efficiency lighting, water tanks, generators etc.?</em></strong>'\n    env22_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env22_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox23:\n    '#type': webform_flexbox\n    env_resource_management2:\n      '#type': label\n      '#title': Legislation\n    env23_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Has the company planned or taken any measures to reduce or optimise its water consumption? If yes, explain.</em></strong>'\n    env23_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env23_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox24:\n    '#type': webform_flexbox\n    env_resource_management3:\n      '#type': label\n      '#title': Legislation\n    env24_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company recycle water?</em></strong>'\n    env24_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env24_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox25:\n    '#type': webform_flexbox\n    env_resource_management4:\n      '#type': label\n      '#title': Legislation\n    env25_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company have contingency plans during water shortage?</em></strong>'\n    env25_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env25_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox26:\n    '#type': webform_flexbox\n    env_resource_management5:\n      '#type': label\n      '#title': Legislation\n    env26_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company have water tanks and what are their capacities?</em></strong>'\n    env26_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env26_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox27:\n    '#type': webform_flexbox\n    env_resource_management6:\n      '#type': label\n      '#title': Legislation\n    env27_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Are there water restrictions in the area?</em></strong>'\n    env27_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env27_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox28:\n    '#type': webform_flexbox\n    env_resource_management7:\n      '#type': label\n      '#title': Legislation\n    env28_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Does the company have more than one source of reliable water supply?</em></strong>'\n    env28_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env28_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox29:\n    '#type': webform_flexbox\n    env_resource_management8:\n      '#type': label\n      '#title': 'Resource Efficiency'\n    env29_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>Protection and conservation of biodiversity; management of ecosystem services; sustainable management of living and natural resources.</em></strong>'\n    env29_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env29_comments:\n      '#type': textarea\n      '#title': Comments\n  flexbox30:\n    '#type': webform_flexbox\n    env_resource_management10:\n      '#type': label\n      '#title': 'Biodiversity conservation and sustainable management of living natural resources'\n    env30_criteria:\n      '#type': webform_markup\n      '#markup': '<strong><em>The company has undertaken a biodiversity study to identify the risks and impacts of its operation to the ecosystem.</em></strong>'\n    env30_rating:\n      '#type': select\n      '#title': Rating\n      '#options': likert_satisfaction\n    env30_comments:\n      '#type': textarea\n      '#title': Comments"
+elements: |-
+  enviromental_management_systems:
+    '#type': webform_wizard_page
+    '#title': 'Enviromental Management Systems'
+    flexbox1:
+      '#type': webform_flexbox
+      env_policy:
+        '#type': label
+        '#title': 'Environmental Policy'
+      env1_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has a policy that clearly articulates the environmental objectives and principles that guide the company to achieve sound environmental performance.</em></strong>'
+      env1_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env1_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox2:
+      '#type': webform_flexbox
+      env_risk_impacts:
+        '#type': label
+        '#title': 'Identification of Risks and Impacts'
+      env2_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has established a formal risk identification and impact process.</em></strong>'
+      env2_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env2_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox3:
+      '#type': webform_flexbox
+      env_management_programs:
+        '#type': label
+        '#title': 'Management Programmes'
+      env3_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has sufficient management programmes that address continuous environmental and social issued exposed to the hospital.</em></strong>'
+      env3_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env3_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox4:
+      '#type': webform_flexbox
+      env_capacity:
+        '#type': label
+        '#title': 'Organisational Capacity and Competency'
+      env4_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has a formal organisational structure to implement EMS within the hospital. The structure includes individuals responsible for managing and implementing the EMS within the hospital.</em></strong>'
+      env4_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env4_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox5:
+      '#type': webform_flexbox
+      env_emergency_prep:
+        '#type': label
+        '#title': 'Emergency Preparedness and Response'
+      env5_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has implemented an emergency preparedness and response systems so that the company, in collaboration with appropriate and relevant third parties, will be prepared to respond to accidents and emergency situations (e.g. fires, accidental oil spills) in a manner appropriate to prevent and mitigate any harm to people and/or the environment.</em></strong>'
+      env5_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env5_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox6:
+      '#type': webform_flexbox
+      env_stakeholder_engage:
+        '#type': label
+        '#title': 'Stakeholder engagement and grievance mechanism'
+      env6_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</em></strong>'
+      env6_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env6_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox7:
+      env7_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has a detailed and updated grievance register.</em></strong>'
+      env7_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env7_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox8:
+      '#type': webform_flexbox
+      env_monitor_review:
+        '#type': label
+        '#title': 'Monitor and Review'
+      env8_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>There is evidence that environmental monitoring shapes and informs the company''s practices.</em></strong>'
+      env8_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env8_comments:
+        '#type': textarea
+        '#title': Comments
+  environmental_compliance:
+    '#type': webform_wizard_page
+    '#title': 'Environmental Compliance'
+    flexbox9:
+      '#type': webform_flexbox
+      env_legislation:
+        '#type': label
+        '#title': Legislation
+      env9_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company comply with all relevant local environmental laws, standards and regulations?</em></strong>'
+      env9_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env9_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox10:
+      '#type': webform_flexbox
+      env_legislation2:
+        '#type': label
+        '#title': Legislation
+      env10_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Has the company obtained all relevant environmental permits and certifications and are they up to date?</em></strong>'
+      env10_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env10_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox11:
+      '#type': webform_flexbox
+      env_legislation3:
+        '#type': label
+        '#title': Legislation
+      env11_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company did not pay any fines or penalties or was not under investigation for non-compliance with environmental regulations and standards (Yes or No). If the answer is no, provide details thereof.</em></strong>'
+      env11_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env11_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox12:
+      '#type': webform_flexbox
+      env_legislation3b:
+        '#type': label
+        '#title': Legislation
+      env12_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The Department of Environmental Affairs undertaken an environmental audit on the company for environmental transgressions.</em></strong>'
+      env12_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env12_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox13:
+      '#type': webform_flexbox
+      env_resource_efficiency:
+        '#type': label
+        '#title': Legislation
+      env13_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Greenhouse gasses: Review strategies that include adoption of renewable or low carbon energy sources, sustainable agricultural, forestry and livestock management practices, the reduction of fugitive emissions and the reduction of gas flaring.</em></strong>'
+      env13_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env13_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox14:
+      '#type': webform_flexbox
+      env_resource_efficiency2:
+        '#type': label
+        '#title': Legislation
+      env14_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Water consumption: Focus on the use of additional technically feasible water conservation measures within the client’s operations, the use of alternative water supplies, water consumption offsets to reduce total demand for water resources to within the available supply, and evaluation of alternative project locations.</em></strong>'
+      env14_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env14_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox15:
+      '#type': webform_flexbox
+      env_resource_efficiency3:
+        '#type': label
+        '#title': Legislation
+      env15_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Has the company undertaken any renewal energy options? List them.</em></strong>'
+      env15_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env15_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox16:
+      '#type': webform_flexbox
+      env_resource_efficiency4:
+        '#type': label
+        '#title': Legislation
+      env16_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company have a clear understanding of energy and water costs (or are they aggregated within a general operating budget)?</em></strong>'
+      env16_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env16_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox17:
+      '#type': webform_flexbox
+      env_resource_efficiency5:
+        '#type': label
+        '#title': Legislation
+      env17_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Did the company experience any load shedding during the current year?</em></strong>'
+      env17_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env17_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox18:
+      '#type': webform_flexbox
+      env_resource_efficiency6:
+        '#type': label
+        '#title': Legislation
+      env18_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Has the company undertaken an energy or water use audit? If so, what were the conclusions and what actions were taken. If not, explore the rationale for not undertaking one.</em></strong>'
+      env18_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env18_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox19:
+      '#type': webform_flexbox
+      env_resource_efficiency7:
+        '#type': label
+        '#title': Legislation
+      env19_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Water & Electricity.</em></strong>'
+      env19_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env19_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox20:
+      '#type': webform_flexbox
+      env_resource_efficiency8:
+        '#type': label
+        '#title': Legislation
+      env20_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Waste; hazardous material management; pesticide use and management.</em></strong>'
+      env20_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env20_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox21:
+      '#type': webform_flexbox
+      env_resource_efficiency9:
+        '#type': label
+        '#title': Legislation
+      env21_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company have a waste management plan in place?</em></strong>'
+      env21_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env21_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox22:
+      '#type': webform_flexbox
+      env_resource_management1:
+        '#type': label
+        '#title': Legislation
+      env22_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>What resource efficieny measures has the hospital underatken: solar energy, boreholes, energy efficiency lighting, water tanks, generators etc.?</em></strong>'
+      env22_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env22_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox23:
+      '#type': webform_flexbox
+      env_resource_management2:
+        '#type': label
+        '#title': Legislation
+      env23_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Has the company planned or taken any measures to reduce or optimise its water consumption? If yes, explain.</em></strong>'
+      env23_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env23_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox24:
+      '#type': webform_flexbox
+      env_resource_management3:
+        '#type': label
+        '#title': Legislation
+      env24_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company recycle water?</em></strong>'
+      env24_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env24_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox25:
+      '#type': webform_flexbox
+      env_resource_management4:
+        '#type': label
+        '#title': Legislation
+      env25_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company have contingency plans during water shortage?</em></strong>'
+      env25_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env25_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox26:
+      '#type': webform_flexbox
+      env_resource_management5:
+        '#type': label
+        '#title': Legislation
+      env26_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company have water tanks and what are their capacities?</em></strong>'
+      env26_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env26_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox27:
+      '#type': webform_flexbox
+      env_resource_management6:
+        '#type': label
+        '#title': Legislation
+      env27_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Are there water restrictions in the area?</em></strong>'
+      env27_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env27_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox28:
+      '#type': webform_flexbox
+      env_resource_management7:
+        '#type': label
+        '#title': Legislation
+      env28_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Does the company have more than one source of reliable water supply?</em></strong>'
+      env28_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env28_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox29:
+      '#type': webform_flexbox
+      env_resource_management8:
+        '#type': label
+        '#title': 'Resource Efficiency'
+      env29_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>Protection and conservation of biodiversity; management of ecosystem services; sustainable management of living and natural resources.</em></strong>'
+      env29_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env29_comments:
+        '#type': textarea
+        '#title': Comments
+    flexbox30:
+      '#type': webform_flexbox
+      env_resource_management10:
+        '#type': label
+        '#title': 'Biodiversity conservation and sustainable management of living natural resources'
+      env30_criteria:
+        '#type': webform_markup
+        '#markup': '<strong><em>The company has undertaken a biodiversity study to identify the risks and impacts of its operation to the ecosystem.</em></strong>'
+      env30_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      env30_comments:
+        '#type': textarea
+        '#title': Comments
 css: ''
 javascript: ''
 settings:
@@ -22,11 +474,11 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: /esg-matrix-form
   page_confirm_path: ''
-  page_theme_name: ''
-  form_title: both
-  form_submit_once: false
+  page_theme_name: seven
+  form_title: source_entity_webform
+  form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
@@ -89,15 +541,15 @@ settings:
   wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
-  wizard_confirmation: true
+  wizard_confirmation: false
   wizard_confirmation_label: ''
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
-  preview: 0
+  preview: 2
   preview_label: ''
   preview_title: ''
   preview_message: ''
@@ -112,9 +564,9 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Your Information has been saved'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true

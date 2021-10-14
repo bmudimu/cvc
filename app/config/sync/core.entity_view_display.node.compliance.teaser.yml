@@ -1,0 +1,38 @@
+uuid: 3decd5c0-a9dd-49c3-b689-dde60cacf9f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.compliance.field_certificate_number
+    - field.field.node.compliance.field_client_name
+    - field.field.node.compliance.field_compliance_status
+    - field.field.node.compliance.field_continuing_obligations
+    - field.field.node.compliance.field_date_issued
+    - field.field.node.compliance.field_date_valid
+    - field.field.node.compliance.field_detail
+    - field.field.node.compliance.field_reference_number
+    - field.field.node.compliance.field_requirement
+    - node.type.compliance
+  module:
+    - user
+id: node.compliance.teaser
+targetEntityType: node
+bundle: compliance
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_certificate_number: true
+  field_client_name: true
+  field_compliance_status: true
+  field_continuing_obligations: true
+  field_date_issued: true
+  field_date_valid: true
+  field_detail: true
+  field_reference_number: true
+  field_requirement: true

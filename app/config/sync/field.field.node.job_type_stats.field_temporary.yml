@@ -1,0 +1,25 @@
+uuid: b9091839-b2ee-4472-b99a-8d7cd95f15ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_temporary
+    - node.type.job_type_stats
+id: node.job_type_stats.field_temporary
+field_name: field_temporary
+entity_type: node
+bundle: job_type_stats
+label: Temporary
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

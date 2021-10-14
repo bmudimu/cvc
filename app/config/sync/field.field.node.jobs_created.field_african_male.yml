@@ -1,0 +1,25 @@
+uuid: 949f878e-6c47-4c12-b9a6-41bbe8cd5ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_african_male
+    - node.type.jobs_created
+id: node.jobs_created.field_african_male
+field_name: field_african_male
+entity_type: node
+bundle: jobs_created
+label: 'African Male'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

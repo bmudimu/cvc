@@ -1,0 +1,34 @@
+uuid: 02e618fb-d215-4105-9804-a452dc5170c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_type_stats.field_client_name
+    - field.field.node.job_type_stats.field_notes
+    - field.field.node.job_type_stats.field_permanent
+    - field.field.node.job_type_stats.field_quarter
+    - field.field.node.job_type_stats.field_temporary
+    - field.field.node.job_type_stats.field_total
+    - field.field.node.job_type_stats.field_year
+    - node.type.job_type_stats
+  module:
+    - user
+id: node.job_type_stats.teaser
+targetEntityType: node
+bundle: job_type_stats
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_notes: true
+  field_permanent: true
+  field_quarter: true
+  field_temporary: true
+  field_total: true
+  field_year: true

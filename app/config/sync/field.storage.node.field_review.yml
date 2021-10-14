@@ -1,0 +1,20 @@
+uuid: 142136e3-e35a-45c7-ba25-eac834230fa2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - webform
+id: node.field_review
+field_name: field_review
+entity_type: node
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 31558de6-c142-43b2-b16a-bc85c059b115
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_african_female
+    - node.type.jobs_lost
+id: node.jobs_lost.field_african_female
+field_name: field_african_female
+entity_type: node
+bundle: jobs_lost
+label: 'African Female'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

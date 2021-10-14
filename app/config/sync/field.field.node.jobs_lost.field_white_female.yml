@@ -1,0 +1,25 @@
+uuid: 0f303600-8265-404e-9dbc-eebe4b56ea71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_white_female
+    - node.type.jobs_lost
+id: node.jobs_lost.field_white_female
+field_name: field_white_female
+entity_type: node
+bundle: jobs_lost
+label: 'White Female'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

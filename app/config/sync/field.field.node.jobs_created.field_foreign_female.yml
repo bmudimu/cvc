@@ -1,0 +1,25 @@
+uuid: c27ea6d2-961a-498c-9fb6-8a37f2450eaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foreign_female
+    - node.type.jobs_created
+id: node.jobs_created.field_foreign_female
+field_name: field_foreign_female
+entity_type: node
+bundle: jobs_created
+label: 'Foreign Female'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

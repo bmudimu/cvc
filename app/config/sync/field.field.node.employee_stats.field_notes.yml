@@ -1,0 +1,19 @@
+uuid: 6c5c2d97-50b1-4772-882a-47164ecb87aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.employee_stats
+id: node.employee_stats.field_notes
+field_name: field_notes
+entity_type: node
+bundle: employee_stats
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

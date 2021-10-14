@@ -1,0 +1,24 @@
+uuid: 4abd5a2e-1f18-4501-b2d4-d6a1d6c41187
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_valid
+    - node.type.compliance
+  module:
+    - datetime
+id: node.compliance.field_date_valid
+field_name: field_date_valid
+entity_type: node
+bundle: compliance
+label: 'Date Valid'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+90 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

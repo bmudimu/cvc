@@ -1,0 +1,19 @@
+uuid: bf98941d-4749-44d0-ac90-ade66a84f773
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference_number
+    - node.type.compliance
+id: node.compliance.field_reference_number
+field_name: field_reference_number
+entity_type: node
+bundle: compliance
+label: 'Reference Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

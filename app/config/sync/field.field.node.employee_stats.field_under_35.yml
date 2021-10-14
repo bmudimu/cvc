@@ -1,0 +1,25 @@
+uuid: 7f0fa82c-8ab4-48c1-b191-ed2b650b52ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_under_35
+    - node.type.employee_stats
+id: node.employee_stats.field_under_35
+field_name: field_under_35
+entity_type: node
+bundle: employee_stats
+label: 'Under 35'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

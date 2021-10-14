@@ -1,0 +1,24 @@
+uuid: c70e3f6b-6f48-41e5-a155-526fe23b2a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_issued
+    - node.type.compliance
+  module:
+    - datetime
+id: node.compliance.field_date_issued
+field_name: field_date_issued
+entity_type: node
+bundle: compliance
+label: 'Date Issued'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

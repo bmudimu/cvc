@@ -1,0 +1,21 @@
+uuid: 789231a1-4e97-4663-bba0-e6ae35c9cd90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.esg_report
+  module:
+    - layout_builder
+id: node.esg_report.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: esg_report
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

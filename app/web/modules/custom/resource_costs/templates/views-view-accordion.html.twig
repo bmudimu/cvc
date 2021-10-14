@@ -1,0 +1,16 @@
+{#
+/**
+*Default theme implementation for Views accordion
+*
+*@ingroup themeable
+*/
+#}
+{% if title %}
+    <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+    <details {{ row.attributes }}>
+        <summary>{{ row.title|t }}</summary>
+        {{- row.content -}}
+    </details>
+{% endfor %}

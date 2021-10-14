@@ -17,7 +17,150 @@ id: demo_application
 title: 'Demo: Application'
 description: 'A demonstration of a very basic application form.'
 category: Demo
-elements: "contact_information:\n  '#title': 'Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#name__required': true\n    '#company__access': false\n    '#email__required': true\n    '#phone__required': true\n    '#address__required': true\n    '#address_2__required': true\n    '#city__required': true\n    '#state_province__required': true\n    '#postal_code__required': true\n    '#country__required': true\nresume:\n  '#title': 'Your Resume'\n  '#type': webform_section\n  resume_method:\n    '#type': radios\n    '#options':\n      attach: 'Attach resume file'\n      paste: 'Paste your resume'\n    '#prefix': '<div class=\"container-inline\">'\n    '#suffix': '</div>'\n    '#default_value': attach\n  resume_file:\n    '#type': webform_document_file\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      required:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: attach\n    '#file_extensions': 'rtf pdf doc docx'\n  resume_text:\n    '#type': textarea\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      required:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: paste\napplication_status:\n  '#type': details\n  '#title': 'Application Status'\n  '#open': true\n  '#admin': true\n  '#access_create_roles': {  }\n  state:\n    '#type': radios\n    '#title': 'Application State'\n    '#options':\n      completed: Completed\n      in_review: 'In review'\n      accepted: Accepted\n      rejected: Rejected\n    '#options_display': side_by_side\n    '#access_create_roles': {  }\n  completed_date:\n    '#type': datetime\n    '#title': 'Application Completed Date'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\n  in_review_date:\n    '#type': datetime\n    '#title': 'Application In Review Date'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\n  accepted_date:\n    '#type': datetime\n    '#title': 'Application Accepted Date'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\n  rejected_date:\n    '#type': datetime\n    '#title': 'Application Rejected Date'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\nevaluation_summary:\n  '#type': fieldset\n  '#title': 'Evaluation Summary'\n  '#title_display': invisible\n  '#access_create_roles': {  }\n  '#access_update_roles': {  }\n  '#access_view_roles':\n    - authenticated\n  evaluation_rating:\n    '#type': webform_rating\n    '#title': 'Average Rating'\n    '#test': '0'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\n    '#step': '.1'\n  evaluation_count:\n    '#type': number\n    '#title': 'Number of Evaluations'\n    '#test': '0'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\nevaluation_details:\n  '#type': details\n  '#title': 'Evaluation Details'\n  '#access_create_roles': {  }\n  '#access_update_roles': {  }\n  '#access_view_roles':\n    - authenticated\n  evaluation_submissions:\n    '#type': view\n    '#display_on': view\n    '#name': webform_demo_application_evaluations\n    '#display_id': embed\n    '#arguments':\n      - '[webform_submission:sid]'\n    '#access_create_roles': {  }\n    '#access_update_roles': {  }\n    '#access_view_roles':\n      - authenticated\n"
+elements: |
+  contact_information:
+    '#title': 'Contact Information'
+    '#type': webform_section
+    contact:
+      '#type': webform_contact
+      '#title': Contact
+      '#name__required': true
+      '#company__access': false
+      '#email__required': true
+      '#phone__required': true
+      '#address__required': true
+      '#address_2__required': true
+      '#city__required': true
+      '#state_province__required': true
+      '#postal_code__required': true
+      '#country__required': true
+  resume:
+    '#title': 'Your Resume'
+    '#type': webform_section
+    resume_method:
+      '#type': radios
+      '#options':
+        attach: 'Attach resume file'
+        paste: 'Paste your resume'
+      '#prefix': '<div class="container-inline">'
+      '#suffix': '</div>'
+      '#default_value': attach
+    resume_file:
+      '#type': webform_document_file
+      '#title': Resume
+      '#title_display': invisible
+      '#states':
+        visible:
+          ':input[name="resume_method"]':
+            value: attach
+        required:
+          ':input[name="resume_method"]':
+            value: attach
+        enabled:
+          ':input[name="resume_method"]':
+            value: attach
+      '#file_extensions': 'rtf pdf doc docx'
+    resume_text:
+      '#type': textarea
+      '#title': Resume
+      '#title_display': invisible
+      '#states':
+        visible:
+          ':input[name="resume_method"]':
+            value: paste
+        required:
+          ':input[name="resume_method"]':
+            value: paste
+        enabled:
+          ':input[name="resume_method"]':
+            value: paste
+  application_status:
+    '#type': details
+    '#title': 'Application Status'
+    '#open': true
+    '#admin': true
+    '#access_create_roles': {  }
+    state:
+      '#type': radios
+      '#title': 'Application State'
+      '#options':
+        completed: Completed
+        in_review: 'In review'
+        accepted: Accepted
+        rejected: Rejected
+      '#options_display': side_by_side
+      '#access_create_roles': {  }
+    completed_date:
+      '#type': datetime
+      '#title': 'Application Completed Date'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
+    in_review_date:
+      '#type': datetime
+      '#title': 'Application In Review Date'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
+    accepted_date:
+      '#type': datetime
+      '#title': 'Application Accepted Date'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
+    rejected_date:
+      '#type': datetime
+      '#title': 'Application Rejected Date'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
+  evaluation_summary:
+    '#type': fieldset
+    '#title': 'Evaluation Summary'
+    '#title_display': invisible
+    '#access_create_roles': {  }
+    '#access_update_roles': {  }
+    '#access_view_roles':
+      - authenticated
+    evaluation_rating:
+      '#type': webform_rating
+      '#title': 'Average Rating'
+      '#test': '0'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
+      '#step': '.1'
+    evaluation_count:
+      '#type': number
+      '#title': 'Number of Evaluations'
+      '#test': '0'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
+  evaluation_details:
+    '#type': details
+    '#title': 'Evaluation Details'
+    '#access_create_roles': {  }
+    '#access_update_roles': {  }
+    '#access_view_roles':
+      - authenticated
+    evaluation_submissions:
+      '#type': view
+      '#display_on': view
+      '#name': webform_demo_application_evaluations
+      '#display_id': embed
+      '#arguments':
+        - '[webform_submission:sid]'
+      '#access_create_roles': {  }
+      '#access_update_roles': {  }
+      '#access_view_roles':
+        - authenticated
 css: ''
 javascript: ''
 settings:

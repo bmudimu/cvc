@@ -1,0 +1,36 @@
+uuid: 35608728-99c6-46e0-a049-5e6d3a7cede8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_type_creat_lost.field_client_name
+    - field.field.node.job_type_creat_lost.field_job_type
+    - field.field.node.job_type_creat_lost.field_notes
+    - field.field.node.job_type_creat_lost.field_permanent
+    - field.field.node.job_type_creat_lost.field_quarter
+    - field.field.node.job_type_creat_lost.field_temporary
+    - field.field.node.job_type_creat_lost.field_total
+    - field.field.node.job_type_creat_lost.field_year
+    - node.type.job_type_creat_lost
+  module:
+    - user
+id: node.job_type_creat_lost.teaser
+targetEntityType: node
+bundle: job_type_creat_lost
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_job_type: true
+  field_notes: true
+  field_permanent: true
+  field_quarter: true
+  field_temporary: true
+  field_total: true
+  field_year: true

@@ -1,0 +1,31 @@
+uuid: 107126b8-da23-4672-989d-7ca254684aee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.months.field_month_number
+    - taxonomy.vocabulary.months
+  module:
+    - text
+id: taxonomy_term.months.default
+targetEntityType: taxonomy_term
+bundle: months
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_month_number:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

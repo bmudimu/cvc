@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.testimport.body
     - field.field.node.testimport.field_client_name
     - field.field.node.testimport.field_quarter
+    - field.field.node.testimport.field_review
     - node.type.testimport
   module:
     - text
@@ -32,3 +33,4 @@ content:
 hidden:
   field_client_name: true
   field_quarter: true
+  field_review: true

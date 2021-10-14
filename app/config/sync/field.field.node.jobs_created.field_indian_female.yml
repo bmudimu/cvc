@@ -1,0 +1,25 @@
+uuid: a366b680-2af7-4204-a706-bdcc2c8c171b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_indian_female
+    - node.type.jobs_created
+id: node.jobs_created.field_indian_female
+field_name: field_indian_female
+entity_type: node
+bundle: jobs_created
+label: 'Indian Female'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

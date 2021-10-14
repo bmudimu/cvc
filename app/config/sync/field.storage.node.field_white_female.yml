@@ -1,0 +1,20 @@
+uuid: ed5d1206-bb10-4d1c-bc32-6f70bc2906a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_white_female
+field_name: field_white_female
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

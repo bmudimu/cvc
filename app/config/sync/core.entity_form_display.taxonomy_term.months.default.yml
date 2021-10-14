@@ -1,0 +1,52 @@
+uuid: 516b9ab1-4ba4-46b1-a909-4543bc93dae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.months.field_month_number
+    - taxonomy.vocabulary.months
+  module:
+    - path
+    - text
+id: taxonomy_term.months.default
+targetEntityType: taxonomy_term
+bundle: months
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_month_number:
+    weight: 101
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -23,6 +23,7 @@ third_party_settings:
         layout_id: layout_fourcol_section
         layout_settings:
           label: 'Count Stats'
+          context_mapping: {  }
         components:
           126bf751-f7a9-4f0f-8686-d806bb20d145:
             uuid: 126bf751-f7a9-4f0f-8686-d806bb20d145
@@ -81,6 +82,7 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           b00ebf19-72d2-43e5-bac0-67c67fcf8f56:
             uuid: b00ebf19-72d2-43e5-bac0-67c67fcf8f56

@@ -17,7 +17,38 @@ id: example_computed_elements
 title: 'Example: Computed'
 description: 'Examples of a computed elements.'
 category: Example
-elements: "information:\n  '#title': 'Your Information'\n  '#type': webform_wizard_page\n  '#next_button_label': 'Preview >'\n  '#open': true\n  first_name:\n    '#type': textfield\n    '#title': 'First Name'\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n  date_of_birth:\n    '#type': date\n    '#title': 'Date of Birth'\n  color:\n    '#type': color\n    '#title': 'Favorite Color'\npreview:\n  '#title': Preview\n  '#type': webform_wizard_page\n  '#open': true\n  computed:\n    '#type': webform_computed_twig\n    '#title': Computed\n    '#title_display': hidden\n    '#template': |\n      {% set attributes = create_attribute() %}\n      <h2{{ attributes.setAttribute('id', 'custom').setAttribute('style', 'color:' ~ data.color) }}>\n        Hello {{ data.first_name }} {{ data.last_name }}!!!\n      </h2>\n      <p>You are {{ ('now'|date('Y')) - (data.date_of_birth|date('Y'))  }} years old.</p>\n"
+elements: |
+  information:
+    '#title': 'Your Information'
+    '#type': webform_wizard_page
+    '#next_button_label': 'Preview >'
+    '#open': true
+    first_name:
+      '#type': textfield
+      '#title': 'First Name'
+    last_name:
+      '#type': textfield
+      '#title': 'Last Name'
+    date_of_birth:
+      '#type': date
+      '#title': 'Date of Birth'
+    color:
+      '#type': color
+      '#title': 'Favorite Color'
+  preview:
+    '#title': Preview
+    '#type': webform_wizard_page
+    '#open': true
+    computed:
+      '#type': webform_computed_twig
+      '#title': Computed
+      '#title_display': hidden
+      '#template': |
+        {% set attributes = create_attribute() %}
+        <h2{{ attributes.setAttribute('id', 'custom').setAttribute('style', 'color:' ~ data.color) }}>
+          Hello {{ data.first_name }} {{ data.last_name }}!!!
+        </h2>
+        <p>You are {{ ('now'|date('Y')) - (data.date_of_birth|date('Y'))  }} years old.</p>
 css: ''
 javascript: ''
 settings:

@@ -1,0 +1,28 @@
+uuid: 8ba06add-3809-4335-b60c-4d6b4987793d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resource_cost_view
+  module:
+    - system
+    - views
+  theme:
+    - cvc_admin
+id: exposedformresource_cost_viewpage_resource_summary
+theme: cvc_admin
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:resource_cost_view-page_resource_summary'
+settings:
+  id: 'views_exposed_filter_block:resource_cost_view-page_resource_summary'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '/resource-summary*'
+    negate: false

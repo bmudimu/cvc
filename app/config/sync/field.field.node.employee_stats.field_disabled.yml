@@ -1,0 +1,25 @@
+uuid: 4722819d-6c17-4ade-af31-e804868e04c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disabled
+    - node.type.employee_stats
+id: node.employee_stats.field_disabled
+field_name: field_disabled
+entity_type: node
+bundle: employee_stats
+label: Disabled
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

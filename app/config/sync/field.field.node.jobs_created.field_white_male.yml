@@ -1,0 +1,25 @@
+uuid: 764858a2-c0e6-41bc-9b62-cf249a5536e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_white_male
+    - node.type.jobs_created
+id: node.jobs_created.field_white_male
+field_name: field_white_male
+entity_type: node
+bundle: jobs_created
+label: 'White Male'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

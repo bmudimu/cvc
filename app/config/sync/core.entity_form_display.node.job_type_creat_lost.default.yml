@@ -1,0 +1,93 @@
+uuid: 32819962-df67-4cea-8a1c-d82974f8b129
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_type_creat_lost.field_client_name
+    - field.field.node.job_type_creat_lost.field_job_type
+    - field.field.node.job_type_creat_lost.field_notes
+    - field.field.node.job_type_creat_lost.field_permanent
+    - field.field.node.job_type_creat_lost.field_quarter
+    - field.field.node.job_type_creat_lost.field_temporary
+    - field.field.node.job_type_creat_lost.field_total
+    - field.field.node.job_type_creat_lost.field_year
+    - node.type.job_type_creat_lost
+id: node.job_type_creat_lost.default
+targetEntityType: node
+bundle: job_type_creat_lost
+mode: default
+content:
+  field_client_name:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_job_type:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_notes:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_permanent:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_quarter:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_temporary:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_total:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_year:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

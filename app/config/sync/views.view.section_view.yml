@@ -15,7 +15,6 @@ dependencies:
     - field.storage.paragraph.field_p_url
     - image.style.image60x60
     - node.type.client
-    - system.menu.main
   module:
     - link
     - media
@@ -1816,6 +1815,7 @@ display:
         fields: false
         style: false
         row: false
+        pager: false
       style:
         type: table
         options:
@@ -1934,13 +1934,16 @@ display:
       row:
         type: fields
         options: {  }
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -1964,14 +1967,14 @@ display:
       display_extenders: {  }
       path: clients/manage-clients
       menu:
-        type: normal
+        type: none
         title: 'Manage Clients'
-        menu_name: main
-        weight: -48
         description: ''
-        parent: ''
         expanded: false
-        enabled: false
+        parent: ''
+        weight: -47
+        context: '0'
+        menu_name: main
       display_description: ''
     cache_metadata:
       max-age: -1

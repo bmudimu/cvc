@@ -1,0 +1,25 @@
+uuid: 7aaaba94-415d-46c1-9c85-99bc904e5b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_permanent
+    - node.type.job_type_stats
+id: node.job_type_stats.field_permanent
+field_name: field_permanent
+entity_type: node
+bundle: job_type_stats
+label: Permanent
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,22 @@
+uuid: b584b7e3-1b93-4ec0-96de-102e7df8fe04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.esg_report
+id: node.esg_report.promote
+field_name: promote
+entity_type: node
+bundle: esg_report
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

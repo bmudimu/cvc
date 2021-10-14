@@ -1,0 +1,25 @@
+uuid: d87e05b8-1c8f-4a40-9818-94e2664a3c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_white_male
+    - node.type.employee_stats
+id: node.employee_stats.field_white_male
+field_name: field_white_male
+entity_type: node
+bundle: employee_stats
+label: 'White Male'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

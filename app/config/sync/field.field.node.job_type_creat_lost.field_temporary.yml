@@ -1,0 +1,25 @@
+uuid: 15550b49-8847-42e2-9fb9-b1e637180ebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_temporary
+    - node.type.job_type_creat_lost
+id: node.job_type_creat_lost.field_temporary
+field_name: field_temporary
+entity_type: node
+bundle: job_type_creat_lost
+label: Temporary
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,4 +1,5 @@
 module:
+  webform_clientside_validation: -1
   address: 0
   admin_toolbar: 0
   automated_cron: 0
@@ -15,6 +16,9 @@ module:
   charts_google: 0
   charts_highcharts: 0
   ckeditor: 0
+  client_list: 0
+  clientside_validation: 0
+  clientside_validation_jquery: 0
   color: 0
   comment: 0
   config: 0
@@ -41,6 +45,7 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_form_errors: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
@@ -75,6 +80,7 @@ module:
   views_aggregator: 0
   views_ui: 0
   webform: 0
+  webform_cards: 0
   webform_demo_application_evaluation: 0
   webform_demo_event_registration: 0
   webform_devel: 0

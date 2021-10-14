@@ -1,0 +1,21 @@
+uuid: 33f27f7b-1f96-467e-847c-8a86c6c3ae7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_certificate_number
+field_name: field_certificate_number
+entity_type: node
+type: string
+settings:
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

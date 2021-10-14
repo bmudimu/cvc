@@ -1,0 +1,33 @@
+uuid: 3d893365-9ff6-4030-95d9-2882f61e5fe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.job_type_stats
+    - taxonomy.vocabulary.quarters
+  content:
+    - 'taxonomy_term:quarters:5e84ce35-f85d-4efe-8cc3-43bd4ddc2a53'
+id: node.job_type_stats.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: job_type_stats
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 5e84ce35-f85d-4efe-8cc3-43bd4ddc2a53
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

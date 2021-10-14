@@ -1,0 +1,650 @@
+uuid: 30badac5-10dd-4b5a-a030-ef5fb565f5c5
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: esg_design_test
+title: 'ESG Design Test'
+description: ''
+category: Test
+elements: |-
+  environmental_management_systems:
+    '#type': webform_wizard_page
+    '#title': 'Environmental Management Systems'
+    container:
+      '#type': container
+      env1_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>1</span>The company has a policy that clearly articulates the environmental objectives and principles that guide the company to achieve sound environmental performance.</div>'
+      container1:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria2:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>2</span>The company has established a formal risk identification and impact process.</div>'
+      container2:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating2:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments2:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria3:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>3</span>The company has sufficient management programmes that address continuous environmental and social issued exposed to the hospital.</div>'
+      container3:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating3:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments3:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria4:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>4</span>The company has a formal organisational structure to implement EMS within the hospital. The structure includes individuals responsible for managing and implementing the EMS within the hospital.</div>'
+      container4:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating4:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments4:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria5:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>5</span>The company has implemented an emergency preparedness and response systems so that the company, in collaboration with appropriate and relevant third parties, will be prepared to respond to accidents and emergency situations (e.g. fires, accidental oil spills) in a manner appropriate to prevent and mitigate any harm to people and/or the environment.</div>'
+      container5:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating5:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments5:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria6:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>6</span>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</div>'
+      container6:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating6:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments6:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria7:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>7</span>The company has a detailed and updated grievance register.</div>'
+      container7:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating7:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments7:
+          '#type': textarea
+          '#title': Comments
+      env1_criteria8:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>8</span>There is evidence that environmental monitoring shapes and informs the company''s practices.</div>'
+      container8:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env1_rating8:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env1_comments8:
+          '#type': textarea
+          '#title': Comments
+      env9_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>9</span>Does the company comply with all relevant local environmental laws, standards and regulations?</div>'
+      container9:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env9_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env9_comments:
+          '#type': textarea
+          '#title': Comments
+      env10_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>10</span>Has the company obtained all relevant environmental permits and certifications and are they up to date?</div>'
+      container10:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env10_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env10_comments:
+          '#type': textarea
+          '#title': Comments
+      env11_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>11</span>The company did not pay any fines or penalties or was not under investigation for non-compliance with environmental regulations and standards (Yes or No). If the answer is no, provide details thereof.</div>'
+      container11:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env11_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env11_comments:
+          '#type': textarea
+          '#title': Comments
+      env12_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>12</span>The Department of Environmental Affairs undertaken an environmental audit on the company for environmental transgressions.</div>'
+      container12:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env12_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env12_comments:
+          '#type': textarea
+          '#title': Comments
+      env13_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>13</span>Greenhouse gasses: Review strategies that include adoption of renewable or low carbon energy sources, sustainable agricultural, forestry and livestock management practices, the reduction of fugitive emissions and the reduction of gas flaring.</div>'
+      container13:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env13_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env13_comments:
+          '#type': textarea
+          '#title': Comments
+      env14_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>14</span>Water consumption: Focus on the use of additional technically feasible water conservation measures within the client’s operations, the use of alternative water supplies, water consumption offsets to reduce total demand for water resources to within the available supply, and evaluation of alternative project locations.</div>'
+      container14:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env14_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env14_comments:
+          '#type': textarea
+          '#title': Comments
+      env15_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>15</span>Has the company undertaken any renewal energy options? List them.</div>'
+      container15:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env15_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env15_comments:
+          '#type': textarea
+          '#title': Comments
+      env16_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>16</span>Does the company have a clear understanding of energy and water costs (or are they aggregated within a general operating budget)?</div>'
+      container16:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env16_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env16_comments:
+          '#type': textarea
+          '#title': Comments
+      env17_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>17</span>Did the company experience any load shedding during the current year?</div>'
+      container17:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env17_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env17_comments:
+          '#type': textarea
+          '#title': Comments
+      env18_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>18</span>Has the company undertaken an energy or water use audit? If so, what were the conclusions and what actions were taken. If not, explore the rationale for not undertaking one.</div>'
+      container18:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env18_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env18_comments:
+          '#type': textarea
+          '#title': Comments
+      env19_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>19</span>Water & Electricity.</div>'
+      container19:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env19_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env19_comments:
+          '#type': textarea
+          '#title': Comments
+      env20_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>20</span>Waste; hazardous material management; pesticide use and management.</div>'
+      container20:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env20_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env20_comments:
+          '#type': textarea
+          '#title': Comments
+      env21_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>21</span>Does the company have a waste management plan in place?</div>'
+      container21:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env21_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env21_comments:
+          '#type': textarea
+          '#title': Comments
+      env22_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>22</span>What resource efficieny measures has the hospital underatken: solar energy, boreholes, energy efficiency lighting, water tanks, generators etc.?</div>'
+      container22:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env22_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env22_comments:
+          '#type': textarea
+          '#title': Comments
+      env23_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>23</span>Has the company planned or taken any measures to reduce or optimise its water consumption? If yes, explain.</div>'
+      container23:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env23_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env23_comments:
+          '#type': textarea
+          '#title': Comments
+      env24_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>24</span>Does the company recycle water?</div>'
+      container24:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env24_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env24_comments:
+          '#type': textarea
+          '#title': Comments
+      env25_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>25</span>Does the company have contingency plans during water shortage?</div>'
+      container25:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env25_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env25_comments:
+          '#type': textarea
+          '#title': Comments
+      env26_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>26</span>Does the company have water tanks and what are their capacities?</div>'
+      container26:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env26_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env26_comments:
+          '#type': textarea
+          '#title': Comments
+      env27_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>27</span>Are there water restrictions in the area?</div>'
+      container27:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env27_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env27_comments:
+          '#type': textarea
+          '#title': Comments
+      env28_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>28</span>Does the company have more than one source of reliable water supply?</div>'
+      container28:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env28_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env28_comments:
+          '#type': textarea
+          '#title': Comments
+      env29_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>29</span>Protection and conservation of biodiversity; management of ecosystem services; sustainable management of living and natural resources.</div>'
+      container29:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env29_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env29_comments:
+          '#type': textarea
+          '#title': Comments
+      env30_criteria:
+        '#type': webform_markup
+        '#markup': '<div class="section"><span>30</span>The company has undertaken a biodiversity study to identify the risks and impacts of its operation to the ecosystem.</div>'
+      container30:
+        '#type': container
+        '#attributes':
+          class:
+            - inner-wrap
+        env30_rating:
+          '#type': select
+          '#title': Rating
+          '#options': likert_satisfaction
+        env30_comments:
+          '#type': textarea
+          '#title': Comments
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

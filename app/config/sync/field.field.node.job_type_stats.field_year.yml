@@ -1,0 +1,29 @@
+uuid: f47f7bba-24da-4193-ba1b-67e903d92ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.job_type_stats
+    - taxonomy.vocabulary.years
+id: node.job_type_stats.field_year
+field_name: field_year
+entity_type: node
+bundle: job_type_stats
+label: Year
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

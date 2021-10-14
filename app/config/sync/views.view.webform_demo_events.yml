@@ -192,8 +192,8 @@ display:
         title: 'Demo: Events'
         description: ''
         expanded: false
-        parent: standard.front_page
-        weight: -49
+        parent: 'menu_link_content:17b07ed8-6e74-4301-b624-d432fa3f21b9'
+        weight: -50
         context: '0'
         menu_name: main
         enabled: false
