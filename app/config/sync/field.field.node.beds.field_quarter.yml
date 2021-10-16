@@ -1,0 +1,29 @@
+uuid: 5c0e713d-2543-474d-a51a-7356b2cb78ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.beds
+    - taxonomy.vocabulary.quarters
+id: node.beds.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: beds
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

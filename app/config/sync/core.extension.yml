@@ -26,6 +26,7 @@ module:
   content_moderation: 0
   contextual: 0
   ctools: 0
+  cvc_handler: 0
   cvc_importer: 0
   cvc_login: 0
   datetime: 0
@@ -87,6 +88,7 @@ module:
   webform_example_element_properties: 0
   webform_example_handler: 0
   webform_examples: 0
+  webform_handler: 0
   webform_icheck: 0
   webform_node: 0
   webform_options_limit: 0

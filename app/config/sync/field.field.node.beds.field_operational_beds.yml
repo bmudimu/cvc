@@ -1,0 +1,25 @@
+uuid: 4461a95d-5cba-4af7-af46-3c79536c4b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_operational_beds
+    - node.type.beds
+id: node.beds.field_operational_beds
+field_name: field_operational_beds
+entity_type: node
+bundle: beds
+label: 'Operational Beds'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100000
+  prefix: ''
+  suffix: ''
+field_type: integer

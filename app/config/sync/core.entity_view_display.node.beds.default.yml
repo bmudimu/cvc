@@ -1,0 +1,74 @@
+uuid: e887cecc-8c9d-4114-8e48-1e5f49087165
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.beds.field_client_name
+    - field.field.node.beds.field_notes
+    - field.field.node.beds.field_operational_beds
+    - field.field.node.beds.field_quarter
+    - field.field.node.beds.field_total_beds
+    - field.field.node.beds.field_year
+    - node.type.beds
+  module:
+    - user
+id: node.beds.default
+targetEntityType: node
+bundle: beds
+mode: default
+content:
+  field_client_name:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_notes:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_operational_beds:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_quarter:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_total_beds:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

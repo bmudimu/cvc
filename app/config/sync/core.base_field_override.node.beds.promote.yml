@@ -1,0 +1,22 @@
+uuid: 103a47a0-7164-4eb4-b788-400b6fcf29cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.beds
+id: node.beds.promote
+field_name: promote
+entity_type: node
+bundle: beds
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

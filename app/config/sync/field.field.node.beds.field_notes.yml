@@ -1,0 +1,19 @@
+uuid: a23b6d1c-e4b3-4a73-bc39-1ddf64c11feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.beds
+id: node.beds.field_notes
+field_name: field_notes
+entity_type: node
+bundle: beds
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,7 @@
+name: 'CVC Webform Handler'
+type: module
+description: 'Provides webform handlers.'
+package: 'custom'
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - 'webform:webform'

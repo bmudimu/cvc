@@ -1,0 +1,29 @@
+uuid: 3deb7cc5-ffb8-4ff7-8749-a03f6f021f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.beds
+    - taxonomy.vocabulary.years
+id: node.beds.field_year
+field_name: field_year
+entity_type: node
+bundle: beds
+label: Year
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,32 @@
+uuid: b2d730d8-06ec-42de-9841-a3f5631dde17
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.beds.field_client_name
+    - field.field.node.beds.field_notes
+    - field.field.node.beds.field_operational_beds
+    - field.field.node.beds.field_quarter
+    - field.field.node.beds.field_total_beds
+    - field.field.node.beds.field_year
+    - node.type.beds
+  module:
+    - user
+id: node.beds.teaser
+targetEntityType: node
+bundle: beds
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_notes: true
+  field_operational_beds: true
+  field_quarter: true
+  field_total_beds: true
+  field_year: true
