@@ -1,0 +1,88 @@
+:root {
+    --main-color: #f0f0f0;
+    --secondary-color: #idif20;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webform-progress {
+  padding: 1rem;
+  margin: 0.5rem auto;
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+ul.webform-progress-tracker {
+    display: inline-flex;
+    padding-left: 0px;
+
+}
+
+li.progress-step {
+    list-style: none;
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+li.progress-step:hover a {
+      color: lighten(--main-color, 5%);
+      background-color: --secondary-color;
+      border: solid 1px --secondary-color;
+    }
+
+ li.progress-step.active a {
+      color: lighten(--main-color, 5%);
+      background-color: --secondary-color;
+      border: solid 1px --secondary-color;
+    }
+
+li.progress-step:first-child {
+    float: left;
+  }
+li.progress-step:last-child {
+    float: right;
+    margin-right: 0px;
+  }
+
+.progress-title {
+    border: solid 1px #d7d7d7;
+    border-radius: 0.2rem;
+    color: #7d7d7d;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    min-width: 110px;
+  }
+
+
+li:first-child a {
+        display: inline-block;
+      }
+
+x:nth-child(2n) a {
+      display: inline-block;
+    }
+x:nth-child(3n) a {
+      display: inline-block;
+    }
+x:nth-child(4n) a {
+      display: inline-block;
+    }
+x:nth-child(5n) a {
+      display: inline-block;
+    }
+x:nth-child(6n) a {
+      display: inline-block;
+    }
+x:nth-child(7n) a {
+      display: inline-block;
+    }
+x:nth-child(8n) a {
+      display: inline-block;
+    }
+x:nth-child(9n) a {
+      display: inline-block;
+    }

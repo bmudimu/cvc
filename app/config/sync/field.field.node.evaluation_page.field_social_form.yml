@@ -1,0 +1,25 @@
+uuid: 3c51a621-81e3-4bba-96f0-36f737541465
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_form
+    - node.type.evaluation_page
+  module:
+    - webform
+id: node.evaluation_page.field_social_form
+field_name: field_social_form
+entity_type: node
+bundle: evaluation_page
+label: 'Social Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

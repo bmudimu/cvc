@@ -1,0 +1,17 @@
+uuid: 6e084a94-190e-4f13-b73d-2fbdcdbe04aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Evaluation Page'
+type: evaluation_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

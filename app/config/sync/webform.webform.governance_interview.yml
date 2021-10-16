@@ -1,0 +1,1018 @@
+uuid: 172d0388-4dd5-4e7a-a596-8342bd74698d
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: governance_interview
+title: 'Governance Interview'
+description: ''
+category: ''
+elements: |-
+  client_details:
+    '#type': webform_card
+    '#title': 'Client Details'
+    container:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox:
+        '#type': webform_flexbox
+        evaluation_year_:
+          '#type': webform_term_select
+          '#title': 'Evaluation Year '
+          '#vocabulary': years
+          '#breadcrumb_delimiter': ''
+        client_name:
+          '#type': webform_entity_select
+          '#title': 'Client Name'
+          '#target_type': node
+          '#selection_handler': 'default:node'
+          '#selection_settings':
+            target_bundles:
+              client: client
+  card_1:
+    '#type': webform_card
+    '#title': 'Question 1'
+    '#title_display': invisible
+    gov1:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>1</span>The company has developed a stakeholder relations policy that takes into account stakeholder engagement?</div>'
+    container1:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov1_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov1_comments:
+        '#type': textarea
+        '#title': Comments
+  card_2:
+    '#type': webform_card
+    '#title': 'Question 2'
+    '#title_display': invisible
+    gov2:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>2</span>The company has developed a stakeholder relations policy that takes into account consumer treatment?</div>'
+    container2:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov2_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov2_comments:
+        '#type': textarea
+        '#title': Comments
+  card_3:
+    '#type': webform_card
+    '#title': 'Question 3'
+    '#title_display': invisible
+    gov3:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>3</span>The board has adopted formal dispute resolution processes for internal and external disputes.</div>'
+    container3:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov3_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov3_comments:
+        '#type': textarea
+        '#title': Comments
+  card_4:
+    '#type': webform_card
+    '#title': 'Question 4'
+    '#title_display': invisible
+    gov4:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>4</span>Does the company have a policy to disclose materiality issues to the shareholders?</div>'
+    container4:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov4_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov4_comments:
+        '#type': textarea
+        '#title': Comments
+  card_5:
+    '#type': webform_card
+    '#title': 'Question 5'
+    '#title_display': invisible
+    gov5:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>5</span>How does the company disclose and manage the materiality issues with regards to Proscesutions?</div>'
+    container5:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov5_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov5_comments:
+        '#type': textarea
+        '#title': Comments
+  card_6:
+    '#type': webform_card
+    '#title': 'Question 6'
+    '#title_display': invisible
+    gov6:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>6</span>The company has published an integrated report with embraces integrated sustainability reporting.</div>'
+    container6:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov6_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov6_comments:
+        '#type': textarea
+        '#title': Comments
+  card_7:
+    '#type': webform_card
+    '#title': 'Question 7'
+    '#title_display': invisible
+    gov7:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>7</span>The company has published an integrated report with embraces integrated sustainability reporting.</div>'
+    container7:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov7_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov7_comments:
+        '#type': textarea
+        '#title': Comments
+  card_8:
+    '#type': webform_card
+    '#title': 'Question 2'
+    '#title_display': invisible
+    gov8:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>8</span>The company has appointed a community liaison office whose is responsible for identifying the impact of the companys services on the safety and health of consumers and on the development of the community.</div>'
+    container8:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov8_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov8_comments:
+        '#type': textarea
+        '#title': Comments
+  card_9:
+    '#type': webform_card
+    '#title': 'Question 9'
+    '#title_display': invisible
+    gov9:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>9</span>The company has an audit committee.</div>'
+    container9:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov9_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov9_comments:
+        '#type': textarea
+        '#title': Comments
+  card_10:
+    '#type': webform_card
+    '#title': 'Question 10'
+    '#title_display': invisible
+    gov10:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>10</span>The terms of reference for the audit committee s approved by the board and reviewed annually.</div>'
+    container10:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov10_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov10_comments:
+        '#type': textarea
+        '#title': Comments
+  card_11:
+    '#type': webform_card
+    '#title': 'Question 11'
+    '#title_display': invisible
+    gov11:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>11</span>The chairman of the audit committee is an independent non-executive director and not the chairman of the board.</div>'
+    container11:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov11_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov11_comments:
+        '#type': textarea
+        '#title': Comments
+  card_12:
+    '#type': webform_card
+    '#title': 'Question 12'
+    '#title_display': invisible
+    gov12:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>12</span>There is a board committee (either a risk committee or the audit committee) that assists the board in carrying out its risk responsibilities. (Further questions will refer to a risk committee, even if the audit committee carries out this function.)</div>'
+    container12:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov12_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov12_comments:
+        '#type': textarea
+        '#title': Comments
+  card_13:
+    '#type': webform_card
+    '#title': 'Question 13'
+    '#title_display': invisible
+    gov13:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>13</span>The risk committees terms of reference have been approved by the board and are reviewed every year.</div>'
+    container13:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov13_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov13_comments:
+        '#type': textarea
+        '#title': Comments
+  card_14:
+    '#type': webform_card
+    '#title': 'Question 14'
+    '#title_display': invisible
+    gov14:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>14</span>The risk committee considers the risk policy and plan.</div>'
+    container14:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov14_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov14_comments:
+        '#type': textarea
+        '#title': Comments
+  card_15:
+    '#type': webform_card
+    '#title': 'Question 15'
+    '#title_display': invisible
+    gov15:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>15</span>There is a nomination committee consisting of board members.</div>'
+    container15:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov15_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov15_comments:
+        '#type': textarea
+        '#title': Comments
+  card_16:
+    '#type': webform_card
+    '#title': 'Question 16'
+    '#title_display': invisible
+    gov16:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>16</span>The nominations committee''s terms of reference have been approved by the board and are reviewed every year.</div>'
+    container16:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov16_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov16_comments:
+        '#type': textarea
+        '#title': Comments
+  card_17:
+    '#type': webform_card
+    '#title': 'Question 17'
+    '#title_display': invisible
+    gov17:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>17</span>The board has adopted a succession planning policy.</div>'
+    container17:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov17_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov17_comments:
+        '#type': textarea
+        '#title': Comments
+  card_18:
+    '#type': webform_card
+    '#title': 'Question 18'
+    '#title_display': invisible
+    gov18:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>18</span>If no, how is succession planning managed by the company?</div>'
+    container18:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov18_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov18_comments:
+        '#type': textarea
+        '#title': Comments
+  card_19:
+    '#type': webform_card
+    '#title': 'Question 19'
+    '#title_display': invisible
+    gov19:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>19</span>The nominations committee oversees the process and reviews the results of the evaluation of the performance and independence of individual directors, the board and board committees.</div>'
+    container19:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov19_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov19_comments:
+        '#type': textarea
+        '#title': Comments
+  card_20:
+    '#type': webform_card
+    '#title': 'Question 20'
+    '#title_display': invisible
+    gov20:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>20</span>The company has a Social and Ethics Committee.</div>'
+    container20:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov20_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov20_comments:
+        '#type': textarea
+        '#title': Comments
+  card_21:
+    '#type': webform_card
+    '#title': 'Question 21'
+    '#title_display': invisible
+    gov21:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>21</span>The Social and Ethics Committee has monitored the company''s activities relating to corruption, including, the OECD recommendations regarding corruption, & the reduction of corruption.</div>'
+    container21:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov21_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov21_comments:
+        '#type': textarea
+        '#title': Comments
+  card_22:
+    '#type': webform_card
+    '#title': 'Question 22'
+    '#title_display': invisible
+    gov22:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>22</span>There is a board remuneration committee.</div>'
+    container22:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov22_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov22_comments:
+        '#type': textarea
+        '#title': Comments
+  card_23:
+    '#type': webform_card
+    '#title': 'Question 23'
+    '#title_display': invisible
+    gov23:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>23</span>The remuneration committee''s terms of reference have been approved by the board and are reviewed every year.</div>'
+    container23:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov23_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov23_comments:
+        '#type': textarea
+        '#title': Comments
+  card_24:
+    '#type': webform_card
+    '#title': 'Question 24'
+    '#title_display': invisible
+    gov24:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>24</span>The remuneration committee terms of reference deal adequately with all of the following: - composition; -objectives, purpose and activities; - delegated authorities - including the extent of power to make decisions; - tenure; and - reporting mechanism to the board.</div>'
+    container24:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov24_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov24_comments:
+        '#type': textarea
+        '#title': Comments
+  card_25:
+    '#type': webform_card
+    '#title': 'Question 25'
+    '#title_display': invisible
+    gov25:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>25</span>There is a policy addressing division of responsibilities at board level to ensure a balance of power and authority, such that that no one individual has unfettered powers of decision-making.</div>'
+    container25:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov25_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov25_comments:
+        '#type': textarea
+        '#title': Comments
+  card_26:
+    '#type': webform_card
+    '#title': 'Question 26'
+    '#title_display': invisible
+    gov26:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>26</span>The board has developed a director training programme for directors.</div>'
+    container26:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov26_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov26_comments:
+        '#type': textarea
+        '#title': Comments
+  card_27:
+    '#type': webform_card
+    '#title': 'Question 27'
+    '#title_display': invisible
+    gov27:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>27</span>The board has developed a director induction programme for all new directors.</div>'
+    container27:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov27_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov27_comments:
+        '#type': textarea
+        '#title': Comments
+  card_28:
+    '#type': webform_card
+    '#title': 'Question 28'
+    '#title_display': invisible
+    gov28:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>28</span>The training programme identifies the focus areas for the directors training.</div>'
+    container28:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov28_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov28_comments:
+        '#type': textarea
+        '#title': Comments
+  card_29:
+    '#type': webform_card
+    '#title': 'Question 29'
+    '#title_display': invisible
+    gov29:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>29</span>The board has developed a succession policy/plan.</div>'
+    container29:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov29_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov29_comments:
+        '#type': textarea
+        '#title': Comments
+  card_30:
+    '#type': webform_card
+    '#title': 'Question 30'
+    '#title_display': invisible
+    gov30:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>30</span>How often are evaluations performed on the board?</div>'
+    container30:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov30_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov30_comments:
+        '#type': textarea
+        '#title': Comments
+  card_31:
+    '#type': webform_card
+    '#title': 'Question 31'
+    '#title_display': invisible
+    gov31:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>31</span>The company has a dedicated company secretary or company that provides secretariat services?</div>'
+    container31:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov31_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov31_comments:
+        '#type': textarea
+        '#title': Comments
+  card_32:
+    '#type': webform_card
+    '#title': 'Question 32'
+    '#title_display': invisible
+    gov32:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>32</span>Does the company pay remuneration to board members?</div>'
+    container32:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov32_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov32_comments:
+        '#type': textarea
+        '#title': Comments
+  card_33:
+    '#type': webform_card
+    '#title': 'Question 33'
+    '#title_display': invisible
+    gov33:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>33</span>How does the board determine board remuneration?</div>'
+    container33:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov33_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov33_comments:
+        '#type': textarea
+        '#title': Comments
+  card_34:
+    '#type': webform_card
+    '#title': 'Question 34'
+    '#title_display': invisible
+    gov34:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>34</span>Does the company disclose the directors remuneration?</div>'
+    container34:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov34_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov34_comments:
+        '#type': textarea
+        '#title': Comments
+  card_35:
+    '#type': webform_card
+    '#title': 'Question 35'
+    '#title_display': invisible
+    gov35:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>35</span>Remuneration policies and practices are in place that adequately address all of the following: - base pay and bonuses; - termination of employee contracts; - severance and retirement benefits; and - share-based and other long-term incentive schemes.</div>'
+    container35:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov35_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov35_comments:
+        '#type': textarea
+        '#title': Comments
+  card_36:
+    '#type': webform_card
+    '#title': 'Question 36'
+    '#title_display': invisible
+    gov36:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>36</span>Who conducts the evaluations for the directors - Self evaluation?</div>'
+    container36:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov36_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov36_comments:
+        '#type': textarea
+        '#title': Comments
+  card_37:
+    '#type': webform_card
+    '#title': 'Question 37'
+    '#title_display': invisible
+    gov37:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>37</span>Who conducts the evaluations for the directors - Chairperson of the board?</div>'
+    container37:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov37_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov37_comments:
+        '#type': textarea
+        '#title': Comments
+  card_38:
+    '#type': webform_card
+    '#title': 'Question 38'
+    '#title_display': invisible
+    gov38:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>38</span>How often are evaluations performed on the board?</div>'
+    container38:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov38_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov38_comments:
+        '#type': textarea
+        '#title': Comments
+  card_39:
+    '#type': webform_card
+    '#title': 'Question 39'
+    '#title_display': invisible
+    gov39:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>39</span>The company has a remuneration policy.</div>'
+    container39:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov39_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov39_comments:
+        '#type': textarea
+        '#title': Comments
+  card_40:
+    '#type': webform_card
+    '#title': 'Question 40'
+    '#title_display': invisible
+    gov40:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>40</span>The company has established an internal audit function.</div>'
+    container40:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      gov40_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      gov40_comments:
+        '#type': textarea
+        '#title': Comments
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: true
+  wizard_progress_percentage: true
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

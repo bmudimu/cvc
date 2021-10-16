@@ -1,0 +1,23 @@
+uuid: 358a0047-4fcb-405c-9215-49a592681a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.evaluation_page
+  module:
+    - text
+id: node.evaluation_page.body
+field_name: body
+entity_type: node
+bundle: evaluation_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

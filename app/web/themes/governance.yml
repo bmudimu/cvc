@@ -1,0 +1,623 @@
+client_details:
+  '#type': card
+  '#title': 'Client Details'
+  container:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    flexbox:
+      '#type': flexbox
+      evaluation_year_:
+        '#type': term_select
+        '#title': 'Evaluation Year '
+        '#vocabulary': years
+        '#breadcrumb_delimiter': ''
+      client_name:
+        '#type': entity_select
+        '#title': 'Client Name'
+        '#target_type': node
+        '#selection_handler': 'default:node'
+        '#selection_settings':
+          target_bundles:
+            client: client
+card_1:
+  '#type': card
+  '#title': 'Question 1'
+  '#title_display': invisible
+  gov1:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>1</span>The company has a policy that clearly articulates the environmental objectives and principles that guide the company to achieve sound environmental performance.</div>'
+  container1:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov1_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov1_comments:
+      '#type': textarea
+      '#title': Comments
+card_2:
+  '#type': card
+  '#title': 'Question 2'
+  '#title_display': invisible
+  gov2:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>2</span>The company has established a formal risk identification and impact process.</div>'
+  container2:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov2_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov2_comments:
+      '#type': textarea
+      '#title': Comments
+card_3:
+  '#type': card
+  '#title': 'Question 3'
+  '#title_display': invisible
+  gov3:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>3</span>The company has sufficient management programmes that address continuous environmental and social issued exposed to the hospital.</div>'
+  container3:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov3_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov3_comments:
+      '#type': textarea
+      '#title': Comments
+card_4:
+  '#type': card
+  '#title': 'Question 4'
+  '#title_display': invisible
+  gov4:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>4</span>The company has a formal organisational structure to implement EMS within the hospital. The structure includes individuals responsible for managing and implementing the EMS within the hospital.</div>'
+  container4:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov4_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov4_comments:
+      '#type': textarea
+      '#title': Comments
+card_5:
+  '#type': card
+  '#title': 'Question 5'
+  '#title_display': invisible
+  gov5:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>5</span>The company has implemented an emergency preparedness and response systems so that the company, in collaboration with appropriate and relevant third parties, will be prepared to respond to accidents and emergency situations (e.g. fires, accidental oil spills) in a manner appropriate to prevent and mitigate any harm to people and/or the environment.</div>'
+  container5:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov5_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov5_comments:
+      '#type': textarea
+      '#title': Comments
+card_6:
+  '#type': card
+  '#title': 'Question 6'
+  '#title_display': invisible
+  gov6:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>6</span>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</div>'
+  container6:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov6_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov6_comments:
+      '#type': textarea
+      '#title': Comments
+card_7:
+  '#type': card
+  '#title': 'Question 7'
+  '#title_display': invisible
+  gov7:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>7</span>The company has a detailed and updated grievance register.</div>'
+  container7:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov7_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov7_comments:
+      '#type': textarea
+      '#title': Comments
+card_8:
+  '#type': card
+  '#title': 'Question 2'
+  '#title_display': invisible
+  gov8:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>8</span>There is evidence that environmental monitoring shapes and informs the company''s practices.</div>'
+  container8:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov8_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov8_comments:
+      '#type': textarea
+      '#title': Comments
+card_9:
+  '#type': card
+  '#title': 'Question 9'
+  '#title_display': invisible
+  gov9:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>9</span>Does the company comply with all relevant local environmental laws, standards and regulations?</div>'
+  container9:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov9_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov9_comments:
+      '#type': textarea
+      '#title': Comments
+card_10:
+  '#type': card
+  '#title': 'Question 10'
+  '#title_display': invisible
+  gov10:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>10</span>Has the company obtained all relevant environmental permits and certifications and are they up to date?</div>'
+  container10:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov10_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov10_comments:
+      '#type': textarea
+      '#title': Comments
+card_11:
+  '#type': card
+  '#title': 'Question 11'
+  '#title_display': invisible
+  gov11:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>11</span>The company did not pay any fines or penalties or was not under investigation for non-compliance with environmental regulations and standards (Yes or No). If the answer is no, provide details thereof.</div>'
+  container11:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov11_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov11_comments:
+      '#type': textarea
+      '#title': Comments
+card_12:
+  '#type': card
+  '#title': 'Question 12'
+  '#title_display': invisible
+  gov12:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>12</span>The Department of Environmental Affairs undertaken an environmental audit on the company for environmental transgressions.</div>'
+  container12:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov12_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov12_comments:
+      '#type': textarea
+      '#title': Comments
+card_13:
+  '#type': card
+  '#title': 'Question 13'
+  '#title_display': invisible
+  gov13:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>13</span>Greenhouse gasses: Review strategies that include adoption of renewable or low carbon energy sources, sustainable agricultural, forestry and livestock management practices, the reduction of fugitive emissions and the reduction of gas flaring.</div>'
+  container13:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov13_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov13_comments:
+      '#type': textarea
+      '#title': Comments
+card_14:
+  '#type': card
+  '#title': 'Question 14'
+  '#title_display': invisible
+  gov14:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>14</span>Water consumption: Focus on the use of additional technically feasible water conservation measures within the client’s operations, the use of alternative water supplies, water consumption offsets to reduce total demand for water resources to within the available supply, and evaluation of alternative project locations.</div>'
+  container14:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov14_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov14_comments:
+      '#type': textarea
+      '#title': Comments
+card_15:
+  '#type': card
+  '#title': 'Question 15'
+  '#title_display': invisible
+  gov15:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>15</span>Has the company undertaken any renewal energy options? List them.</div>'
+  container15:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov15_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov15_comments:
+      '#type': textarea
+      '#title': Comments
+card_16:
+  '#type': card
+  '#title': 'Question 16'
+  '#title_display': invisible
+  gov16:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>16</span>Does the company have a clear understanding of energy and water costs (or are they aggregated within a general operating budget)?</div>'
+  container16:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov16_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov16_comments:
+      '#type': textarea
+      '#title': Comments
+card_17:
+  '#type': card
+  '#title': 'Question 17'
+  '#title_display': invisible
+  gov17:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>17</span>Did the company experience any load shedding during the current year?</div>'
+  container17:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov17_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov17_comments:
+      '#type': textarea
+      '#title': Comments
+card_18:
+  '#type': card
+  '#title': 'Question 18'
+  '#title_display': invisible
+  gov18:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>18</span>Has the company undertaken an energy or water use audit? If so, what were the conclusions and what actions were taken. If not, explore the rationale for not undertaking one.</div>'
+  container18:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov18_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov18_comments:
+      '#type': textarea
+      '#title': Comments
+card_19:
+  '#type': card
+  '#title': 'Question 19'
+  '#title_display': invisible
+  gov19:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>19</span>Water & Electricity.</div>'
+  container19:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov19_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov19_comments:
+      '#type': textarea
+      '#title': Comments
+card_20:
+  '#type': card
+  '#title': 'Question 20'
+  '#title_display': invisible
+  gov20:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>20</span>Waste; hazardous material management; pesticide use and management.</div>'
+  container20:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov20_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov20_comments:
+      '#type': textarea
+      '#title': Comments
+card_21:
+  '#type': card
+  '#title': 'Question 21'
+  '#title_display': invisible
+  gov21:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>21</span>Does the company have a waste management plan in place?</div>'
+  container21:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov21_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov21_comments:
+      '#type': textarea
+      '#title': Comments
+card_22:
+  '#type': card
+  '#title': 'Question 22'
+  '#title_display': invisible
+  gov22:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>22</span>What resource efficieny measures has the hospital underatken: solar energy, boreholes, energy efficiency lighting, water tanks, generators etc.?</div>'
+  container22:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov22_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov22_comments:
+      '#type': textarea
+      '#title': Comments
+card_23:
+  '#type': card
+  '#title': 'Question 23'
+  '#title_display': invisible
+  gov23:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>23</span>Has the company planned or taken any measures to reduce or optimise its water consumption? If yes, explain.</div>'
+  container23:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov23_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov23_comments:
+      '#type': textarea
+      '#title': Comments
+card_24:
+  '#type': card
+  '#title': 'Question 24'
+  '#title_display': invisible
+  gov24:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>24</span>Does the company recycle water?</div>'
+  container24:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov24_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov24_comments:
+      '#type': textarea
+      '#title': Comments
+card_25:
+  '#type': card
+  '#title': 'Question 25'
+  '#title_display': invisible
+  gov25:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>25</span>Does the company have contingency plans during water shortage?</div>'
+  container25:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov25_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov25_comments:
+      '#type': textarea
+      '#title': Comments
+card_26:
+  '#type': card
+  '#title': 'Question 26'
+  '#title_display': invisible
+  gov26:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>26</span>Does the company have water tanks and what are their capacities?</div>'
+  container26:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov26_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov26_comments:
+      '#type': textarea
+      '#title': Comments
+card_27:
+  '#type': card
+  '#title': 'Question 27'
+  '#title_display': invisible
+  gov27:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>27</span>Are there water restrictions in the area?</div>'
+  container27:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov27_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov27_comments:
+      '#type': textarea
+      '#title': Comments
+card_28:
+  '#type': card
+  '#title': 'Question 28'
+  '#title_display': invisible
+  gov28:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>28</span>Does the company have more than one source of reliable water supply?</div>'
+  container28:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov28_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov28_comments:
+      '#type': textarea
+      '#title': Comments
+card_29:
+  '#type': card
+  '#title': 'Question 29'
+  '#title_display': invisible
+  gov29:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>29</span>Protection and conservation of biodiversity; management of ecosystem services; sustainable management of living and natural resources.</div>'
+  container29:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov29_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov29_comments:
+      '#type': textarea
+      '#title': Comments
+card_30:
+  '#type': card
+  '#title': 'Question 30'
+  '#title_display': invisible
+  gov30:
+    '#type': markup
+    '#display_on': both
+    '#markup': '<div class="section"><span>30</span>The company has undertaken a biodiversity study to identify the risks and impacts of its operation to the ecosystem.</div>'
+  container30:
+    '#type': container
+    '#attributes':
+      class:
+        - inner-wrap
+    gov30_rating:
+      '#type': select
+      '#title': Rating
+      '#options': likert_satisfaction
+    gov30_comments:
+      '#type': textarea
+      '#title': Comments

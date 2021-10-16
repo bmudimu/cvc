@@ -81,7 +81,6 @@ display:
             field_water: field_water
             field_electricity: field_electricity
             nothing: nothing
-            field_month_number: field_month_number
           info:
             field_month:
               sortable: false
@@ -109,14 +108,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_month_number:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: field_month_number
+          default: '-1'
           empty_table: false
       row:
         type: fields
@@ -422,7 +414,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -866,7 +857,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -2069,6 +2059,7 @@ display:
         relationships: false
         arguments: false
         css_class: false
+        use_ajax: false
       style:
         type: views_aggregator_plugin_style_table
         options:
@@ -2174,15 +2165,15 @@ display:
         type: fields
         options: {  }
       fields:
-        field_quarter:
-          id: field_quarter
-          table: node__field_quarter
-          field: field_quarter
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          label: Quarter
-          exclude: true
+          label: Title
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2222,139 +2213,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_month:
-          id: field_month
-          table: node__field_month
-          field: field_month
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Month
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: '0'
-          element_class: ''
-          element_label_type: '0'
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: '0'
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_water:
-          id: field_water
-          table: node__field_water
-          field: field_water
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Water
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: '0'
-          element_class: ''
-          element_label_type: '0'
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: '0'
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
           click_sort_column: value
-          type: number_decimal
+          type: string
           settings:
-            thousand_separator: ''
-            prefix_suffix: false
-            decimal_separator: .
-            scale: 2
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2365,122 +2227,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
           plugin_id: field
-        field_electricity:
-          id: field_electricity
-          table: node__field_electricity
-          field: field_electricity
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Electricity
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: true
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: true
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: '0'
-          element_class: ''
-          element_label_type: '0'
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: '0'
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: number_decimal
-          settings:
-            thousand_separator: ''
-            prefix_suffix: false
-            decimal_separator: .
-            scale: 2
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Total
-          exclude: false
-          alter:
-            alter_text: true
-            text: "{% set water = field_water|trim  %}\r\n{% set electricity = field_electricity|trim %}\r\n\r\n{{ (water + electricity)|number_format(2, '.', ' ') }}"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
       display_description: ''
       sorts: {  }
       filters:
@@ -2616,6 +2365,7 @@ display:
           plugin_id: string
       block_description: 'Resource Fund Categories'
       css_class: filters
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -2625,11 +2375,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_electricity'
-        - 'config:field.storage.node.field_month'
-        - 'config:field.storage.node.field_quarter'
-        - 'config:field.storage.node.field_water'
+      tags: {  }
   page_resource_summary:
     display_plugin: page
     id: page_resource_summary
@@ -2690,7 +2436,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -2707,7 +2453,7 @@ display:
           table: node__field_water
           field: field_water
           relationship: none
-          group_type: group
+          group_type: sum
           admin_label: ''
           label: Water
           exclude: false
@@ -2745,11 +2491,19 @@ display:
           element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ''
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
           click_sort_column: value
           type: number_decimal
           settings:
@@ -2765,7 +2519,6 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
         field_electricity:
@@ -2773,7 +2526,7 @@ display:
           table: node__field_electricity
           field: field_electricity
           relationship: none
-          group_type: group
+          group_type: sum
           admin_label: ''
           label: Electricity
           exclude: false
@@ -2816,6 +2569,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ''
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
           click_sort_column: value
           type: number_decimal
           settings:
@@ -2831,7 +2592,6 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
         nothing:
@@ -2883,6 +2643,70 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+        field_month_number:
+          id: field_month_number
+          table: taxonomy_term__field_month_number
+          field: field_month_number
+          relationship: field_month
+          group_type: group
+          admin_label: ''
+          label: 'Month Number'
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       defaults:
         fields: false
         relationships: false
@@ -2891,6 +2715,9 @@ display:
         filters: false
         filter_groups: false
         use_ajax: false
+        group_by: false
+        style: false
+        row: false
       relationships:
         field_client_name:
           id: field_client_name
@@ -2909,6 +2736,15 @@ display:
           group_type: group
           admin_label: 'field_fund: Taxonomy term'
           required: true
+          plugin_id: standard
+        field_month:
+          id: field_month
+          table: node__field_month
+          field: field_month
+          relationship: none
+          group_type: group
+          admin_label: 'field_month: Taxonomy term'
+          required: false
           plugin_id: standard
       arguments:
         name:
@@ -3097,6 +2933,111 @@ display:
       display_description: ''
       exposed_block: true
       use_ajax: true
+      group_by: true
+      style:
+        type: views_aggregator_plugin_style_table
+        options:
+          row_class: ''
+          default_row_class: true
+          override: 1
+          sticky: 0
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_month: field_month
+            field_water: field_water
+            field_electricity: field_electricity
+            nothing: nothing
+            field_month_number: field_month_number
+          info:
+            field_month:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              has_aggr: 1
+              aggr:
+                views_aggregator_group_and_compress: views_aggregator_group_and_compress
+              aggr_par: ''
+              has_aggr_column: 1
+              aggr_column: views_aggregator_replace
+              aggr_par_column: 'Year Total'
+            field_water:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              has_aggr: 0
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: 1
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            field_electricity:
+              sortable: 0
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              has_aggr: 0
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: 1
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            nothing:
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              has_aggr: 0
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: 1
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+            field_month_number:
+              sortable: 1
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: 0
+              responsive: ''
+              has_aggr: 0
+              aggr:
+                views_aggregator_first: views_aggregator_first
+              aggr_par: ''
+              has_aggr_column: 0
+              aggr_column: views_aggregator_sum
+              aggr_par_column: ''
+          default: field_month_number
+          empty_table: 0
+          group_aggregation:
+            group_aggregation_results: '0'
+            grouping_field_class: ''
+            result_label_prefix: ''
+            result_label_suffix: ''
+            grouping_row_class: ''
+          column_aggregation:
+            totals_row_position:
+              2: '2'
+              1: 0
+              3: 0
+            totals_per_page: '1'
+            precision: '2'
+            totals_row_class: ''
+      row:
+        type: fields
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -3108,6 +3049,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_electricity'
         - 'config:field.storage.node.field_month'
-        - 'config:field.storage.node.field_water'
+        - 'config:field.storage.taxonomy_term.field_month_number'

@@ -11,6 +11,8 @@ base:
       css/adminlte.css: {}
       css/cv_select.css: {}
       css/custom.css: {}
+      css/progressbar.css: {}
+      # css/progress_bar.scss: {}
       # css/skins/default.css: {}
 
   js:

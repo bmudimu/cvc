@@ -1,0 +1,56 @@
+uuid: 5db90963-8995-4f1f-92ff-ac23a729f554
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evaluation_page.body
+    - field.field.node.evaluation_page.field_environmental_form
+    - field.field.node.evaluation_page.field_governance_form
+    - field.field.node.evaluation_page.field_social_form
+    - node.type.evaluation_page
+  module:
+    - text
+    - user
+    - webform
+id: node.evaluation_page.default
+targetEntityType: node
+bundle: evaluation_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_environmental_form:
+    weight: 103
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_governance_form:
+    weight: 104
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_social_form:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

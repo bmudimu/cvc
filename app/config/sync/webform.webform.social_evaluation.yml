@@ -1,4 +1,4 @@
-uuid: c36631da-5403-4ec7-a72f-162d07bf47f9
+uuid: bd251442-c0b5-4e30-8eca-fb6b986ff447
 langcode: en
 status: open
 dependencies: {  }
@@ -13,1365 +13,1833 @@ title: 'Social Evaluation'
 description: ''
 category: ''
 elements: |-
-  social:
-    '#type': webform_wizard_page
-    '#title': Social
+  client_details:
+    '#type': webform_card
+    '#title': 'Client Details'
     container:
       '#type': container
-      env1_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>1</span>Number of employees per employment category.</div>'
-      container1:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria2:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>2</span>Total Number of Jobs</div>'
-      container2:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating2:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments2:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria3:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>3</span>Total Number of New Jobs</div>'
-      container3:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating3:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments3:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria4:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>4</span>Total Number of Lost Jobs</div>'
-      container4:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating4:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments4:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria5:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>5</span>Total Number of Construction Jobs</div>'
-      container5:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating5:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments5:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria6:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>6</span>Total Number of Companies Contracted</div>'
-      container6:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating6:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments6:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria7:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>7</span>Total Number of Procurement Construction Companies</div>'
-      container7:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating7:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments7:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria8:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>8</span>The company has an HR policy that complies with national labour regulations and applies to all staff. The policy is made available to all staff.</div>'
-      container8:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating8:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments8:
-          '#type': textarea
-          '#title': Comments
-      env9_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>9</span>The company has developed a Business conduct and code of ethics policy which is made available to all staff.</div>'
-      container9:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env9_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env9_comments:
-          '#type': textarea
-          '#title': Comments
-      env10_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>10</span>The company has an HR manager with the necessary skills and expertise.</div>'
-      container10:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env10_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env10_comments:
-          '#type': textarea
-          '#title': Comments
-      env11_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>11</span>Does the company have any concerns on absenteeism?</div>'
-      container11:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env11_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env11_comments:
-          '#type': textarea
-          '#title': Comments
-      env12_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>12</span>The company monitors compliance with all its HR policies.</div>'
-      container12:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env12_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env12_comments:
-          '#type': textarea
-          '#title': Comments
-      env13_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>13</span>How is remuneration benchmarked?</div>'
-      container13:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env13_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env13_comments:
-          '#type': textarea
-          '#title': Comments
-      env14_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>14</span>Has the company ever faced any issues related to labour and working conditions? (e.g. excessive working hours, wages below national minimum wage, child labour).</div>'
-      container14:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env14_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env14_comments:
-          '#type': textarea
-          '#title': Comments
-      env15_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>15</span>Does the company have an higher than average turnover of staff? Why?</div>'
-      container15:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env15_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env15_comments:
-          '#type': textarea
-          '#title': Comments
-      env16_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>16</span>The company has an anti discrimination policy?</div>'
-      container16:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env16_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env16_comments:
-          '#type': textarea
-          '#title': Comments
-      env17_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>17</span>The company has a policy that protects access and discrimination from people with disabilities?</div>'
-      container17:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env17_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env17_comments:
-          '#type': textarea
-          '#title': Comments
-      env18_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>18</span>The company has a sexual harrassment policy?</div>'
-      container18:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env18_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env18_comments:
-          '#type': textarea
-          '#title': Comments
-      env19_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>19</span>The company has a policy that deals with support and respect for protection of other human rights principles?</div>'
-      container19:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env19_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env19_comments:
-          '#type': textarea
-          '#title': Comments
-      env20_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>20</span>Do all employees have signed employment contracts?</div>'
-      container20:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env20_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env20_comments:
-          '#type': textarea
-          '#title': Comments
-      env21_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>21</span>Are copies of employment contracts provided?</div>'
-      container21:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env21_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env21_comments:
-          '#type': textarea
-          '#title': Comments
-      env22_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>22</span>The company remunerates its employees fairly.</div>'
-      container22:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env22_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env22_comments:
-          '#type': textarea
-          '#title': Comments
-      env23_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>23</span>How does the company benchmark remuneration?</div>'
-      container23:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env23_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env23_comments:
-          '#type': textarea
-          '#title': Comments
-      env24_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>24</span>The company has workers that are part of a registered union.</div>'
-      container24:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env24_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env24_comments:
-          '#type': textarea
-          '#title': Comments
-      env25_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>25</span>Workers representatives are democratically elected and free to carry out their duties within working hours.</div>'
-      container25:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env25_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env25_comments:
-          '#type': textarea
-          '#title': Comments
-      env26_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>26</span>Employees are free to join a union and freely express their opinion and concerns.</div>'
-      container26:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env26_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env26_comments:
-          '#type': textarea
-          '#title': Comments
-      env27_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>27</span>Does the company have any staff forums that deals with staff issues?</div>'
-      container27:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env27_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env27_comments:
-          '#type': textarea
-          '#title': Comments
-      env28_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>28</span>Non-discrimination and equal opportunity</div>'
-      container28:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env28_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env28_comments:
-          '#type': textarea
-          '#title': Comments
-      env29_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>29</span>The company has a retrenchment policy in place.</div>'
-      container29:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env29_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env29_comments:
-          '#type': textarea
-          '#title': Comments
-      env30_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>30</span>The company has a retrenchment policy in place.</div>'
-      container30:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env30_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env30_comments:
-          '#type': textarea
-          '#title': 'Comments:'
-      env31_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>31</span>Has the company undertaken any retrenchment in the last five years? If so, how many people and why?</div>'
-      container31:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env31_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env31_comments:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria32:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>32</span>How does the company ensure that retrenchment is managed fairly?</div>'
-      container32:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating32:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments32:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria33:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>33</span>Has the company had any industrial action over the past 5 years? What was the cause, how long was it and what was the outcome?</div>'
-      container33:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating33:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments33:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria34:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>34</span>Was there any retrenchment of termination of the contract as a result of the industrial action?</div>'
-      container34:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating34:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments34:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria35:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>35</span>The company has a grievance policy for its employees that is made available to all workers at the time of their employment.</div>'
-      container35:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating35:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments35:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria36:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>36</span>The grevience procedure allows for anonymous complaints to be raised and addressed.</div>'
-      container36:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating36:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments36:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria37:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>37</span>List any major grievances and highlight if they were appropriately handled.</div>'
-      container37:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating37:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments37:
-          '#type': textarea
-          '#title': Comments
-      env1_criteria38:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>38</span>The company''s HR policy protects the rights of minors.</div>'
-      container38:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env1_rating38:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env1_comments38:
-          '#type': textarea
-          '#title': Comments
-      env39_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>39</span>The company monitors employees compliance to ensure that their professional licences are renewed timelously.</div>'
-      container39:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env39_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env39_comments:
-          '#type': textarea
-          '#title': Comments
-      env40_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>40</span>How often does the employment equity committee meet?</div>'
-      container40:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env40_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env40_comments:
-          '#type': textarea
-          '#title': Comments
-      env41criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>41</span>Have all the employment equity meeting minutes for this reporting period been submitted?</div>'
-      container41:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env41rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env41comments:
-          '#type': textarea
-          '#title': Comments
-      env42riteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>42</span>The company has an employment equity policy.</div>'
-      container42:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env42_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env42_comments:
-          '#type': textarea
-          '#title': Comments
-      env43_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>43</span>The company has implemented an Employment Equity Forum.</div>'
-      container43:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env43_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env43_comments:
-          '#type': textarea
-          '#title': Comments
-      env44_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>44</span>The company has implemented an Employment Equity Plan.</div>'
-      container44:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env44_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env44_comments:
-          '#type': textarea
-          '#title': Comments
-      env45_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>45</span>How often does the company monitor and evaluate their employment equity plan progress? (monthly/quarterly).</div>'
-      container45:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env45_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env45_comments:
-          '#type': textarea
-          '#title': Comments
-      env46_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>46</span>If annual reporting falls within this reporting period, did the company achieve the annual objects as set out in the employment equity plan for this period? Provide evidence</div>'
-      container46:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env46_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env46_comments:
-          '#type': textarea
-          '#title': Comments
-      env47_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>47</span>Does the company have a transformation committee?</div>'
-      container47:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env47_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env47_comments:
-          '#type': textarea
-          '#title': Comments
-      env48_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>48</span>The company has a training and development policy and plan.</div>'
-      container48:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env48_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env48_comments:
-          '#type': textarea
-          '#title': Comments
-      env49_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>49</span>Does the company have a training and development committee?</div>'
-      container49:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env49_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env49_comments:
-          '#type': textarea
-          '#title': Comments
-      env50_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>50</span>How often does the training and development committee meet?</div>'
-      container50:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env50_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env50_comments:
-          '#type': textarea
-          '#title': Comments
-      env51_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>51</span>Has the company provided minutes of the meetings held in this quarter?</div>'
-      container51:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env51_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env51_comments:
-          '#type': textarea
-          '#title': Comments
-      env52_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>52</span>Has the company provided training in this current period?</div>'
-      container52:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env52_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env52_comments:
-          '#type': textarea
-          '#title': Comments
-      env53_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>53</span>Has the company provided evidence of training undertaken in this reporting period?</div>'
-      container53:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env53_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env53_comments:
-          '#type': textarea
-          '#title': Comments
-      env54_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>54</span>The company has a procurement policy that gives preference to the use of SMME''s and B-BBEE suppliers.</div>'
-      container54:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env54_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env54_comments:
-          '#type': textarea
-          '#title': Comments
-      env55_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>55</span>The company monitors compliance of the procurement policy.</div>'
-      container55:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env55_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env55_comments:
-          '#type': textarea
-          '#title': Comments
-      env56_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>56</span>The company has undertaken enterprise development initiatives.</div>'
-      container56:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env56_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env56_comments:
-          '#type': textarea
-          '#title': Comments
-      env57_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>57</span>The facility has been constructed according to national building regulations.</div>'
-      container57:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env57_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env57_comments:
-          '#type': textarea
-          '#title': Comments
-      env58_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>58</span>Emergency exits are clearly marked.</div>'
-      container58:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env58_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env58comments:
-          '#type': textarea
-          '#title': Comments
-      env59_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>59</span>The facility is equipped with fire detectors, alarm systems, and fire-fighting equipment.</div>'
-      container59:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env59_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env59_comments:
-          '#type': textarea
-          '#title': Comments
-      env60_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>60</span>Clean and adequate eating areas are provided for staff.</div>'
-      container60:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env60_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env60_comments:
-          '#type': textarea
-          '#title': Comments
-      env61_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>61</span>The facility is appropriately equipped first-aid stations that are easily accessible throughout the place of work.</div>'
-      container61:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env61_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env61_comments:
-          '#type': textarea
-          '#title': Comments
-      env62_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>62</span>The hospital has additional policies and procedures to supliment health and safety</div>'
-      container62:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env62_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env62_comments:
-          '#type': textarea
-          '#title': Comments
-      env63_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>63</span>The company has a health and safety policy?</div>'
-      container63:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env63_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env63_comments:
-          '#type': textarea
-          '#title': Comments
-      env64_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>64</span>The company has health and safety representatives in place.</div>'
-      container64:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env64_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env64_comments:
-          '#type': textarea
-          '#title': Comments
-      env65_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>65</span>The company has provided the number of health and safety representatives, if yes, state the number of representatives</div>'
-      container65:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env65_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env65_comments:
-          '#type': textarea
-          '#title': Comments
-      env66_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>66</span>The hospital has a health and saftey committee.</div>'
-      container66:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env66_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env66_comments:
-          '#type': textarea
-          '#title': Comments
-      env67_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>67</span>The hospital conducted health and safety training.</div>'
-      container67:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env67_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env67_comments:
-          '#type': textarea
-          '#title': Comments
-      env68_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>68</span>The hospital has an incident reporting system.</div>'
-      container68:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env68_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env68_comments:
-          '#type': textarea
-          '#title': Comments
-      env69_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>69</span>The hospital has evacuation plans around the hospital.</div>'
-      container69:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env69_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env69_comments:
-          '#type': textarea
-          '#title': Comments
-      env70_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>70</span>The hospital conducted an evacuation mock drill in this quarter.</div>'
-      container70:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env70_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env70_comments:
-          '#type': textarea
-          '#title': Comments
-      env71_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>71</span>When was the last evacuation exercise underataken and how oftrn does this occur?</div>'
-      container71:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env71_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env71_comments:
-          '#type': textarea
-          '#title': Comments
-      env72_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>72</span>The hospital provided a copy of the evacuation report.</div>'
-      container72:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env72_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env72_comments:
-          '#type': textarea
-          '#title': Comments
-      env73_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>73</span>The company has developed standard operating procedures for routine operational tasks.</div>'
-      container73:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env73_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env73_comments:
-          '#type': textarea
-          '#title': Comments
-      env74_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>74</span>The company has provided occupational health and training to staff.</div>'
-      container74:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env74_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env74_comments:
-          '#type': textarea
-          '#title': Comments
-      env75_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>75</span>Staff are trained on and emergency procedures for fire, evacuation and natural disaster.</div>'
-      container75:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env75_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env75_comments:
-          '#type': textarea
-          '#title': Comments
-      env76_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>76</span>The hospital has a risk management plan and risk register in place.</div>'
-      container76:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env76_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env76_comments:
-          '#type': textarea
-          '#title': Comments
-      env77_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>77</span>The hospital has a risk committee in place.</div>'
-      container77:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env77_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env77_comments:
-          '#type': textarea
-          '#title': Comments
-      env78_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>78</span>Did the company conduct any risk meetings in this quarter?</div>'
-      container78:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env78_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env78_comments:
-          '#type': textarea
-          '#title': Comments
-      env79_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>79</span>List the risks or challenges experienced by the hospital in this quarter.</div>'
-      container79:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env79_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env79_comments:
-          '#type': textarea
-          '#title': Comments
-      env80_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>80</span>Has there been any serious health and safety issues reported at the hospital. If yes, provide information.</div>'
-      container80:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env80_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env80_comments:
-          '#type': textarea
-          '#title': Comments
-      env81_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>81</span>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</div>'
-      container81:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env81_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env81_comments:
-          '#type': textarea
-          '#title': Comments
-      env82_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>82</span>Does the company have a stakeholder engagement plan in place.</div>'
-      container82:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env82_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env82_comments:
-          '#type': textarea
-          '#title': Comments
-      env83_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>83</span>The company has a strategy to manage local communities and other stakeholders - Public participation process.</div>'
-      container83:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env83_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env83_comments:
-          '#type': textarea
-          '#title': Comments
-      env84_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>84</span>The company has a strategy to manage local communities and other stakeholders - Managing community expectation.</div>'
-      container84:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env84_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env84_comments:
-          '#type': textarea
-          '#title': Comments
-      env85_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>85</span>The company has a strategy to manage local communities and other stakeholders - Strategy to address community health and safety.</div>'
-      container85:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env85_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env85_comments:
-          '#type': textarea
-          '#title': Comments
-      env86_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>86</span>List of Corporate Social Initiatives that were undertaken by the company.</div>'
-      container86:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env86_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env86_comments:
-          '#type': textarea
-          '#title': Comments
-      env87_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>87</span>The hospital has a community liason officer/ Marketing manager.</div>'
-      container87:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env87_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env87_comments:
-          '#type': textarea
-          '#title': Comments
-      env88_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>88</span>The company has undertaken community development programmes through financial donations or in any other ways.</div>'
-      container88:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env88_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env88_comments:
-          '#type': textarea
-          '#title': Comments
-      env89_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>89</span>CSR spend.</div>'
-      container89:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env89_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env89_comments:
-          '#type': textarea
-          '#title': Comments
-      env90_criteria:
-        '#type': webform_markup
-        '#markup': '<div class="section"><span>90</span>The company undertakes customer/patient surveys?</div>'
-      container90:
-        '#type': container
-        '#attributes':
-          class:
-            - inner-wrap
-        env90_rating:
-          '#type': select
-          '#title': Rating
-          '#options': likert_satisfaction
-        env90_comments:
-          '#type': textarea
-          '#title': Comments
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox:
+        '#type': webform_flexbox
+        evaluation_year_:
+          '#type': webform_term_select
+          '#title': 'Evaluation Year '
+          '#vocabulary': years
+          '#breadcrumb_delimiter': ''
+        client_name:
+          '#type': webform_entity_select
+          '#title': 'Client Name'
+          '#target_type': node
+          '#selection_handler': 'default:node'
+          '#selection_settings':
+            target_bundles:
+              client: client
+  card_1:
+    '#type': webform_card
+    '#title': 'Question 1'
+    '#title_display': invisible
+    soc1:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>1</span>Number of employees per employment category.</div>'
+    container1:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc1_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc1_comments:
+        '#type': textarea
+        '#title': Comments
+  card_2:
+    '#type': webform_card
+    '#title': 'Question 2'
+    '#title_display': invisible
+    soc2:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>2</span>Total Number of Jobs</div>'
+    container2:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc2_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc2_comments:
+        '#type': textarea
+        '#title': Comments
+  card_3:
+    '#type': webform_card
+    '#title': 'Question 3'
+    '#title_display': invisible
+    soc3:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>3</span>Total Number of New Jobs</div>'
+    container3:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc3_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc3_comments:
+        '#type': textarea
+        '#title': Comments
+  card_4:
+    '#type': webform_card
+    '#title': 'Question 4'
+    '#title_display': invisible
+    soc4:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>4</span>Total Number of Lost Jobs</div>'
+    container4:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc4_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc4_comments:
+        '#type': textarea
+        '#title': Comments
+  card_5:
+    '#type': webform_card
+    '#title': 'Question 5'
+    '#title_display': invisible
+    soc5:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>5</span>Total Number of Construction Jobs</div>'
+    container5:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc5_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc5_comments:
+        '#type': textarea
+        '#title': Comments
+  card_6:
+    '#type': webform_card
+    '#title': 'Question 6'
+    '#title_display': invisible
+    soc6:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>6</span>Total Number of Companies Contracted</div>'
+    container6:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc6_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc6_comments:
+        '#type': textarea
+        '#title': Comments
+  card_7:
+    '#type': webform_card
+    '#title': 'Question 7'
+    '#title_display': invisible
+    soc7:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>7</span>Total Number of Procurement Construction Companies</div>'
+    container7:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc7_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc7_comments:
+        '#type': textarea
+        '#title': Comments
+  card_8:
+    '#type': webform_card
+    '#title': 'Question 2'
+    '#title_display': invisible
+    soc8:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>8</span>The company has an HR policy that complies with national labour regulations and applies to all staff. The policy is made available to all staff.</div>'
+    container8:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc8_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc8_comments:
+        '#type': textarea
+        '#title': Comments
+  card_9:
+    '#type': webform_card
+    '#title': 'Question 9'
+    '#title_display': invisible
+    soc9:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>9</span>The company has developed a Business conduct and code of ethics policy which is made available to all staff.</div>'
+    container9:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc9_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc9_comments:
+        '#type': textarea
+        '#title': Comments
+  card_10:
+    '#type': webform_card
+    '#title': 'Question 10'
+    '#title_display': invisible
+    soc10:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>10</span>The company has an HR manager with the necessary skills and expertise.</div>'
+    container10:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc10_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc10_comments:
+        '#type': textarea
+        '#title': Comments
+  card_11:
+    '#type': webform_card
+    '#title': 'Question 11'
+    '#title_display': invisible
+    soc11:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>11</span>Does the company have any concerns on absenteeism?</div>'
+    container11:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc11_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc11_comments:
+        '#type': textarea
+        '#title': Comments
+  card_12:
+    '#type': webform_card
+    '#title': 'Question 12'
+    '#title_display': invisible
+    soc12:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>12</span>The company monitors compliance with all its HR policies.</div>'
+    container12:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc12_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc12_comments:
+        '#type': textarea
+        '#title': Comments
+  card_13:
+    '#type': webform_card
+    '#title': 'Question 13'
+    '#title_display': invisible
+    soc13:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>13</span>How is remuneration benchmarked?</div>'
+    container13:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc13_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc13_comments:
+        '#type': textarea
+        '#title': Comments
+  card_14:
+    '#type': webform_card
+    '#title': 'Question 14'
+    '#title_display': invisible
+    soc14:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>14</span>Has the company ever faced any issues related to labour and working conditions? (e.g. excessive working hours, wages below national minimum wage, child labour).</div>'
+    container14:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc14_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc14_comments:
+        '#type': textarea
+        '#title': Comments
+  card_15:
+    '#type': webform_card
+    '#title': 'Question 15'
+    '#title_display': invisible
+    soc15:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>15</span>Does the company have an higher than average turnover of staff? Why?</div>'
+    container15:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc15_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc15_comments:
+        '#type': textarea
+        '#title': Comments
+  card_16:
+    '#type': webform_card
+    '#title': 'Question 16'
+    '#title_display': invisible
+    soc16:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>16</span>The company has an anti discrimination policy?</div>'
+    container16:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc16_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc16_comments:
+        '#type': textarea
+        '#title': Comments
+  card_17:
+    '#type': webform_card
+    '#title': 'Question 17'
+    '#title_display': invisible
+    soc17:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>17</span>The company has a policy that protects access and discrimination from people with disabilities?</div>'
+    container17:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc17_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc17_comments:
+        '#type': textarea
+        '#title': Comments
+  card_18:
+    '#type': webform_card
+    '#title': 'Question 18'
+    '#title_display': invisible
+    soc18:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>18</span>The company has a sexual harrassment policy?</div>'
+    container18:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc18_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc18_comments:
+        '#type': textarea
+        '#title': Comments
+  card_19:
+    '#type': webform_card
+    '#title': 'Question 19'
+    '#title_display': invisible
+    soc19:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>19</span>The company has a policy that deals with support and respect for protection of other human rights principles?</div>'
+    container19:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc19_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc19_comments:
+        '#type': textarea
+        '#title': Comments
+  card_20:
+    '#type': webform_card
+    '#title': 'Question 20'
+    '#title_display': invisible
+    soc20:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>20</span>Do all employees have signed employment contracts?</div>'
+    container20:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc20_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc20_comments:
+        '#type': textarea
+        '#title': Comments
+  card_21:
+    '#type': webform_card
+    '#title': 'Question 21'
+    '#title_display': invisible
+    soc21:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>21</span>Are copies of employment contracts provided?</div>'
+    container21:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc21_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc21_comments:
+        '#type': textarea
+        '#title': Comments
+  card_22:
+    '#type': webform_card
+    '#title': 'Question 22'
+    '#title_display': invisible
+    soc22:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>22</span>The company remunerates its employees fairly.</div>'
+    container22:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc22_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc22_comments:
+        '#type': textarea
+        '#title': Comments
+  card_23:
+    '#type': webform_card
+    '#title': 'Question 23'
+    '#title_display': invisible
+    soc23:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>23</span>How does the company benchmark remuneration?</div>'
+    container23:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc23_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc23_comments:
+        '#type': textarea
+        '#title': Comments
+  card_24:
+    '#type': webform_card
+    '#title': 'Question 24'
+    '#title_display': invisible
+    soc24:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>24</span>The company has workers that are part of a registered union.</div>'
+    container24:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc24_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc24_comments:
+        '#type': textarea
+        '#title': Comments
+  card_25:
+    '#type': webform_card
+    '#title': 'Question 25'
+    '#title_display': invisible
+    soc25:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>25</span>Workers representatives are democratically elected and free to carry out their duties within working hours.</div>'
+    container25:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc25_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc25_comments:
+        '#type': textarea
+        '#title': Comments
+  card_26:
+    '#type': webform_card
+    '#title': 'Question 26'
+    '#title_display': invisible
+    soc26:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>26</span>Employees are free to join a union and freely express their opinion and concerns.</div>'
+    container26:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc26_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc26_comments:
+        '#type': textarea
+        '#title': Comments
+  card_27:
+    '#type': webform_card
+    '#title': 'Question 27'
+    '#title_display': invisible
+    soc27:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>27</span>Does the company have any staff forums that deals with staff issues?</div>'
+    container27:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc27_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc27_comments:
+        '#type': textarea
+        '#title': Comments
+  card_28:
+    '#type': webform_card
+    '#title': 'Question 28'
+    '#title_display': invisible
+    soc28:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>28</span>Non-discrimination and equal opportunity</div>'
+    container28:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc28_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc28_comments:
+        '#type': textarea
+        '#title': Comments
+  card_29:
+    '#type': webform_card
+    '#title': 'Question 29'
+    '#title_display': invisible
+    soc29:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>29</span>The company has a retrenchment policy in place.</div>'
+    container29:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc29_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc29_comments:
+        '#type': textarea
+        '#title': Comments
+  card_30:
+    '#type': webform_card
+    '#title': 'Question 30'
+    '#title_display': invisible
+    soc30:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>30</span>The company has a retrenchment policy in place.</div>'
+    container30:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc30_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc30_comments:
+        '#type': textarea
+        '#title': Comments
+  card_31:
+    '#type': webform_card
+    '#title': 'Question 31'
+    '#title_display': invisible
+    soc31:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>31</span>Has the company undertaken any retrenchment in the last five years? If so, how many people and why?</div>'
+    container31:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc31_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc31_comments:
+        '#type': textarea
+        '#title': Comments
+  card_32:
+    '#type': webform_card
+    '#title': 'Question 32'
+    '#title_display': invisible
+    soc32:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>32</span>How does the company ensure that retrenchment is managed fairly?</div>'
+    container32:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc32_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc32_comments:
+        '#type': textarea
+        '#title': Comments
+  card_33:
+    '#type': webform_card
+    '#title': 'Question 33'
+    '#title_display': invisible
+    soc33:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>33</span>Has the company had any industrial action over the past 5 years? What was the cause, how long was it and what was the outcome?</div>'
+    container33:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc33_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc33_comments:
+        '#type': textarea
+        '#title': Comments
+  card_34:
+    '#type': webform_card
+    '#title': 'Question 34'
+    '#title_display': invisible
+    soc34:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>34</span>Was there any retrenchment of termination of the contract as a result of the industrial action?</div>'
+    container34:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc34_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc34_comments:
+        '#type': textarea
+        '#title': Comments
+  card_35:
+    '#type': webform_card
+    '#title': 'Question 35'
+    '#title_display': invisible
+    soc35:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>35</span>The company has a grievance policy for its employees that is made available to all workers at the time of their employment.</div>'
+    container35:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc35_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc35_comments:
+        '#type': textarea
+        '#title': Comments
+  card_36:
+    '#type': webform_card
+    '#title': 'Question 36'
+    '#title_display': invisible
+    soc36:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>36</span>The grevience procedure allows for anonymous complaints to be raised and addressed.</div>'
+    container36:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc36_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc36_comments:
+        '#type': textarea
+        '#title': Comments
+  card_37:
+    '#type': webform_card
+    '#title': 'Question 37'
+    '#title_display': invisible
+    soc37:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>37</span>List any major grievances and highlight if they were appropriately handled.</div>'
+    container37:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc37_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc37_comments:
+        '#type': textarea
+        '#title': Comments
+  card_38:
+    '#type': webform_card
+    '#title': 'Question 38'
+    '#title_display': invisible
+    soc38:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>38</span>The company''s HR policy protects the rights of minors.</div>'
+    container38:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc38_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc38_comments:
+        '#type': textarea
+        '#title': Comments
+  card_39:
+    '#type': webform_card
+    '#title': 'Question 39'
+    '#title_display': invisible
+    soc39:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>39</span>The company monitors employees compliance to ensure that their professional licences are renewed timelously.</div>'
+    container39:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc39_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc39_comments:
+        '#type': textarea
+        '#title': Comments
+  card_40:
+    '#type': webform_card
+    '#title': 'Question 40'
+    '#title_display': invisible
+    soc40:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>40</span>How often does the employment equity committee meet?</div>'
+    container40:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc40_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc40_comments:
+        '#type': textarea
+        '#title': Comments
+  card_41:
+    '#type': webform_card
+    '#title': 'Question 41'
+    '#title_display': invisible
+    soc41:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>41</span>Have all the employment equity meeting minutes for this reporting period been submitted?</div>'
+    container41:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc41_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc41_comments:
+        '#type': textarea
+        '#title': Comments
+  card_42:
+    '#type': webform_card
+    '#title': 'Question 42'
+    '#title_display': invisible
+    soc42:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>42</span>The company has an employment equity policy.</div>'
+    container42:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc42_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc42_comments:
+        '#type': textarea
+        '#title': Comments
+  card_43:
+    '#type': webform_card
+    '#title': 'Question 43'
+    '#title_display': invisible
+    soc43:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>43</span>The company has implemented an Employment Equity Forum.</div>'
+    container43:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc43_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc43_comments:
+        '#type': textarea
+        '#title': Comments
+  card_44:
+    '#type': webform_card
+    '#title': 'Question 44'
+    '#title_display': invisible
+    soc44:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>44</span>The company has implemented an Employment Equity Plan.</div>'
+    container44:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc44_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc44_comments:
+        '#type': textarea
+        '#title': Comments
+  card_45:
+    '#type': webform_card
+    '#title': 'Question 45'
+    '#title_display': invisible
+    soc45:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>45</span>How often does the company monitor and evaluate their employment equity plan progress? (monthly/quarterly).</div>'
+    container45:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc45_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc45_comments:
+        '#type': textarea
+        '#title': Comments
+  card_46:
+    '#type': webform_card
+    '#title': 'Question 46'
+    '#title_display': invisible
+    soc46:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>46</span>If annual reporting falls within this reporting period, did the company achieve the annual objects as set out in the employment equity plan for this period? Provide evidence</div>'
+    container46:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc46_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc46_comments:
+        '#type': textarea
+        '#title': Comments
+  card_47:
+    '#type': webform_card
+    '#title': 'Question 47'
+    '#title_display': invisible
+    soc47:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>47</span>Does the company have a transformation committee?</div>'
+    container47:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc47_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc47_comments:
+        '#type': textarea
+        '#title': Comments
+  card_48:
+    '#type': webform_card
+    '#title': 'Question 48'
+    '#title_display': invisible
+    soc48:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>48</span>The company has a training and development policy and plan.</div>'
+    container48:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc48_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc48_comments:
+        '#type': textarea
+        '#title': Comments
+  card_49:
+    '#type': webform_card
+    '#title': 'Question 49'
+    '#title_display': invisible
+    soc49:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>49</span>Does the company have a training and development committee?</div>'
+    container49:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc49_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc49_comments:
+        '#type': textarea
+        '#title': Comments
+  card_50:
+    '#type': webform_card
+    '#title': 'Question 50'
+    '#title_display': invisible
+    soc50:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>50</span>How often does the training and development committee meet?</div>'
+    container50:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc50_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc50_comments:
+        '#type': textarea
+        '#title': Comments
+  card_51:
+    '#type': webform_card
+    '#title': 'Question 51'
+    '#title_display': invisible
+    soc51:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>51</span>Has the company provided minutes of the meetings held in this quarter?</div>'
+    container51:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc51_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc51_comments:
+        '#type': textarea
+        '#title': Comments
+  card_52:
+    '#type': webform_card
+    '#title': 'Question 52'
+    '#title_display': invisible
+    soc52:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>52</span>Has the company provided training in this current period?</div>'
+    container52:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc52_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc52_comments:
+        '#type': textarea
+        '#title': Comments
+  card_53:
+    '#type': webform_card
+    '#title': 'Question 53'
+    '#title_display': invisible
+    soc53:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>53</span>Has the company provided evidence of training undertaken in this reporting period?</div>'
+    container53:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc53_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc53_comments:
+        '#type': textarea
+        '#title': Comments
+  card_54:
+    '#type': webform_card
+    '#title': 'Question 54'
+    '#title_display': invisible
+    soc54:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>54</span>The company has a procurement policy that gives preference to the use of SMME''s and B-BBEE suppliers.</div>'
+    container54:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc54_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc54_comments:
+        '#type': textarea
+        '#title': Comments
+  card_55:
+    '#type': webform_card
+    '#title': 'Question 55'
+    '#title_display': invisible
+    soc55:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>55</span>The company monitors compliance of the procurement policy.</div>'
+    container55:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc55_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc55_comments:
+        '#type': textarea
+        '#title': Comments
+  card_56:
+    '#type': webform_card
+    '#title': 'Question 56'
+    '#title_display': invisible
+    soc56:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>56</span>The company has undertaken enterprise development initiatives.</div>'
+    container56:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc56_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc56_comments:
+        '#type': textarea
+        '#title': Comments
+  card_57:
+    '#type': webform_card
+    '#title': 'Question 57'
+    '#title_display': invisible
+    soc57:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>57</span>The facility has been constructed according to national building regulations.</div>'
+    container57:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc57_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc57_comments:
+        '#type': textarea
+        '#title': Comments
+  card_58:
+    '#type': webform_card
+    '#title': 'Question 58'
+    '#title_display': invisible
+    soc58:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>58</span>Emergency exits are clearly marked.</div>'
+    container58:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc58_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc58_comments:
+        '#type': textarea
+        '#title': Comments
+  card_59:
+    '#type': webform_card
+    '#title': 'Question 59'
+    '#title_display': invisible
+    soc59:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>59</span>The facility is equipped with fire detectors, alarm systems, and fire-fighting equipment.</div>'
+    container59:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc59_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc59_comments:
+        '#type': textarea
+        '#title': Comments
+  card_60:
+    '#type': webform_card
+    '#title': 'Question 60'
+    '#title_display': invisible
+    soc60:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>60</span>Clean and adequate eating areas are provided for staff.</div>'
+    container60:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc60_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc60_comments:
+        '#type': textarea
+        '#title': Comments
+  card_61:
+    '#type': webform_card
+    '#title': 'Question 61'
+    '#title_display': invisible
+    soc61:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>61</span>The facility is appropriately equipped first-aid stations that are easily accessible throughout the place of work.</div>'
+    container61:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc61_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc61_comments:
+        '#type': textarea
+        '#title': Comments
+  card_62:
+    '#type': webform_card
+    '#title': 'Question 62'
+    '#title_display': invisible
+    soc62:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>62</span>The hospital has additional policies and procedures to supliment health and safety</div>'
+    container62:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc62_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc62_comments:
+        '#type': textarea
+        '#title': Comments
+  card_63:
+    '#type': webform_card
+    '#title': 'Question 63'
+    '#title_display': invisible
+    soc63:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>63</span>The company has a health and safety policy?</div>'
+    container63:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc63_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc63_comments:
+        '#type': textarea
+        '#title': Comments
+  card_64:
+    '#type': webform_card
+    '#title': 'Question 64'
+    '#title_display': invisible
+    soc64:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>64</span>The company has health and safety representatives in place.</div>'
+    container64:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc64_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc64_comments:
+        '#type': textarea
+        '#title': Comments
+  card_65:
+    '#type': webform_card
+    '#title': 'Question 65'
+    '#title_display': invisible
+    soc65:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>65</span>The company has provided the number of health and safety representatives, if yes, state the number of representatives</div>'
+    container65:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc65_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc65_comments:
+        '#type': textarea
+        '#title': Comments
+  card_66:
+    '#type': webform_card
+    '#title': 'Question 66'
+    '#title_display': invisible
+    soc66:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>66</span>The hospital has a health and saftey committee.</div>'
+    container66:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc66_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc66_comments:
+        '#type': textarea
+        '#title': Comments
+  card_67:
+    '#type': webform_card
+    '#title': 'Question 67'
+    '#title_display': invisible
+    soc67:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>67</span>The hospital conducted health and safety training.</div>'
+    container67:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc67_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc67_comments:
+        '#type': textarea
+        '#title': Comments
+  card_68:
+    '#type': webform_card
+    '#title': 'Question 68'
+    '#title_display': invisible
+    soc68:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>68</span>The hospital has an incident reporting system.</div>'
+    container68:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc68_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc68_comments:
+        '#type': textarea
+        '#title': Comments
+  card_69:
+    '#type': webform_card
+    '#title': 'Question 69'
+    '#title_display': invisible
+    soc69:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>69</span>The hospital has evacuation plans around the hospital.</div>'
+    container69:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc69_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc69_comments:
+        '#type': textarea
+        '#title': Comments
+  card_70:
+    '#type': webform_card
+    '#title': 'Question 70'
+    '#title_display': invisible
+    soc70:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>70</span>The hospital conducted an evacuation mock drill in this quarter.</div>'
+    container70:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc70_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc70_comments:
+        '#type': textarea
+        '#title': Comments
+  card_71:
+    '#type': webform_card
+    '#title': 'Question 71'
+    '#title_display': invisible
+    soc71:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>71</span>When was the last evacuation exercise underataken and how oftrn does this occur?</div>'
+    container71:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc71_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc71_comments:
+        '#type': textarea
+        '#title': Comments
+  card_72:
+    '#type': webform_card
+    '#title': 'Question 72'
+    '#title_display': invisible
+    soc72:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>72</span>The hospital provided a copy of the evacuation report.</div>'
+    container72:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc72_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc72_comments:
+        '#type': textarea
+        '#title': Comments
+  card_73:
+    '#type': webform_card
+    '#title': 'Question 73'
+    '#title_display': invisible
+    soc73:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>73</span>The company has developed standard operating procedures for routine operational tasks.</div>'
+    container73:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc73_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc73_comments:
+        '#type': textarea
+        '#title': Comments
+  card_74:
+    '#type': webform_card
+    '#title': 'Question 74'
+    '#title_display': invisible
+    soc74:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>74</span>The company has provided occupational health and training to staff.</div>'
+    container74:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc74_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc74_comments:
+        '#type': textarea
+        '#title': Comments
+  card_75:
+    '#type': webform_card
+    '#title': 'Question 75'
+    '#title_display': invisible
+    soc75:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>75</span>Staff are trained on and emergency procedures for fire, evacuation and natural disaster.</div>'
+    container75:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc75_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc75_comments:
+        '#type': textarea
+        '#title': Comments
+  card_76:
+    '#type': webform_card
+    '#title': 'Question 76'
+    '#title_display': invisible
+    soc76:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>76</span>The hospital has a risk management plan and risk register in place.</div>'
+    container76:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc76_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc76_comments:
+        '#type': textarea
+        '#title': Comments
+  card_77:
+    '#type': webform_card
+    '#title': 'Question 77'
+    '#title_display': invisible
+    soc77:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>77</span>The hospital has a risk committee in place.</div>'
+    container77:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc77_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc77_comments:
+        '#type': textarea
+        '#title': Comments
+  card_78:
+    '#type': webform_card
+    '#title': 'Question 78'
+    '#title_display': invisible
+    soc78:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>78</span>Did the company conduct any risk meetings in this quarter?</div>'
+    container78:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc78_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc78_comments:
+        '#type': textarea
+        '#title': Comments
+  card_79:
+    '#type': webform_card
+    '#title': 'Question 79'
+    '#title_display': invisible
+    soc79:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>79</span>List the risks or challenges experienced by the hospital in this quarter.</div>'
+    container79:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc79_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc79_comments:
+        '#type': textarea
+        '#title': Comments
+  card_80:
+    '#type': webform_card
+    '#title': 'Question 80'
+    '#title_display': invisible
+    soc80:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>80</span>Has there been any serious health and safety issues reported at the hospital. If yes, provide information.</div>'
+    container80:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc80_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc80_comments:
+        '#type': textarea
+        '#title': Comments
+  card_81:
+    '#type': webform_card
+    '#title': 'Question 81'
+    '#title_display': invisible
+    soc81:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>81</span>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</div>'
+    container81:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc81_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc81_comments:
+        '#type': textarea
+        '#title': Comments
+  card_82:
+    '#type': webform_card
+    '#title': 'Question 82'
+    '#title_display': invisible
+    soc82:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>82</span>Does the company have a stakeholder engagement plan in place.</div>'
+    container82:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc82_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc82_comments:
+        '#type': textarea
+        '#title': Comments
+  card_83:
+    '#type': webform_card
+    '#title': 'Question 68'
+    '#title_display': invisible
+    soc83:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>83</span>The company has a strategy to manage local communities and other stakeholders - Public participation process.</div>'
+    container83:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc83_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc83_comments:
+        '#type': textarea
+        '#title': Comments
+  card_84:
+    '#type': webform_card
+    '#title': 'Question 84'
+    '#title_display': invisible
+    soc84:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>84</span>The company has a strategy to manage local communities and other stakeholders - Managing community expectation.</div>'
+    container84:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc84_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc84_comments:
+        '#type': textarea
+        '#title': Comments
+  card_85:
+    '#type': webform_card
+    '#title': 'Question 85'
+    '#title_display': invisible
+    soc85:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>85</span>The company has a strategy to manage local communities and other stakeholders - Strategy to address community health and safety.</div>'
+    container85:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc85_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc85_comments:
+        '#type': textarea
+        '#title': Comments
+  card_86:
+    '#type': webform_card
+    '#title': 'Question 86'
+    '#title_display': invisible
+    soc86:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>86</span>List of Corporate Social Initiatives that were undertaken by the company.</div>'
+    container86:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc86_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc86_comments:
+        '#type': textarea
+        '#title': Comments
+  card_87:
+    '#type': webform_card
+    '#title': 'Question 87'
+    '#title_display': invisible
+    soc87:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>87</span>The hospital has a community liason officer/ Marketing manager.</div>'
+    container87:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc87_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc87_comments:
+        '#type': textarea
+        '#title': Comments
+  card_88:
+    '#type': webform_card
+    '#title': 'Question 88'
+    '#title_display': invisible
+    soc88:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>88</span>The company has undertaken community development programmes through financial donations or in any other ways.</div>'
+    container88:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc88_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc88_comments:
+        '#type': textarea
+        '#title': Comments
+  card_89:
+    '#type': webform_card
+    '#title': 'Question 89'
+    '#title_display': invisible
+    soc89:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>89</span>CSR spend.</div>'
+    container89:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc89_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc89_comments:
+        '#type': textarea
+        '#title': Comments
+  card_90:
+    '#type': webform_card
+    '#title': 'Question 90'
+    '#title_display': invisible
+    soc90:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section"><span>90</span>The company undertakes customer/patient surveys?</div>'
+    container90:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      soc90_rating:
+        '#type': select
+        '#title': Rating
+        '#options': likert_satisfaction
+      soc90_comments:
+        '#type': textarea
+        '#title': Comments
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
@@ -1380,7 +1848,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -1434,9 +1902,9 @@ settings:
   autofill: false
   autofill_message: ''
   autofill_excluded_elements: {  }
-  wizard_progress_bar: true
-  wizard_progress_pages: false
-  wizard_progress_percentage: false
+  wizard_progress_bar: false
+  wizard_progress_pages: true
+  wizard_progress_percentage: true
   wizard_progress_link: false
   wizard_progress_states: false
   wizard_auto_forward: true
@@ -1449,7 +1917,7 @@ settings:
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   preview: 0

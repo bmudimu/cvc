@@ -1,0 +1,36 @@
+uuid: 8643ebba-1b93-4e5e-8d13-71277d1d8bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.evaluation_page.body
+    - field.field.node.evaluation_page.field_environmental_form
+    - field.field.node.evaluation_page.field_governance_form
+    - field.field.node.evaluation_page.field_social_form
+    - node.type.evaluation_page
+  module:
+    - text
+    - user
+id: node.evaluation_page.teaser
+targetEntityType: node
+bundle: evaluation_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_environmental_form: true
+  field_governance_form: true
+  field_social_form: true

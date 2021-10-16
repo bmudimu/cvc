@@ -1,0 +1,32 @@
+uuid: 89fa7e5c-1b13-469b-9893-691d7c65bb6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_environmental_form
+    - node.type.evaluation_page
+    - webform.webform.esg_matrix
+  module:
+    - webform
+id: node.evaluation_page.field_environmental_form
+field_name: field_environmental_form
+entity_type: node
+bundle: evaluation_page
+label: 'Environmental Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 9becfe22-8f69-4ecf-a5d7-60678cc7e7d1
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

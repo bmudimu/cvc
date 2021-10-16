@@ -1,0 +1,79 @@
+uuid: 33302ba3-da2c-4302-aa6c-f8fb6f3f7b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evaluation_page.body
+    - field.field.node.evaluation_page.field_environmental_form
+    - field.field.node.evaluation_page.field_governance_form
+    - field.field.node.evaluation_page.field_social_form
+    - node.type.evaluation_page
+  module:
+    - path
+    - text
+    - webform
+id: node.evaluation_page.default
+targetEntityType: node
+bundle: evaluation_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_environmental_form:
+    weight: 4
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_governance_form:
+    weight: 5
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_social_form:
+    weight: 3
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

@@ -1,0 +1,487 @@
+uuid: 0733ea84-2370-4a16-944e-3a89ab516a01
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: performance_review_stats
+title: 'Performance Review Stats'
+description: ''
+category: ''
+elements: |-
+  client_details:
+    '#type': webform_card
+    '#title': 'Client Details'
+    container:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox:
+        '#type': webform_flexbox
+        client_name:
+          '#type': webform_entity_select
+          '#title': 'Client Name'
+          '#target_type': node
+          '#selection_handler': 'default:node'
+          '#selection_settings':
+            target_bundles:
+              client: client
+        evaluation_year:
+          '#type': webform_term_select
+          '#title': 'Evaluation Year'
+          '#vocabulary': years
+          '#breadcrumb_delimiter': ''
+        evaluation_qtr:
+          '#type': webform_term_select
+          '#title': 'Evaluation Quarter'
+          '#vocabulary': quarters
+          '#breadcrumb_delimiter': ''
+  card_1:
+    '#type': webform_card
+    '#title': Wages
+    '#title_display': visible
+    stats1:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section">Minimum and Average Wages.</div>'
+    container1:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox_01:
+        '#type': webform_flexbox
+        minimum_wage:
+          '#type': number
+          '#title': 'Minimum Wage'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        average_wage:
+          '#type': number
+          '#title': 'Average Wage'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+      stats1_comments:
+        '#type': textarea
+        '#title': Comments
+  card_2:
+    '#type': webform_card
+    '#title': Tax
+    '#title_display': visible
+    stats2:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section">Tax Contributions by Client</div>'
+    container2:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox_02:
+        '#type': webform_flexbox
+        paye:
+          '#type': number
+          '#title': PAYE
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        vat:
+          '#type': number
+          '#title': VAT
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        uif:
+          '#type': number
+          '#title': UIF
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        sdl:
+          '#type': number
+          '#title': SDL
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+      stats2_comments:
+        '#type': textarea
+        '#title': Comments
+  card_3:
+    '#type': webform_card
+    '#title': 'Training Inhouse'
+    '#title_display': visible
+    stats3:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section">Training and Skills Development for Staff</div>'
+    container3:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox_03:
+        '#type': webform_flexbox
+        training_spend_mon:
+          '#type': number
+          '#title': 'Training Spend per Month'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        trained_male:
+          '#type': number
+          '#title': 'Trained: MALE'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        trained_female:
+          '#type': number
+          '#title': 'Trained: FEMALE'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        training_level:
+          '#type': number
+          '#title': 'Training Level'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        training_days:
+          '#type': number
+          '#title': 'Training Days'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+      stats3_comments:
+        '#type': textarea
+        '#title': Comments
+  card_4:
+    '#type': webform_card
+    '#title': 'SMME Training'
+    '#title_display': visible
+    stats4:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section">Training and Skills Development for SMMEs</div>'
+    container4:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox_04:
+        '#type': webform_flexbox
+        trained_smme:
+          '#type': number
+          '#title': 'Trained SMMEs'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+        trained_local_smme:
+          '#type': number
+          '#title': 'Trained Local SMMEs'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+        trained_bbbee_smme:
+          '#type': number
+          '#title': 'Trained BBBEE SMMEs'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+        contracts_awarded:
+          '#type': number
+          '#title': 'Contracts Awarded'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+        trained_wo_bbbee:
+          '#type': number
+          '#title': 'Trained WO SMMEs'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+        training_spend_yr:
+          '#type': number
+          '#title': 'Training Spend per Year'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+      stats4_comments:
+        '#type': textarea
+        '#title': Comments
+  card_5:
+    '#type': webform_card
+    '#title': LTIFR
+    '#title_display': visible
+    stats5:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section">Injuries and Fatalities</div>'
+    container5:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox_05:
+        '#type': webform_flexbox
+        trained_health_safety:
+          '#type': number
+          '#title': 'Trained Health & Safety'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        injuries_fatalities:
+          '#type': number
+          '#title': 'Injuries & Fatalities'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        lost_time:
+          '#type': number
+          '#title': 'Lost Time'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        claims:
+          '#type': number
+          '#title': 'No. of Claims'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+        declined_claims:
+          '#type': number
+          '#title': 'No. of Declined Claims'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 10000
+      stats5_comments:
+        '#type': textarea
+        '#title': Comments
+  card_6:
+    '#type': webform_card
+    '#title': 'CSR Spend'
+    '#title_display': visible
+    stats6:
+      '#type': webform_markup
+      '#display_on': both
+      '#markup': '<div class="section">CSR Spend at end of reporting period</div>'
+    container6:
+      '#type': container
+      '#attributes':
+        class:
+          - inner-wrap
+      flexbox_06:
+        '#type': webform_flexbox
+        csr_spend:
+          '#type': number
+          '#title': 'CSR Spend'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        percent_to_turnover:
+          '#type': number
+          '#title': '% to Turnover'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        percent_to_profit:
+          '#type': number
+          '#title': '% to Profit'
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+        sector:
+          '#type': number
+          '#title': Sector
+          '#default_value': '0'
+          '#min': 0
+          '#max': 100000000
+      stats6_comments:
+        '#type': textarea
+        '#title': Comments
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: true
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

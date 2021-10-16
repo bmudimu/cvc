@@ -209,6 +209,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/printable": "^2.0",
+        "drupal/scss_compiler": "^1.1",
         "drupal/slick": "^2.3",
         "drupal/slick_views": "^2.4",
         "drupal/views_aggregator": "^1.0@beta",

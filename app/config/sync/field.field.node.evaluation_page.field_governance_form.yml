@@ -1,0 +1,25 @@
+uuid: 6cb534e2-c597-49ef-9aa7-cd99fd12045b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_governance_form
+    - node.type.evaluation_page
+  module:
+    - webform
+id: node.evaluation_page.field_governance_form
+field_name: field_governance_form
+entity_type: node
+bundle: evaluation_page
+label: 'Governance Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

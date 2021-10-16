@@ -1,0 +1,28 @@
+uuid: 8696ab92-b3c6-480a-825f-157657ef0bce
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.compliance_checklist
+  module:
+    - system
+    - views
+  theme:
+    - cvc_admin
+id: exposedformcompliance_checklistpage_1
+theme: cvc_admin
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:compliance_checklist-page_1'
+settings:
+  id: 'views_exposed_filter_block:compliance_checklist-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /compliance-checklist
+    negate: false

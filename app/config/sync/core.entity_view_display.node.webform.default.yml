@@ -20,20 +20,17 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
   webform:
-    weight: 102
+    weight: 1
     label: hidden
-    settings: {  }
+    settings:
+      source_entity: true
     third_party_settings: {  }
     type: webform_entity_reference_entity_view
     region: content
-hidden: {  }
+hidden:
+  links: true
