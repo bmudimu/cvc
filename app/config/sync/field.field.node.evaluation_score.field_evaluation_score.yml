@@ -1,0 +1,23 @@
+uuid: a4e0c0f5-366d-41ff-8ee0-a6e72acd94bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evaluation_score
+    - node.type.evaluation_score
+id: node.evaluation_score.field_evaluation_score
+field_name: field_evaluation_score
+entity_type: node
+bundle: evaluation_score
+label: 'Evaluation Score'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,22 @@
+uuid: 51e1bcc3-f359-45a2-8710-7937c37dccbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.evaluation
+id: node.evaluation.promote
+field_name: promote
+entity_type: node
+bundle: evaluation
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

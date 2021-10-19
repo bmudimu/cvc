@@ -1,0 +1,29 @@
+uuid: 32e9453c-007a-4553-b516-f2bba90fa59d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_name
+    - node.type.client
+    - node.type.evaluation
+id: node.evaluation.field_client_name
+field_name: field_client_name
+entity_type: node
+bundle: evaluation
+label: 'Client Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client: client
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

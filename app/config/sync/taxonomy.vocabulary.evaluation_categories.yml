@@ -1,0 +1,8 @@
+uuid: a8b56ef5-6913-49b9-ab95-3ca2f2346b9a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Evaluation Categories'
+vid: evaluation_categories
+description: ''
+weight: 0

@@ -1,7 +1,9 @@
 uuid: b98ac28d-6a57-4c6f-9358-a57180098b8a
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - cvc_handler
 open: null
 close: null
 weight: 0
@@ -23,11 +25,6 @@ elements: |-
           - inner-wrap
       flexbox:
         '#type': webform_flexbox
-        evaluation_year_:
-          '#type': webform_term_select
-          '#title': 'Evaluation Year '
-          '#vocabulary': years
-          '#breadcrumb_delimiter': ''
         client_name:
           '#type': webform_entity_select
           '#title': 'Client Name'
@@ -36,11 +33,21 @@ elements: |-
           '#selection_settings':
             target_bundles:
               client: client
+        evaluation_year:
+          '#type': webform_term_select
+          '#title': 'Evaluation Year'
+          '#vocabulary': years
+          '#breadcrumb_delimiter': ''
+        evaluation_qtr:
+          '#type': webform_term_select
+          '#title': 'Evaluation Quarter'
+          '#vocabulary': quarters
+          '#breadcrumb_delimiter': ''
   card_1:
     '#type': webform_card
     '#title': 'Question 1'
     '#title_display': invisible
-    env1:
+    qn1:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>1</span>The company has a policy that clearly articulates the environmental objectives and principles that guide the company to achieve sound environmental performance.</div>'
@@ -49,18 +56,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env1_rating:
+      rating1:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env1_comments:
+      notes1:
         '#type': textarea
         '#title': Comments
   card_2:
     '#type': webform_card
     '#title': 'Question 2'
     '#title_display': invisible
-    env2:
+    qn2:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>2</span>The company has established a formal risk identification and impact process.</div>'
@@ -69,18 +76,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env2_rating:
+      rating2:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env2_comments:
+      notes2:
         '#type': textarea
         '#title': Comments
   card_3:
     '#type': webform_card
     '#title': 'Question 3'
     '#title_display': invisible
-    env3:
+    qn3:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>3</span>The company has sufficient management programmes that address continuous environmental and social issued exposed to the hospital.</div>'
@@ -89,18 +96,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env3_rating:
+      rating3:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env3_comments:
+      notes3:
         '#type': textarea
         '#title': Comments
   card_4:
     '#type': webform_card
     '#title': 'Question 4'
     '#title_display': invisible
-    env4:
+    qn4:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>4</span>The company has a formal organisational structure to implement EMS within the hospital. The structure includes individuals responsible for managing and implementing the EMS within the hospital.</div>'
@@ -109,18 +116,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env4_rating:
+      rating4:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env4_comments:
+      notes4:
         '#type': textarea
         '#title': Comments
   card_5:
     '#type': webform_card
     '#title': 'Question 5'
     '#title_display': invisible
-    env5:
+    qn5:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>5</span>The company has implemented an emergency preparedness and response systems so that the company, in collaboration with appropriate and relevant third parties, will be prepared to respond to accidents and emergency situations (e.g. fires, accidental oil spills) in a manner appropriate to prevent and mitigate any harm to people and/or the environment.</div>'
@@ -129,18 +136,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env5_rating:
+      rating5:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env5_comments:
+      notes5:
         '#type': textarea
         '#title': Comments
   card_6:
     '#type': webform_card
     '#title': 'Question 6'
     '#title_display': invisible
-    env6:
+    qn6:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>6</span>The company has a Stakeholder Relations Policy that identifies and evaluates the interest of its stakeholders.</div>'
@@ -149,18 +156,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env6_rating:
+      rating6:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env6_comments:
+      notes6:
         '#type': textarea
         '#title': Comments
   card_7:
     '#type': webform_card
     '#title': 'Question 7'
     '#title_display': invisible
-    env7:
+    qn7:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>7</span>The company has a detailed and updated grievance register.</div>'
@@ -169,18 +176,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env7_rating:
+      rating7:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env7_comments:
+      notes7:
         '#type': textarea
         '#title': Comments
   card_8:
     '#type': webform_card
     '#title': 'Question 2'
     '#title_display': invisible
-    env8:
+    qn8:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>8</span>There is evidence that environmental monitoring shapes and informs the company''s practices.</div>'
@@ -189,18 +196,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env8_rating:
+      rating8:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env8_comments:
+      notes8:
         '#type': textarea
         '#title': Comments
   card_9:
     '#type': webform_card
     '#title': 'Question 9'
     '#title_display': invisible
-    env9:
+    qn9:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>9</span>Does the company comply with all relevant local environmental laws, standards and regulations?</div>'
@@ -209,18 +216,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env9_rating:
+      rating9:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env9_comments:
+      notes9:
         '#type': textarea
         '#title': Comments
   card_10:
     '#type': webform_card
     '#title': 'Question 10'
     '#title_display': invisible
-    env10:
+    qn10:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>10</span>Has the company obtained all relevant environmental permits and certifications and are they up to date?</div>'
@@ -229,18 +236,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env10_rating:
+      rating10:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env10_comments:
+      notes10:
         '#type': textarea
         '#title': Comments
   card_11:
     '#type': webform_card
     '#title': 'Question 11'
     '#title_display': invisible
-    env11:
+    qn11:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>11</span>The company did not pay any fines or penalties or was not under investigation for non-compliance with environmental regulations and standards (Yes or No). If the answer is no, provide details thereof.</div>'
@@ -249,18 +256,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env11_rating:
+      rating11:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env11_comments:
+      notes11:
         '#type': textarea
         '#title': Comments
   card_12:
     '#type': webform_card
     '#title': 'Question 12'
     '#title_display': invisible
-    env12:
+    qn12:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>12</span>The Department of Environmental Affairs undertaken an environmental audit on the company for environmental transgressions.</div>'
@@ -269,18 +276,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env12_rating:
+      rating12:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env12_comments:
+      notes12:
         '#type': textarea
         '#title': Comments
   card_13:
     '#type': webform_card
     '#title': 'Question 13'
     '#title_display': invisible
-    env13:
+    qn13:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>13</span>Greenhouse gasses: Review strategies that include adoption of renewable or low carbon energy sources, sustainable agricultural, forestry and livestock management practices, the reduction of fugitive emissions and the reduction of gas flaring.</div>'
@@ -289,18 +296,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env13_rating:
+      rating13:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env13_comments:
+      notes13:
         '#type': textarea
         '#title': Comments
   card_14:
     '#type': webform_card
     '#title': 'Question 14'
     '#title_display': invisible
-    env14:
+    qn14:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>14</span>Water consumption: Focus on the use of additional technically feasible water conservation measures within the client’s operations, the use of alternative water supplies, water consumption offsets to reduce total demand for water resources to within the available supply, and evaluation of alternative project locations.</div>'
@@ -309,18 +316,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env14_rating:
+      rating14:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env14_comments:
+      notes14:
         '#type': textarea
         '#title': Comments
   card_15:
     '#type': webform_card
     '#title': 'Question 15'
     '#title_display': invisible
-    env15:
+    qn15:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>15</span>Has the company undertaken any renewal energy options? List them.</div>'
@@ -329,18 +336,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env15_rating:
+      rating15:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env15_comments:
+      notes15:
         '#type': textarea
         '#title': Comments
   card_16:
     '#type': webform_card
     '#title': 'Question 16'
     '#title_display': invisible
-    env16:
+    qn16:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>16</span>Does the company have a clear understanding of energy and water costs (or are they aggregated within a general operating budget)?</div>'
@@ -349,18 +356,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env16_rating:
+      rating16:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env16_comments:
+      notes16:
         '#type': textarea
         '#title': Comments
   card_17:
     '#type': webform_card
     '#title': 'Question 17'
     '#title_display': invisible
-    env17:
+    qn17:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>17</span>Did the company experience any load shedding during the current year?</div>'
@@ -369,18 +376,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env17_rating:
+      rating17:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env17_comments:
+      notes17:
         '#type': textarea
         '#title': Comments
   card_18:
     '#type': webform_card
     '#title': 'Question 18'
     '#title_display': invisible
-    env18:
+    qn18:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>18</span>Has the company undertaken an energy or water use audit? If so, what were the conclusions and what actions were taken. If not, explore the rationale for not undertaking one.</div>'
@@ -389,18 +396,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env18_rating:
+      rating18:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env18_comments:
+      notes18:
         '#type': textarea
         '#title': Comments
   card_19:
     '#type': webform_card
     '#title': 'Question 19'
     '#title_display': invisible
-    env19:
+    qn19:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>19</span>Water & Electricity.</div>'
@@ -409,18 +416,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env19_rating:
+      rating19:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env19_comments:
+      notes19:
         '#type': textarea
         '#title': Comments
   card_20:
     '#type': webform_card
     '#title': 'Question 20'
     '#title_display': invisible
-    env20:
+    qn20:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>20</span>Waste; hazardous material management; pesticide use and management.</div>'
@@ -429,18 +436,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env20_rating:
+      rating20:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env20_comments:
+      notes20:
         '#type': textarea
         '#title': Comments
   card_21:
     '#type': webform_card
     '#title': 'Question 21'
     '#title_display': invisible
-    env21:
+    qn21:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>21</span>Does the company have a waste management plan in place?</div>'
@@ -449,18 +456,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env21_rating:
+      rating21:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env21_comments:
+      notes21:
         '#type': textarea
         '#title': Comments
   card_22:
     '#type': webform_card
     '#title': 'Question 22'
     '#title_display': invisible
-    env22:
+    qn22:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>22</span>What resource efficieny measures has the hospital underatken: solar energy, boreholes, energy efficiency lighting, water tanks, generators etc.?</div>'
@@ -469,18 +476,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env22_rating:
+      rating22:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env22_comments:
+      notes22:
         '#type': textarea
         '#title': Comments
   card_23:
     '#type': webform_card
     '#title': 'Question 23'
     '#title_display': invisible
-    env23:
+    qn23:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>23</span>Has the company planned or taken any measures to reduce or optimise its water consumption? If yes, explain.</div>'
@@ -489,18 +496,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env23_rating:
+      rating23:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env23_comments:
+      notes23:
         '#type': textarea
         '#title': Comments
   card_24:
     '#type': webform_card
     '#title': 'Question 24'
     '#title_display': invisible
-    env24:
+    qn24:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>24</span>Does the company recycle water?</div>'
@@ -509,18 +516,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env24_rating:
+      rating24:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env24_comments:
+      notes24:
         '#type': textarea
         '#title': Comments
   card_25:
     '#type': webform_card
     '#title': 'Question 25'
     '#title_display': invisible
-    env25:
+    qn25:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>25</span>Does the company have contingency plans during water shortage?</div>'
@@ -529,18 +536,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env25_rating:
+      rating25:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env25_comments:
+      notes25:
         '#type': textarea
         '#title': Comments
   card_26:
     '#type': webform_card
     '#title': 'Question 26'
     '#title_display': invisible
-    env26:
+    qn26:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>26</span>Does the company have water tanks and what are their capacities?</div>'
@@ -549,18 +556,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env26_rating:
+      rating26:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env26_comments:
+      notes26:
         '#type': textarea
         '#title': Comments
   card_27:
     '#type': webform_card
     '#title': 'Question 27'
     '#title_display': invisible
-    env27:
+    qn27:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>27</span>Are there water restrictions in the area?</div>'
@@ -569,18 +576,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env27_rating:
+      rating27:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env27_comments:
+      notes27:
         '#type': textarea
         '#title': Comments
   card_28:
     '#type': webform_card
     '#title': 'Question 28'
     '#title_display': invisible
-    env28:
+    qn28:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>28</span>Does the company have more than one source of reliable water supply?</div>'
@@ -589,18 +596,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env28_rating:
+      rating28:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env28_comments:
+      notes28:
         '#type': textarea
         '#title': Comments
   card_29:
     '#type': webform_card
     '#title': 'Question 29'
     '#title_display': invisible
-    env29:
+    qn29:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>29</span>Protection and conservation of biodiversity; management of ecosystem services; sustainable management of living and natural resources.</div>'
@@ -609,18 +616,18 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env29_rating:
+      rating29:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env29_comments:
+      notes29:
         '#type': textarea
         '#title': Comments
   card_30:
     '#type': webform_card
     '#title': 'Question 30'
     '#title_display': invisible
-    env30:
+    qn30:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>30</span>The company has undertaken a biodiversity study to identify the risks and impacts of its operation to the ecosystem.</div>'
@@ -629,11 +636,11 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      env30_rating:
+      rating30:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      env30_comments:
+      notes30:
         '#type': textarea
         '#title': Comments
 css: ''
@@ -814,5 +821,14 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  social_evaluation:
+    id: social_evaluation_handler
+    label: 'Social Evaluation'
+    notes: ''
+    handler_id: social_evaluation
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }

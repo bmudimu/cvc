@@ -1,0 +1,19 @@
+uuid: 218d599a-b9ac-42cb-ba94-73a192adeff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.evaluation_score
+id: node.evaluation_score.field_notes
+field_name: field_notes
+entity_type: node
+bundle: evaluation_score
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

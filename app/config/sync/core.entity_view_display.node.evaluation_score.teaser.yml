@@ -1,0 +1,26 @@
+uuid: c893a07c-82bd-4807-8fde-060567f318c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.evaluation_score.field_evaluation_score
+    - field.field.node.evaluation_score.field_notes
+    - field.field.node.evaluation_score.field_question
+    - node.type.evaluation_score
+  module:
+    - user
+id: node.evaluation_score.teaser
+targetEntityType: node
+bundle: evaluation_score
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_evaluation_score: true
+  field_notes: true
+  field_question: true

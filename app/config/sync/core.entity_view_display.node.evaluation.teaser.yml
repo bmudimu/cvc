@@ -1,0 +1,32 @@
+uuid: da76fb75-b2c8-4237-b8a9-1ca3cc125237
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.evaluation.field_client_name
+    - field.field.node.evaluation.field_evaluation_category
+    - field.field.node.evaluation.field_evaluation_score
+    - field.field.node.evaluation.field_notes
+    - field.field.node.evaluation.field_quarter
+    - field.field.node.evaluation.field_year
+    - node.type.evaluation
+  module:
+    - user
+id: node.evaluation.teaser
+targetEntityType: node
+bundle: evaluation
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_evaluation_category: true
+  field_evaluation_score: true
+  field_notes: true
+  field_quarter: true
+  field_year: true

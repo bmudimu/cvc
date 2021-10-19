@@ -1,7 +1,9 @@
 uuid: 172d0388-4dd5-4e7a-a596-8342bd74698d
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - cvc_handler
 open: null
 close: null
 weight: 0
@@ -60,7 +62,7 @@ elements: |-
     '#type': webform_card
     '#title': 'Question 2'
     '#title_display': invisible
-    gov2:
+    qn2:
       '#type': webform_markup
       '#display_on': both
       '#markup': '<div class="section"><span>2</span>The company has developed a stakeholder relations policy that takes into account consumer treatment?</div>'
@@ -69,11 +71,11 @@ elements: |-
       '#attributes':
         class:
           - inner-wrap
-      gov2_rating:
+      rating2:
         '#type': select
         '#title': Rating
         '#options': likert_satisfaction
-      gov2_comments:
+      notes2:
         '#type': textarea
         '#title': Comments
   card_3:
@@ -1014,5 +1016,14 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  social_evaluation:
+    id: social_evaluation_handler
+    label: 'Social Evaluation'
+    notes: ''
+    handler_id: social_evaluation
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }

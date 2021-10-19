@@ -1,0 +1,19 @@
+uuid: ad352245-d989-4b9b-8ca5-f8b9330963b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_question
+    - node.type.evaluation_score
+id: node.evaluation_score.field_question
+field_name: field_question
+entity_type: node
+bundle: evaluation_score
+label: Question
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

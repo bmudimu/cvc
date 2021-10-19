@@ -1,0 +1,45 @@
+uuid: 305d2acd-550f-4778-b826-261a9dab28bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evaluation_score.field_evaluation_score
+    - field.field.node.evaluation_score.field_notes
+    - field.field.node.evaluation_score.field_question
+    - node.type.evaluation_score
+  module:
+    - user
+id: node.evaluation_score.default
+targetEntityType: node
+bundle: evaluation_score
+mode: default
+content:
+  field_evaluation_score:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_notes:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_question:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
