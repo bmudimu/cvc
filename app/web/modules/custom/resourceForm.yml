@@ -58,18 +58,10 @@ card_1:
       january:
         '#type': label
         '#title': January
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
       water1:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -77,10 +69,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -88,32 +76,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#template': '{% if data.water1|length and data.electricity1|length %}{{ (data.water1 + data.electricity1)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes1:
-        '#type': textarea
-        '#title': Comments
     flexbox_02:
       '#type': flexbox
       february:
         '#type': label
         '#title': February
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
       water2:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -121,10 +94,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -132,32 +101,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#template': '{% if data.water2|length and data.electricity2|length %}{{ (data.water2 + data.electricity2)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes2:
-          '#type': textarea
-          '#title': Comments
     flexbox_03:
       '#type': flexbox
       march:
         '#type': label
         '#title': March
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
       water3:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -165,10 +119,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -176,32 +126,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '1'
         '#template': '{% if data.water3|length and data.electricity3|length %}{{ (data.water3 + data.electricity3)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes3:
-        '#type': textarea
-        '#title': Comments
     flexbox_04:
       '#type': flexbox
       april:
         '#type': label
         '#title': April
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
       water4:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -209,10 +144,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -220,32 +151,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#template': '{% if data.water4|length and data.electricity4|length %}{{ (data.water4 + data.electricity4)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes4:
-        '#type': textarea
-        '#title': Comments
     flexbox_05:
       '#type': flexbox
       may:
         '#type': label
         '#title': May
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
       water5:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -253,10 +169,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -264,31 +176,16 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#template': '{% if data.water5|length and data.electricity5|length %}{{ (data.water5 + data.electricity5)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes5:
-        '#type': textarea
-        '#title': Comments
     flexbox_06:
       '#type': flexbox
       june:
         '#type': label
         '#title': June
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
       water6:
         '#type': number
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -296,10 +193,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -307,32 +200,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '2'
         '#template': '{% if data.water6|length and data.electricity6|length %}{{ (data.water6 + data.electricity6)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes6:
-        '#type': textarea
-        '#title': Comments
     flexbox_07:
       '#type': flexbox
       july:
         '#type': label
         '#title': July
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
       water7:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -340,10 +218,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -351,32 +225,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#template': '{% if data.water7|length and data.electricity7|length %}{{ (data.water7 + data.electricity7)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes7:
-        '#type': textarea
-        '#title': Comments
     flexbox_08:
       '#type': flexbox
       august:
         '#type': label
         '#title': August
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
       water8:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -384,10 +243,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -395,32 +250,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#template': '{% if data.water8|length and data.electricity8|length %}{{ (data.water8 + data.electricity8)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes8:
-        '#type': textarea
-        '#title': Comments
     flexbox_09:
       '#type': flexbox
       september:
         '#type': label
         '#title': September
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
       water9:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -428,10 +268,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -439,32 +275,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '3'
         '#template': '{% if data.water9|length and data.electricity9|length %}{{ (data.water9 + data.electricity9)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes9:
-        '#type': textarea
-        '#title': Comments
     flexbox_10:
       '#type': flexbox
       october:
         '#type': label
         '#title': October
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
       water10:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -472,10 +293,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -483,32 +300,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#template': '{% if data.water10|length and data.electricity10|length %}{{ (data.water10 + data.electricity10)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes10:
-        '#type': textarea
-        '#title': Comments
     flexbox_11:
       '#type': flexbox
       november:
         '#type': label
         '#title': November
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
       water11:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -516,10 +318,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -527,32 +325,17 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#template': '{% if data.water11|length and data.electricity11|length %}{{ (data.water11 + data.electricity11)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes11:
-        '#type': textarea
-        '#title': Comments
     flexbox_12:
       '#type': flexbox
       december:
         '#type': label
         '#title': December
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
       water12:
         '#type': number
         '#title': Water
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -560,10 +343,6 @@ card_1:
         '#type': number
         '#title': Electricity
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#default_value': '0'
         '#min': 0
         '#max': 1000000
@@ -571,12 +350,8 @@ card_1:
         '#type': computed_twig
         '#title': Total
         '#title_display': invisible
-        '#states':
-          invisible:
-            ':input[name="quarter"]':
-              '!value': '4'
         '#template': '{% if data.water12|length and data.electricity12|length %}{{ (data.water12 + data.electricity12)|number_format(2) }}{% else %}0{% endif %}'
         '#ajax': true
-      notes12:
-        '#type': textarea
-        '#title': Comments
+    notes1:
+      '#type': textarea
+      '#title': Comments
