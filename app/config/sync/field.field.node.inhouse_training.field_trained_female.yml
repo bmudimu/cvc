@@ -1,0 +1,23 @@
+uuid: 2cad2d22-f505-4ad9-8368-dae111a34390
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trained_female
+    - node.type.inhouse_training
+id: node.inhouse_training.field_trained_female
+field_name: field_trained_female
+entity_type: node
+bundle: inhouse_training
+label: 'Trained Female'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

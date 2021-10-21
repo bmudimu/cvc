@@ -1,0 +1,36 @@
+uuid: fb16d4eb-6a04-402a-b01a-33df625620fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tax_contribution.field_client_name
+    - field.field.node.tax_contribution.field_notes
+    - field.field.node.tax_contribution.field_paye
+    - field.field.node.tax_contribution.field_quarter
+    - field.field.node.tax_contribution.field_sdl
+    - field.field.node.tax_contribution.field_uif
+    - field.field.node.tax_contribution.field_vat
+    - field.field.node.tax_contribution.field_year
+    - node.type.tax_contribution
+  module:
+    - user
+id: node.tax_contribution.teaser
+targetEntityType: node
+bundle: tax_contribution
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_notes: true
+  field_paye: true
+  field_quarter: true
+  field_sdl: true
+  field_uif: true
+  field_vat: true
+  field_year: true

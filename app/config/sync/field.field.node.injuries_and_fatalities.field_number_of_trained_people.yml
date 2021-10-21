@@ -1,0 +1,23 @@
+uuid: 3db439b8-7d2a-4255-b75f-6c19da8be097
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_trained_people
+    - node.type.injuries_and_fatalities
+id: node.injuries_and_fatalities.field_number_of_trained_people
+field_name: field_number_of_trained_people
+entity_type: node
+bundle: injuries_and_fatalities
+label: 'Number of Trained People'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,38 @@
+uuid: 06fd8f16-7a6e-411e-81a3-dc10158bcc1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.injuries_and_fatalities.field_client_name
+    - field.field.node.injuries_and_fatalities.field_lost_time
+    - field.field.node.injuries_and_fatalities.field_notes
+    - field.field.node.injuries_and_fatalities.field_number_of_claims
+    - field.field.node.injuries_and_fatalities.field_number_of_injuries
+    - field.field.node.injuries_and_fatalities.field_number_of_trained_people
+    - field.field.node.injuries_and_fatalities.field_percent_declined_claims
+    - field.field.node.injuries_and_fatalities.field_quarter
+    - field.field.node.injuries_and_fatalities.field_year
+    - node.type.injuries_and_fatalities
+  module:
+    - user
+id: node.injuries_and_fatalities.teaser
+targetEntityType: node
+bundle: injuries_and_fatalities
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_lost_time: true
+  field_notes: true
+  field_number_of_claims: true
+  field_number_of_injuries: true
+  field_number_of_trained_people: true
+  field_percent_declined_claims: true
+  field_quarter: true
+  field_year: true

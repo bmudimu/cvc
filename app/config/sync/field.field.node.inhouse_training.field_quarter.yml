@@ -1,0 +1,29 @@
+uuid: 4bea476d-279c-40d5-8f6e-570d7bc0df21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.inhouse_training
+    - taxonomy.vocabulary.quarters
+id: node.inhouse_training.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: inhouse_training
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

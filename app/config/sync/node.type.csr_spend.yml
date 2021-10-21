@@ -1,0 +1,17 @@
+uuid: a718153c-2c75-4455-b259-a75ccdd311a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'CSR Spend'
+type: csr_spend
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

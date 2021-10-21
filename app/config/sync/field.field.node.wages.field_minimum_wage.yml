@@ -1,0 +1,23 @@
+uuid: d97ad030-ed41-4f0c-a311-19a81ca77a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_minimum_wage
+    - node.type.wages
+id: node.wages.field_minimum_wage
+field_name: field_minimum_wage
+entity_type: node
+bundle: wages
+label: 'Minimum Wage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

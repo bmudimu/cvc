@@ -1,0 +1,20 @@
+uuid: 54e6c31e-cd39-48b2-9e6a-cf277b26ac02
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_percent_to_profit
+field_name: field_percent_to_profit
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

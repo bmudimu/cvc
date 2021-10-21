@@ -1,0 +1,29 @@
+uuid: 6f442d93-2b40-44f4-baee-b30a3e123062
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.csr_spend
+    - taxonomy.vocabulary.years
+id: node.csr_spend.field_year
+field_name: field_year
+entity_type: node
+bundle: csr_spend
+label: Year
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

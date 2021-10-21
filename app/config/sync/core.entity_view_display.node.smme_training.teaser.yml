@@ -1,0 +1,40 @@
+uuid: d2b4f309-9ff9-4340-b1c9-5e968d362708
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.smme_training.field_bbbee_trained
+    - field.field.node.smme_training.field_client_name
+    - field.field.node.smme_training.field_local_smme_trained
+    - field.field.node.smme_training.field_notes
+    - field.field.node.smme_training.field_number_of_contracts
+    - field.field.node.smme_training.field_quarter
+    - field.field.node.smme_training.field_smme_trained
+    - field.field.node.smme_training.field_training_spend_per_year
+    - field.field.node.smme_training.field_wo_bbbee_trained
+    - field.field.node.smme_training.field_year
+    - node.type.smme_training
+  module:
+    - user
+id: node.smme_training.teaser
+targetEntityType: node
+bundle: smme_training
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bbbee_trained: true
+  field_client_name: true
+  field_local_smme_trained: true
+  field_notes: true
+  field_number_of_contracts: true
+  field_quarter: true
+  field_smme_trained: true
+  field_training_spend_per_year: true
+  field_wo_bbbee_trained: true
+  field_year: true

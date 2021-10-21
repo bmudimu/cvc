@@ -1,0 +1,23 @@
+uuid: 9a81121a-e4a4-46eb-95cf-c96450d3fabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wo_bbbee_trained
+    - node.type.smme_training
+id: node.smme_training.field_wo_bbbee_trained
+field_name: field_wo_bbbee_trained
+entity_type: node
+bundle: smme_training
+label: 'WO BBBEE Trained'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

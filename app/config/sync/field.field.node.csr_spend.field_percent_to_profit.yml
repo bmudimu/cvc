@@ -1,0 +1,23 @@
+uuid: 635969b1-3d3f-4930-abd6-2b6e33983c92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_percent_to_profit
+    - node.type.csr_spend
+id: node.csr_spend.field_percent_to_profit
+field_name: field_percent_to_profit
+entity_type: node
+bundle: csr_spend
+label: 'Percent to Profit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

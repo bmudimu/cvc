@@ -1,0 +1,23 @@
+uuid: d04cd03c-f699-4bd9-94b6-4dbb3d1b7fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_training_monthly_spend
+    - node.type.inhouse_training
+id: node.inhouse_training.field_training_monthly_spend
+field_name: field_training_monthly_spend
+entity_type: node
+bundle: inhouse_training
+label: 'Training Monthly Spend'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

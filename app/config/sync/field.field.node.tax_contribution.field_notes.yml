@@ -1,0 +1,19 @@
+uuid: 54de387a-09a5-45cc-9264-99ee54064f53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.tax_contribution
+id: node.tax_contribution.field_notes
+field_name: field_notes
+entity_type: node
+bundle: tax_contribution
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,19 @@
+uuid: d58b3236-daf6-4fba-bc52-bdca034c2d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.injuries_and_fatalities
+id: node.injuries_and_fatalities.field_notes
+field_name: field_notes
+entity_type: node
+bundle: injuries_and_fatalities
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

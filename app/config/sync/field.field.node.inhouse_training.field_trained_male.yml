@@ -1,0 +1,23 @@
+uuid: a5e06a1f-0aa2-4e80-9856-fd182c6bba62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trained_male
+    - node.type.inhouse_training
+id: node.inhouse_training.field_trained_male
+field_name: field_trained_male
+entity_type: node
+bundle: inhouse_training
+label: 'Trained Male'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

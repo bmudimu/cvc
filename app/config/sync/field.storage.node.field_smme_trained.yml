@@ -1,0 +1,20 @@
+uuid: 2db28445-2f71-43a5-9cb5-e5dd3bbb22d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_smme_trained
+field_name: field_smme_trained
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

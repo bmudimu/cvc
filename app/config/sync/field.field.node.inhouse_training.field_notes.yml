@@ -1,0 +1,19 @@
+uuid: 5acca5a5-8482-45ed-86e5-7a191ac81ad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.inhouse_training
+id: node.inhouse_training.field_notes
+field_name: field_notes
+entity_type: node
+bundle: inhouse_training
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

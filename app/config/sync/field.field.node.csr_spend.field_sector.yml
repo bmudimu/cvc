@@ -1,0 +1,19 @@
+uuid: 76ecf175-7810-4b5f-b210-9cb6d4316eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sector
+    - node.type.csr_spend
+id: node.csr_spend.field_sector
+field_name: field_sector
+entity_type: node
+bundle: csr_spend
+label: Sector
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

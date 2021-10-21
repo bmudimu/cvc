@@ -1,0 +1,116 @@
+uuid: 5b088367-bcd0-4c2e-b2ed-837fd9b3844b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.smme_training.field_bbbee_trained
+    - field.field.node.smme_training.field_client_name
+    - field.field.node.smme_training.field_local_smme_trained
+    - field.field.node.smme_training.field_notes
+    - field.field.node.smme_training.field_number_of_contracts
+    - field.field.node.smme_training.field_quarter
+    - field.field.node.smme_training.field_smme_trained
+    - field.field.node.smme_training.field_training_spend_per_year
+    - field.field.node.smme_training.field_wo_bbbee_trained
+    - field.field.node.smme_training.field_year
+    - node.type.smme_training
+  module:
+    - user
+id: node.smme_training.default
+targetEntityType: node
+bundle: smme_training
+mode: default
+content:
+  field_bbbee_trained:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_client_name:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_local_smme_trained:
+    weight: 110
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_notes:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_number_of_contracts:
+    weight: 109
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_quarter:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_smme_trained:
+    weight: 108
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_training_spend_per_year:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_wo_bbbee_trained:
+    weight: 111
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

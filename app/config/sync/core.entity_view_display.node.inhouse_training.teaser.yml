@@ -1,0 +1,38 @@
+uuid: 556646af-ce73-42a7-b513-251741118380
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.inhouse_training.field_client_name
+    - field.field.node.inhouse_training.field_days_for_training
+    - field.field.node.inhouse_training.field_notes
+    - field.field.node.inhouse_training.field_quarter
+    - field.field.node.inhouse_training.field_trained_female
+    - field.field.node.inhouse_training.field_trained_male
+    - field.field.node.inhouse_training.field_training_level
+    - field.field.node.inhouse_training.field_training_monthly_spend
+    - field.field.node.inhouse_training.field_year
+    - node.type.inhouse_training
+  module:
+    - user
+id: node.inhouse_training.teaser
+targetEntityType: node
+bundle: inhouse_training
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_days_for_training: true
+  field_notes: true
+  field_quarter: true
+  field_trained_female: true
+  field_trained_male: true
+  field_training_level: true
+  field_training_monthly_spend: true
+  field_year: true

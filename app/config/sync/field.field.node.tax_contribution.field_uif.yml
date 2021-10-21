@@ -1,0 +1,23 @@
+uuid: 8296f4a4-baf8-4f3a-b0ae-0cecd64ee47c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uif
+    - node.type.tax_contribution
+id: node.tax_contribution.field_uif
+field_name: field_uif
+entity_type: node
+bundle: tax_contribution
+label: UIF
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

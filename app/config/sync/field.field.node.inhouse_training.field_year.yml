@@ -1,0 +1,29 @@
+uuid: e49564e4-742b-42dc-9684-451a9265a598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.inhouse_training
+    - taxonomy.vocabulary.years
+id: node.inhouse_training.field_year
+field_name: field_year
+entity_type: node
+bundle: inhouse_training
+label: Year
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      years: years
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

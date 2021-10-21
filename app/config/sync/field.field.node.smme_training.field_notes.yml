@@ -1,0 +1,19 @@
+uuid: d268a465-a7b6-45af-ba13-de806167f558
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.smme_training
+id: node.smme_training.field_notes
+field_name: field_notes
+entity_type: node
+bundle: smme_training
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

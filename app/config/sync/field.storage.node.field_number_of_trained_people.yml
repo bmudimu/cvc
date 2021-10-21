@@ -1,0 +1,20 @@
+uuid: 56c0165b-f67e-40d2-8e73-70c55c541114
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_number_of_trained_people
+field_name: field_number_of_trained_people
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

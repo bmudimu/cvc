@@ -1,0 +1,22 @@
+uuid: 223602cc-c727-4e0b-9cf2-8a8ddc830d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.inhouse_training
+id: node.inhouse_training.promote
+field_name: promote
+entity_type: node
+bundle: inhouse_training
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

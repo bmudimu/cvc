@@ -1,0 +1,17 @@
+uuid: 248c6e41-5210-4637-b012-523602c7aa89
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Injuries and Fatalities'
+type: injuries_and_fatalities
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

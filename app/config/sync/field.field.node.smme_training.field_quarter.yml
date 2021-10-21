@@ -1,0 +1,29 @@
+uuid: 8b2b726f-2020-40a0-9085-73075febabb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.smme_training
+    - taxonomy.vocabulary.quarters
+id: node.smme_training.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: smme_training
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

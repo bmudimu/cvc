@@ -1,0 +1,23 @@
+uuid: 8435e2be-7092-4c99-b4da-fb80bff0bff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_local_smme_trained
+    - node.type.smme_training
+id: node.smme_training.field_local_smme_trained
+field_name: field_local_smme_trained
+entity_type: node
+bundle: smme_training
+label: 'Local SMME Trained'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

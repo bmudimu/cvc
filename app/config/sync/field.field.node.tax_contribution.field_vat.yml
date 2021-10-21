@@ -1,0 +1,23 @@
+uuid: 3ce7cf3a-2267-4f48-adba-8e016deddd7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vat
+    - node.type.tax_contribution
+id: node.tax_contribution.field_vat
+field_name: field_vat
+entity_type: node
+bundle: tax_contribution
+label: VAT
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

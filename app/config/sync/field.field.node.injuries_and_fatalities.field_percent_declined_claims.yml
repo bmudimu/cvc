@@ -1,0 +1,23 @@
+uuid: b909972e-4a99-4152-a306-85f0743ebc15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_percent_declined_claims
+    - node.type.injuries_and_fatalities
+id: node.injuries_and_fatalities.field_percent_declined_claims
+field_name: field_percent_declined_claims
+entity_type: node
+bundle: injuries_and_fatalities
+label: 'Percent Declined Claims'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100
+  prefix: ''
+  suffix: '%'
+field_type: decimal

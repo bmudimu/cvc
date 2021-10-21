@@ -1,0 +1,17 @@
+uuid: 14773b7d-4477-44e0-b80d-be7a5176e362
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Inhouse Training'
+type: inhouse_training
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 6c121ddd-c920-4f2d-9636-a60e00b31be0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sdl
+    - node.type.tax_contribution
+id: node.tax_contribution.field_sdl
+field_name: field_sdl
+entity_type: node
+bundle: tax_contribution
+label: SDL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

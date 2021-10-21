@@ -1,0 +1,36 @@
+uuid: 7f1ffd2e-c0ca-4310-b84d-444b77fb8c38
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.csr_spend.field_client_name
+    - field.field.node.csr_spend.field_csr_spend
+    - field.field.node.csr_spend.field_notes
+    - field.field.node.csr_spend.field_percent_to_profit
+    - field.field.node.csr_spend.field_percent_to_turnover
+    - field.field.node.csr_spend.field_quarter
+    - field.field.node.csr_spend.field_sector
+    - field.field.node.csr_spend.field_year
+    - node.type.csr_spend
+  module:
+    - user
+id: node.csr_spend.teaser
+targetEntityType: node
+bundle: csr_spend
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_client_name: true
+  field_csr_spend: true
+  field_notes: true
+  field_percent_to_profit: true
+  field_percent_to_turnover: true
+  field_quarter: true
+  field_sector: true
+  field_year: true

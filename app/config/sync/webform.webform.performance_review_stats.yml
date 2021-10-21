@@ -1,7 +1,9 @@
 uuid: 0733ea84-2370-4a16-944e-3a89ab516a01
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - cvc_handler
 open: null
 close: null
 weight: 0
@@ -31,12 +33,12 @@ elements: |-
           '#selection_settings':
             target_bundles:
               client: client
-        evaluation_year:
+        year:
           '#type': webform_term_select
           '#title': 'Evaluation Year'
           '#vocabulary': years
           '#breadcrumb_delimiter': ''
-        evaluation_qtr:
+        quarter:
           '#type': webform_term_select
           '#title': 'Evaluation Quarter'
           '#vocabulary': quarters
@@ -61,14 +63,14 @@ elements: |-
           '#title': 'Minimum Wage'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         average_wage:
           '#type': number
           '#title': 'Average Wage'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
-      stats1_comments:
+          '#max': 1000000
+      notes1:
         '#type': textarea
         '#title': Comments
   card_2:
@@ -91,26 +93,26 @@ elements: |-
           '#title': PAYE
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         vat:
           '#type': number
           '#title': VAT
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         uif:
           '#type': number
           '#title': UIF
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         sdl:
           '#type': number
           '#title': SDL
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
-      stats2_comments:
+          '#max': 1000000
+      notes2:
         '#type': textarea
         '#title': Comments
   card_3:
@@ -133,32 +135,32 @@ elements: |-
           '#title': 'Training Spend per Month'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 9000000
         trained_male:
           '#type': number
           '#title': 'Trained: MALE'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         trained_female:
           '#type': number
           '#title': 'Trained: FEMALE'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         training_level:
           '#type': number
           '#title': 'Training Level'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 1000000
         training_days:
           '#type': number
           '#title': 'Training Days'
           '#default_value': '0'
           '#min': 0
-          '#max': 10000
-      stats3_comments:
+          '#max': 100000
+      notes3:
         '#type': textarea
         '#title': Comments
   card_4:
@@ -212,7 +214,7 @@ elements: |-
           '#default_value': '0'
           '#min': 0
           '#max': 10000
-      stats4_comments:
+      notes4:
         '#type': textarea
         '#title': Comments
   card_5:
@@ -235,32 +237,33 @@ elements: |-
           '#title': 'Trained Health & Safety'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 100000
         injuries_fatalities:
           '#type': number
           '#title': 'Injuries & Fatalities'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 100000
         lost_time:
           '#type': number
           '#title': 'Lost Time'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 100000
         claims:
           '#type': number
           '#title': 'No. of Claims'
           '#default_value': '0'
           '#min': 0
-          '#max': 10000
+          '#max': 100000
         declined_claims:
           '#type': number
-          '#title': 'No. of Declined Claims'
+          '#title': 'Declined Claims %'
+          '#field_suffix': '%'
           '#default_value': '0'
           '#min': 0
-          '#max': 10000
-      stats5_comments:
+          '#max': 100
+      notes5:
         '#type': textarea
         '#title': Comments
   card_6:
@@ -283,26 +286,25 @@ elements: |-
           '#title': 'CSR Spend'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 10000000
         percent_to_turnover:
           '#type': number
           '#title': '% to Turnover'
+          '#field_suffix': '%'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 100
         percent_to_profit:
           '#type': number
           '#title': '% to Profit'
+          '#field_suffix': '%'
           '#default_value': '0'
           '#min': 0
-          '#max': 100000000
+          '#max': 100
         sector:
-          '#type': number
+          '#type': textfield
           '#title': Sector
-          '#default_value': '0'
-          '#min': 0
-          '#max': 100000000
-      stats6_comments:
+      notes6:
         '#type': textarea
         '#title': Comments
 css: ''
@@ -483,5 +485,14 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  create_performance_stats_nodes:
+    id: cvc_performance_handler
+    label: 'Create performance stats nodes'
+    notes: ''
+    handler_id: create_performance_stats_nodes
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }

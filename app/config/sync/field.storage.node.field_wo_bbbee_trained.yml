@@ -1,0 +1,20 @@
+uuid: ba46a76f-36e4-4b19-b5f6-aaed4acfd5bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_wo_bbbee_trained
+field_name: field_wo_bbbee_trained
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

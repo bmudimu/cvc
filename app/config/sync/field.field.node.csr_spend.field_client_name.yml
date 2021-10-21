@@ -1,0 +1,29 @@
+uuid: 1b2550c5-bffb-49ca-bd25-f39297fd3e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_name
+    - node.type.client
+    - node.type.csr_spend
+id: node.csr_spend.field_client_name
+field_name: field_client_name
+entity_type: node
+bundle: csr_spend
+label: 'Client Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      client: client
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

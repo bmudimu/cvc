@@ -1,0 +1,29 @@
+uuid: 20083109-158a-4bbc-9da1-8b760e29f80e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.wages
+    - taxonomy.vocabulary.quarters
+id: node.wages.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: wages
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

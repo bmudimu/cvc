@@ -1,0 +1,23 @@
+uuid: 7a6415dc-09ce-4186-b48c-b161f09105df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paye
+    - node.type.tax_contribution
+id: node.tax_contribution.field_paye
+field_name: field_paye
+entity_type: node
+bundle: tax_contribution
+label: PAYE
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

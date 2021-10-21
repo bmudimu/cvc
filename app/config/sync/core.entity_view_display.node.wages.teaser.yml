@@ -1,0 +1,32 @@
+uuid: 9b73b8ff-5577-4aad-85d9-a18c0043a340
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wages.field_average_wage
+    - field.field.node.wages.field_client_name
+    - field.field.node.wages.field_minimum_wage
+    - field.field.node.wages.field_notes
+    - field.field.node.wages.field_quarter
+    - field.field.node.wages.field_year
+    - node.type.wages
+  module:
+    - user
+id: node.wages.teaser
+targetEntityType: node
+bundle: wages
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_average_wage: true
+  field_client_name: true
+  field_minimum_wage: true
+  field_notes: true
+  field_quarter: true
+  field_year: true

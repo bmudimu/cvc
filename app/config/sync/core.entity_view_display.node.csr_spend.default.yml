@@ -1,0 +1,99 @@
+uuid: 191914f5-5976-46e7-80d4-17991f777f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.csr_spend.field_client_name
+    - field.field.node.csr_spend.field_csr_spend
+    - field.field.node.csr_spend.field_notes
+    - field.field.node.csr_spend.field_percent_to_profit
+    - field.field.node.csr_spend.field_percent_to_turnover
+    - field.field.node.csr_spend.field_quarter
+    - field.field.node.csr_spend.field_sector
+    - field.field.node.csr_spend.field_year
+    - node.type.csr_spend
+  module:
+    - user
+id: node.csr_spend.default
+targetEntityType: node
+bundle: csr_spend
+mode: default
+content:
+  field_client_name:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_csr_spend:
+    weight: 106
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_notes:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_percent_to_profit:
+    weight: 108
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_percent_to_turnover:
+    weight: 107
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_quarter:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sector:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_year:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 0cb3e9ae-9220-4709-adff-82e9102d52d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_training_spend_per_year
+    - node.type.smme_training
+id: node.smme_training.field_training_spend_per_year
+field_name: field_training_spend_per_year
+entity_type: node
+bundle: smme_training
+label: 'Training Spend per Year'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

@@ -1,0 +1,23 @@
+uuid: cfb391c4-c3f0-40d0-bfa3-01e835fd1868
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_csr_spend
+    - node.type.csr_spend
+id: node.csr_spend.field_csr_spend
+field_name: field_csr_spend
+entity_type: node
+bundle: csr_spend
+label: 'CSR Spend'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

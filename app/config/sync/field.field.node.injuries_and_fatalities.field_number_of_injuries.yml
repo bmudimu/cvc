@@ -1,0 +1,23 @@
+uuid: fd999ee0-1b2c-44e8-8e05-003c42d82b03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_injuries
+    - node.type.injuries_and_fatalities
+id: node.injuries_and_fatalities.field_number_of_injuries
+field_name: field_number_of_injuries
+entity_type: node
+bundle: injuries_and_fatalities
+label: 'Number of Injuries'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

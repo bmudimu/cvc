@@ -1,0 +1,29 @@
+uuid: bf899620-9dbc-4c8d-a759-118c43100722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.tax_contribution
+    - taxonomy.vocabulary.quarters
+id: node.tax_contribution.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: tax_contribution
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

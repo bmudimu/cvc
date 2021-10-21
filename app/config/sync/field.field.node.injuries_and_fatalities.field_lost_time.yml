@@ -1,0 +1,23 @@
+uuid: aae311ce-72f6-41ac-ae95-31613de8337b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lost_time
+    - node.type.injuries_and_fatalities
+id: node.injuries_and_fatalities.field_lost_time
+field_name: field_lost_time
+entity_type: node
+bundle: injuries_and_fatalities
+label: 'Lost Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 100000
+  prefix: ''
+  suffix: Day|Days
+field_type: decimal

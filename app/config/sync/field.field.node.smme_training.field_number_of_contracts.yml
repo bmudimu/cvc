@@ -1,0 +1,23 @@
+uuid: 9cbdf315-6035-430e-9ebc-fdd46ec15f6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_contracts
+    - node.type.smme_training
+id: node.smme_training.field_number_of_contracts
+field_name: field_number_of_contracts
+entity_type: node
+bundle: smme_training
+label: 'Number of Contracts'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

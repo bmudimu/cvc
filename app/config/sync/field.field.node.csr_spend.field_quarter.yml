@@ -1,0 +1,29 @@
+uuid: 67162442-4715-4612-bc5d-a45a734e9b4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarter
+    - node.type.csr_spend
+    - taxonomy.vocabulary.quarters
+id: node.csr_spend.field_quarter
+field_name: field_quarter
+entity_type: node
+bundle: csr_spend
+label: Quarter
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quarters: quarters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

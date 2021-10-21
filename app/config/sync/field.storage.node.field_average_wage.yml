@@ -1,0 +1,18 @@
+uuid: 0fbfcdc3-79d9-4f5a-b738-55b2ec606836
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_average_wage
+field_name: field_average_wage
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
