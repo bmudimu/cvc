@@ -3,8 +3,8 @@ FROM drupal:8.6-apache
 RUN apt-get update && apt-get install -y \
 	curl \
 	git \
-	mariadb-client \
-	vim \
+	mysql-client \
+    vim \
 	wget
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
@@ -21,3 +21,4 @@ RUN rm -rf /var/www/html/*
 COPY apache-drupal.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /app
+

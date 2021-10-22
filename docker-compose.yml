@@ -1,0 +1,36 @@
+version: '3'
+services:
+  # We create a container called db from the MariaDB v10.4 Docker image
+  db:
+    image: mysql:5.7
+    container_name: cvcdb
+    environment:
+      MYSQL_DATABASE: cvcdb
+      MYSQL_USER: bmudimu
+      MYSQL_PASSWORD: cvc_2021
+      MYSQL_ROOT_PASSWORD: cvc2021
+    ports:
+      - "3306:3306"
+    volumes:
+      # Create a Docker volume db_data to store the contents of /var/lib/mysql
+      - cvc_data://var/lib/mysql
+    restart: always
+  d9:
+    #Build the drupal container from the mounted project
+    #You could also pull image from your docker hub if available
+    depends_on:
+      - db
+    container_name: cvcapp
+    #Instead of using image we use the Dockerfile as the basis of this image
+    #Build on the fly without a seperate command or pushing to docker repository
+    build: .
+    ports:
+      - "8099:80"
+    # Use volumes to mount the project files into container for local development.
+    # Comment out the below line to test the production-ready container
+    volumes:
+      - ./app:/app
+    restart: always
+volumes:
+  #This tells Docker Compose to create the volume specified above
+  cvc_data:
