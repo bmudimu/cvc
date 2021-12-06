@@ -10,11 +10,14 @@
   function esg_progress_theme($existing, $type, $theme, $path)
   {
       return [
-          'esgrange' => [
+          'scoretable' => [
               'variables' => [
-                  'year' => NULL,
-                  'quarter' => NULL,
-                  'score' => NULL,
+                //   'year' => NULL,
+                //   'quarter' => NULL,
+                'total_count' => NULL,
+                'total_score' => NULL,
+                'data' => NULL,
+                'evaluation_score' => NULL,
               ],
             ],
         ];

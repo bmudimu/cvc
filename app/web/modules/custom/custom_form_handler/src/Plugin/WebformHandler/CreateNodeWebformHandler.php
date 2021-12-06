@@ -44,14 +44,14 @@ class CreateNodeWebformHandler extends WebformHandlerBase {
     ->condition('status', 1)
     ->condition('type', 'evaluation_question')
     ->condition('field_question_category.entity.name', 'Environmental and Management Systems')
-    ->sort('title', ASC);
+    ->sort('title', ASC); //get all the questions from the question content type already created
 
     $qids = $question_query->execute();
 
     $question_nodes = Node::loadMultiple($qids);
 
     foreach ($question_nodes as $question) {
-      $questions[] = $question->field_question->value;
+      $questions[] = $question->field_question->value; // put the actual evaluation question text into questions array
     };
 
     for ($i=0; $i<$valuesLength; $i++) {

@@ -1,0 +1,54 @@
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Response</th>
+            <th>Count</th>
+            <th>Score</th>
+            <th>%Weight</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for sub_array in data %}
+            <tr>
+                {% for value in sub_array %}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        <tr>
+            <td>Overall Rating</td>
+            <td><span>{{ total_count }}</span></td>
+            <td><span>{{ total_score }}</span></td>
+            <td>
+            <div class="progress progress-striped active">
+                <div class="progress-bar bg-success" style="width: {{ evaluation_score }}%">{{ evaluation_score }}%</div>
+            </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+        <tr style="text-align:center">
+            <th>Optimised</th>
+            <th>Managed</th>
+            <th>Defined</th>
+            <th>Repeatable</th>
+            <th>Ad Hoc</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="text-align:center">
+            <td><span class="badge bg-primary">80% +</span></td>
+            <td><span class="badge bg-info">60% - 79%</span></td>
+            <td><span class="badge bg-success">50% - 59%</span></td>
+            <td><span class="badge bg-warning">40% - 49%</span></td>
+            <td><span class="badge bg-danger">20% - 39%</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,26 @@
+{# <div class="card"> #}
+              {# <div class="card-header">
+                <h3 class="card-title">Evaluation Score Table</h3>
+              </div> #}
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      {# <th style="width: 10px">#</th> #}
+                      <th>Evaluation Items</th>
+                      {# <th style="width: 40px">Rating</th> #}
+                      {# <th>Notes</th> #}
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for item in items %}
+                        <tr>
+                              <td>{{ item.content }}</td>
+                        </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            {# </div> #}

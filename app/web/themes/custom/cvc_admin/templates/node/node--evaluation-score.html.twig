@@ -1,0 +1,31 @@
+{# <div class="card"> #}
+              {# <div class="card-header">
+                <h3 class="card-title">Evaluation Score Table</h3>
+              </div> #}
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Evaluation Item</th>
+                      <th style="width: 40px">Rating</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{ content.field_evaluation_item_no}}</td>
+                      <td>{{ content.field_question }}</td>
+                      <td><span class="badge bg-success">{{ content.field_evaluation_score }}</span></td>
+                      <td>{{ content.field_notes }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            {# </div> #}
+
+
+
+
